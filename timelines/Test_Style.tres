@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=6 format=3 uid="uid://cr73qxr4p5xyh"]
+
+[ext_resource type="Script" uid="uid://cgy3j1rr7thi1" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="1_3kiss"]
+[ext_resource type="PackedScene" uid="uid://bquja8jyk8kbr" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn" id="2_dama3"]
+[ext_resource type="Script" uid="uid://dfgbcee3j5cnc" path="res://addons/dialogic/Resources/dialogic_style.gd" id="2_pv0iv"]
+
+[sub_resource type="Resource" id="Resource_dama3"]
+script = ExtResource("1_3kiss")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_erx4v"]
+script = ExtResource("1_3kiss")
+scene = ExtResource("2_dama3")
+overrides = {
+"typing_sounds_enabled": "false"
+}
+
+[resource]
+script = ExtResource("2_pv0iv")
+name = "Test_Style"
+layer_list = Array[String](["10"])
+layer_info = {
+"": SubResource("Resource_dama3"),
+"10": SubResource("Resource_erx4v")
+}
+base_overrides = {}
+layers = Array[ExtResource("1_3kiss")]([])
+metadata/_latest_layer = "10"
