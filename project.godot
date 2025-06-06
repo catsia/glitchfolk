@@ -29,6 +29,11 @@ layout/style_list=["res://styles/premade_visualnovel.tres"]
 layout/default_style="res://styles/premade_visualnovel.tres"
 glossary/default_case_sensitive=true
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+
 [dotnet]
 
 project/assembly_name="glitchfolk"
