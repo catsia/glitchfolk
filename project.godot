@@ -12,7 +12,7 @@ config_version=5
 
 config/name="glitchfolk"
 run/main_scene="uid://cnudvb67jea3t"
-config/features=PackedStringArray("4.4", "C#", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -25,8 +25,9 @@ directories/dch_directory={}
 directories/dtl_directory={
 "intro": "res://timelines/intro.dtl"
 }
-layout/style_list=["res://timelines/Test_Style.tres"]
-layout/default_style="res://timelines/Test_Style.tres"
+layout/style_list=["res://styles/premade_visualnovel.tres"]
+layout/default_style="res://styles/premade_visualnovel.tres"
+glossary/default_case_sensitive=true
 
 [dotnet]
 
