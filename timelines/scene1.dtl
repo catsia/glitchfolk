@@ -1,2 +1,3 @@
-[wave]Hiiiii, I'm new scene[/wave]
 [signal arg_type="dict" arg="{"show_image":"background"}"]
+– Просыпайся, папа. 
+[signal arg_type="dict" arg="{"show_image":"father_sprite"}"]
