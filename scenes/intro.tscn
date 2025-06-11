@@ -1404,3 +1404,5 @@ frame_progress = 0.563834
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_bu1yb")
 animation = &"birthsxv"
+
+[connection signal="animation_finished" from="cosmos" to="." method="_on_cosmos_animation_finished"]

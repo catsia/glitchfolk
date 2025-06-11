@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://wn7rtr0ktpeh"]
+
+[ext_resource type="Script" uid="uid://d2n2m578xrc1y" path="res://scenes/scene_1.gd" id="1_t413n"]
+[ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_td60s"]
+
+[node name="Scene1" type="Node2D"]
+script = ExtResource("1_t413n")
+
+[node name="background" type="TextureRect" parent="."]
+visible = false
+offset_left = -78.0
+offset_top = -29.0
+offset_right = 2094.0
+offset_bottom = 1204.0
+texture = ExtResource("2_td60s")
