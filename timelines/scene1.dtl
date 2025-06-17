@@ -1,3 +1,4 @@
 [signal arg_type="dict" arg="{"show_image":"background"}"]
-– Просыпайся, папа. 
+– Просыпайся, папа.
 [signal arg_type="dict" arg="{"show_image":"father_sprite"}"]
+[signal arg_type="dict" arg="{"animation":"father_crack"}"]

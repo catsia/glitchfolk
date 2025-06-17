@@ -24,4 +24,5 @@ func fade_and_switch_scene():
 	)
 
 func _on_cosmos_animation_finished() -> void:
+	$cosmos_cycle.show()
 	dialog_manager._play_animation(self, "cosmos_cycle")

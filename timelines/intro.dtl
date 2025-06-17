@@ -37,7 +37,10 @@
 Мак дал семена — маленькие квадратные зёрнышки, которые подхватывал ветер и распространял над необъятными океанами и морями пустоты.
 
 Куда бы маковое зёрнышко ни упало, оно всюду придавало пустоте форму. Нечто формировалось. Порядок. Субстанция. Жизнь.
+[signal arg_type="dict" arg="{"hide_animation":"rgb_pixel2"}"]
 [signal arg_type="dict" arg="{"animation":"pixel_life_birth1"}"]
+[wait time="0.1" hide_text="false"]
+[signal arg_type="dict" arg="{"hide_animation":"rgb_pixel_full"}"]
 [pause=1] Зерно пикселя множилось посредством деления.
 [signal arg_type="dict" arg="{"animation":"pixel_life_birth2"}"]
 [pause=1] Из одного явилось два.
@@ -60,6 +63,9 @@
 
 Маки росли, люди рождались, и всё было хорошо.
 [signal arg_type="dict" arg="{"show_image":"cross_bird"}"]
+[signal arg_type="dict" arg="{"hide_animation":"rgb_pixel_full"}"]
+[signal arg_type="dict" arg="{"hide_animation":"rgb_pixel1"}"]
+[signal arg_type="dict" arg="{"hide_animation":"rgb_pixel2"}"]
 
 До тех пор, пока не появилась Жар-птица.
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1nqmtitjeap0"
-path="res://.godot/imported/folk_father 600x600 without shadow.png-c1c73aca5567a484e65cdda6a680fd24.ctex"
+uid="uid://cwfumru8q8yol"
+path="res://.godot/imported/folk_father_crack.png-2040b51719bc6dc1827ccd0b5394754a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/main_art/folk_father 600x600 without shadow.png"
-dest_files=["res://.godot/imported/folk_father 600x600 without shadow.png-c1c73aca5567a484e65cdda6a680fd24.ctex"]
+source_file="res://assets/art/animations/folk_father_crack.png"
+dest_files=["res://.godot/imported/folk_father_crack.png-2040b51719bc6dc1827ccd0b5394754a.ctex"]
 
 [params]
 

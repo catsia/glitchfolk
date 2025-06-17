@@ -9,7 +9,7 @@ func _manage_dialogic_signal(context: Node, data: Dictionary):
 		if data.has("hide_image"):
 			_hide_image(context, data["hide_image"])
 		if data.has("hide_animation"):
-			_hide_animation(context, data["hide_image"])					
+			_hide_animation(context, data["hide_animation"])					
 
 func _play_animation(context: Node, signal_name: String):
 	var animation =  context.get_node_or_null(signal_name)
