@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://wn7rtr0ktpeh"]
+[gd_scene load_steps=37 format=3 uid="uid://wn7rtr0ktpeh"]
 
 [ext_resource type="Script" uid="uid://d2n2m578xrc1y" path="res://scenes/scene_1.gd" id="1_t413n"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_td60s"]
@@ -7,9 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://dik1w32ikcxkw" path="res://assets/art/animations/father_mak.png" id="5_cg05x"]
 [ext_resource type="Texture2D" uid="uid://c6hnvsuaiq6jb" path="res://assets/art/animations/father_stain.png" id="6_ogaks"]
 [ext_resource type="Script" uid="uid://o8dbsoi3lwfj" path="res://scenes/btn_father_mak.gd" id="6_s8jmr"]
-[ext_resource type="Script" uid="uid://bplemi0vfkd8u" path="res://scenes/father_strain.gd" id="8_suuxx"]
-[ext_resource type="Script" uid="uid://d0sx50kr10rau" path="res://scenes/father_crack.gd" id="9_f1jql"]
-[ext_resource type="Script" uid="uid://rcj1ra52lc55" path="res://scenes/next_scene_button.gd" id="10_lfno2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cg05x"]
 atlas = ExtResource("4_dc6gq")
@@ -298,7 +295,7 @@ animations = [{
 "speed": 9.0
 }]
 
-[node name="Scene1" type="CanvasLayer"]
+[node name="Scene1" type="Node2D"]
 script = ExtResource("1_t413n")
 
 [node name="background" type="TextureRect" parent="."]
@@ -326,56 +323,17 @@ sprite_frames = SubResource("SpriteFrames_p1jvj")
 position = Vector2(934, 342)
 sprite_frames = SubResource("SpriteFrames_3q2cr")
 
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = -35.0
-offset_top = -38.0
-offset_right = 2076.0
-offset_bottom = 1157.0
-
-[node name="btn_father_mak" type="Button" parent="Control"]
+[node name="btn_father_mak" type="Button" parent="."]
 visibility_layer = 3
-layout_mode = 0
-offset_left = 907.0
-offset_top = 360.0
-offset_right = 992.0
-offset_bottom = 462.0
+offset_left = 872.0
+offset_top = 322.0
+offset_right = 957.0
+offset_bottom = 424.0
 action_mode = 0
-flat = true
 script = ExtResource("6_s8jmr")
 
-[node name="father_strain" type="Button" parent="Control"]
-layout_mode = 0
-offset_left = 816.0
-offset_top = 446.0
-offset_right = 899.0
-offset_bottom = 563.0
-flat = true
-script = ExtResource("8_suuxx")
-
-[node name="father_crack" type="Button" parent="Control"]
-layout_mode = 0
-offset_left = 716.0
-offset_top = 355.0
-offset_right = 814.0
-offset_bottom = 391.0
-rotation = -0.65903
-flat = true
-script = ExtResource("9_f1jql")
-
-[node name="next_scene_button" type="Button" parent="Control"]
-layout_mode = 0
-offset_left = 9.0
-offset_top = 18.0
-offset_right = 2008.0
-offset_bottom = 1170.0
-disabled = true
-flat = true
-script = ExtResource("10_lfno2")
-
-[connection signal="pressed" from="Control/btn_father_mak" to="." method="_on_btn_father_mak_pressed"]
-[connection signal="pressed" from="Control/btn_father_mak" to="Control/btn_father_mak" method="_on_pressed"]
-[connection signal="pressed" from="Control/father_strain" to="Control/father_strain" method="_on_pressed"]
-[connection signal="pressed" from="Control/father_crack" to="Control/father_crack" method="_on_pressed"]
-[connection signal="mouse_entered" from="Control/next_scene_button" to="Control/next_scene_button" method="_on_mouse_entered"]
+[connection signal="button_down" from="btn_father_mak" to="." method="_on_btn_father_mak_button_down"]
+[connection signal="button_down" from="btn_father_mak" to="btn_father_mak" method="_on_button_down"]
+[connection signal="mouse_entered" from="btn_father_mak" to="btn_father_mak" method="_on_pressed"]
+[connection signal="pressed" from="btn_father_mak" to="." method="_on_btn_father_mak_pressed"]
+[connection signal="pressed" from="btn_father_mak" to="btn_father_mak" method="_on_pressed"]

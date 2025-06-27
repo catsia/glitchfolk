@@ -19,13 +19,18 @@ config/icon="res://icon.svg"
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 ScreenFade="*res://scenes/ScreenFade.tscn"
+InteractiveObjManager="*res://scripts/interactive_obj_manager.gd"
 
 [dialogic]
 
 directories/dch_directory={}
 directories/dtl_directory={
-"intro": "res://timelines/intro.dtl",
-"scene1": "res://timelines/scene1.dtl"
+"father_crack": "res://timelines/short/father_crack.dtl",
+"father_mak": "res://timelines/short/father_mak.dtl",
+"father_stain": "res://timelines/short/father_stain.dtl",
+"graveyard1": "res://timelines/graveyard1.dtl",
+"graveyard2": "res://timelines/graveyard2.dtl",
+"intro": "res://timelines/intro.dtl"
 }
 layout/style_list=["res://styles/premade_visualnovel.tres"]
 layout/default_style="res://styles/premade_visualnovel.tres"
