@@ -34,6 +34,7 @@ overrides = {}
 script = ExtResource("1_bp0cy")
 scene = ExtResource("5_fxe5j")
 overrides = {
+"box_size": "Vector2(750, 150)",
 "typing_sounds_enabled": "false"
 }
 
@@ -74,4 +75,4 @@ layer_info = {
 }
 base_overrides = {}
 layers = Array[ExtResource("1_bp0cy")]([])
-metadata/_latest_layer = "13"
+metadata/_latest_layer = "14"

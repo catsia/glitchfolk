@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://wn7rtr0ktpeh"]
+[gd_scene load_steps=51 format=3 uid="uid://wn7rtr0ktpeh"]
 
 [ext_resource type="Script" uid="uid://d2n2m578xrc1y" path="res://scenes/scene_1.gd" id="1_t413n"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_td60s"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://bplemi0vfkd8u" path="res://scenes/father_strain.gd" id="8_suuxx"]
 [ext_resource type="Script" uid="uid://d0sx50kr10rau" path="res://scenes/father_crack.gd" id="9_f1jql"]
 [ext_resource type="Script" uid="uid://rcj1ra52lc55" path="res://scenes/next_scene_button.gd" id="10_lfno2"]
+[ext_resource type="Texture2D" uid="uid://cq0l14b5py32q" path="res://assets/art/animations/willow_glitch.png" id="11_ug83y"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cg05x"]
 atlas = ExtResource("4_dc6gq")
@@ -170,6 +171,42 @@ region = Rect2(90, 120, 90, 120)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_3q2cr")
 }, {
 "duration": 1.0,
@@ -298,6 +335,77 @@ animations = [{
 "speed": 9.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_p1jvj"]
+atlas = ExtResource("11_ug83y")
+region = Rect2(0, 0, 810, 810)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6r25"]
+atlas = ExtResource("11_ug83y")
+region = Rect2(810, 0, 810, 810)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x128f"]
+atlas = ExtResource("11_ug83y")
+region = Rect2(1620, 0, 810, 810)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxed8"]
+atlas = ExtResource("11_ug83y")
+region = Rect2(0, 810, 810, 810)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aq06o"]
+atlas = ExtResource("11_ug83y")
+region = Rect2(810, 810, 810, 810)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfqrv"]
+atlas = ExtResource("11_ug83y")
+region = Rect2(1620, 810, 810, 810)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwb4d"]
+atlas = ExtResource("11_ug83y")
+region = Rect2(0, 1620, 810, 810)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w30ay"]
+atlas = ExtResource("11_ug83y")
+region = Rect2(810, 1620, 810, 810)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_343kp"]
+atlas = ExtResource("11_ug83y")
+region = Rect2(1620, 1620, 810, 810)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cakwj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p1jvj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6r25")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x128f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxed8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aq06o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lfqrv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwb4d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w30ay")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_343kp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
+
 [node name="Scene1" type="CanvasLayer"]
 script = ExtResource("1_t413n")
 
@@ -335,6 +443,7 @@ offset_right = 2076.0
 offset_bottom = 1157.0
 
 [node name="btn_father_mak" type="Button" parent="Control"]
+modulate = Color(1, 1, 1, 0)
 visibility_layer = 3
 layout_mode = 0
 offset_left = 907.0
@@ -346,6 +455,7 @@ flat = true
 script = ExtResource("6_s8jmr")
 
 [node name="father_strain" type="Button" parent="Control"]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 816.0
 offset_top = 446.0
@@ -355,6 +465,7 @@ flat = true
 script = ExtResource("8_suuxx")
 
 [node name="father_crack" type="Button" parent="Control"]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 716.0
 offset_top = 355.0
@@ -373,6 +484,10 @@ offset_bottom = 1170.0
 disabled = true
 flat = true
 script = ExtResource("10_lfno2")
+
+[node name="willow_anim" type="AnimatedSprite2D" parent="."]
+position = Vector2(960, 540)
+sprite_frames = SubResource("SpriteFrames_cakwj")
 
 [connection signal="pressed" from="Control/btn_father_mak" to="." method="_on_btn_father_mak_pressed"]
 [connection signal="pressed" from="Control/btn_father_mak" to="Control/btn_father_mak" method="_on_pressed"]
