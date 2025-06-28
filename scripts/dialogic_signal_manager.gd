@@ -15,6 +15,7 @@ func _manage_dialogic_signal(context: Node, data: Dictionary):
 func _play_animation(context: Node, signal_name: String):
 	var animation =  context.get_node_or_null(signal_name)
 	if animation:
+		animation.visible = true
 		animation.play()
 	else:
 		print("No animation ", signal_name)
