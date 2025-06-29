@@ -18,10 +18,13 @@ krey: Мне нужно кое-что, что есть только у тебя.
 Двумя пальцами К. вынул кость из шейного позвонка скелета. Часть его родного отца покоилась меж двух подушечек пальцев.
 
 krey: – До встречи, папа. И, ради святого глитча, прости меня.
+[signal arg_type="dict" arg="{"hide_image":"father_sprite"}"]
+[signal arg_type="dict" arg="{"hide_animation":"father_mak"}"]
+[sound path="res://sounds/burying.mp3" volume="0.0"]
 (звук засыпаемой земли, фейд аут)
+[wait time="1.0" hide_text="false"]
 К. сел на одинокую лавку, спрятанную под тенью плакучей ивы — концептуально единственно уместного кладбищу дерева.
 [signal arg_type="dict" arg="{"animation":"willow_anim"}"]
-[signal arg_type="dict" arg="{"hide_image":"father_sprite"}"]
 
 Ивы оплакивали умерших, освобождая от этого обязательства людей.
 

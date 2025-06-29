@@ -420,6 +420,7 @@ texture = ExtResource("2_td60s")
 [node name="father_sprite" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 texture = ExtResource("3_dc6gq")
+metadata/is_fade_in = true
 
 [node name="father_crack" type="AnimatedSprite2D" parent="."]
 position = Vector2(729, 312)
@@ -433,6 +434,7 @@ sprite_frames = SubResource("SpriteFrames_p1jvj")
 [node name="father_mak" type="AnimatedSprite2D" parent="."]
 position = Vector2(934, 342)
 sprite_frames = SubResource("SpriteFrames_3q2cr")
+metadata/is_fade_in = true
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3

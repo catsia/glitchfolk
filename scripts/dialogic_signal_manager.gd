@@ -1,5 +1,7 @@
 extends Node
 
+var fade_duration = 1.5
+
 func _manage_dialogic_signal(context: Node, data: Dictionary):
 	if typeof(data) == TYPE_DICTIONARY:
 		if data.has("animation"):
@@ -31,14 +33,19 @@ func _show_image(context: Node, image_path: String):
 func _hide_image(context: Node, image_path: String):
 	var texture = context.get_node_or_null(image_path)
 	if texture:
-		texture.visible = false
+		fade_in(context, texture)
+		
+		#texture.visible = false
 	else:
 		print("No image ", image_path)	
 
 func _hide_animation(context: Node, signal_name: String):
 	var animation = context.get_node_or_null(signal_name)
 	if animation:
-		animation.visible = false
+		if animation.get_meta("is_fade_in"):
+			fade_in(context, animation)
+		else:
+			animation.visible = false
 	else:
 		print("No animation ", signal_name)	
 		
@@ -48,3 +55,17 @@ func _stop_animation(context: Node, signal_name: String):
 		animation.stop()
 	else:
 		print("No animation ", signal_name)	
+		
+func fade_in(context: Node, item):
+	var tween = context.get_tree().create_tween()
+	tween.tween_property(item, "modulate:a", 0, fade_duration)
+	tween.play()
+	await tween.finished
+	tween.kill()
+
+func fade_out(context: Node, item):
+	var tween = context.get_tree().create_tween()
+	tween.tween_property(item, "modulate:a", 1, fade_duration)
+	tween.play()
+	await tween.finished
+	tween.kill()
