@@ -17,7 +17,7 @@ func _manage_dialogic_signal(context: Node, data: Dictionary):
 func _play_animation(context: Node, signal_name: String):
 	var animation =  context.get_node_or_null(signal_name)
 	if animation:
-		if animation.get_meta("is_fade_in"):
+		if animation.has_meta("fade_in"):
 			fade_in(context, animation)
 		else:
 			animation.visible = true
@@ -28,7 +28,7 @@ func _play_animation(context: Node, signal_name: String):
 func _show_image(context: Node, image_path: String):
 	var texture = context.get_node_or_null(image_path)
 	if texture:
-		if texture.get_meta("is_fade_in"):
+		if texture.has_meta("fade_in"):
 			fade_in(context, texture)
 		else:
 			texture.visible = true
@@ -39,7 +39,7 @@ func _show_image(context: Node, image_path: String):
 func _hide_image(context: Node, image_path: String):
 	var texture = context.get_node_or_null(image_path)
 	if texture:
-		if texture.get_meta("is_fade_out"):
+		if texture.has_meta("fade_out"):
 			fade_out(context, texture)
 		else:
 			texture.visible = false
@@ -49,7 +49,7 @@ func _hide_image(context: Node, image_path: String):
 func _hide_animation(context: Node, signal_name: String):
 	var animation = context.get_node_or_null(signal_name)
 	if animation:
-		if animation.get_meta("is_fade_out"):
+		if animation.has_meta("fade_out"):
 			fade_out(context, animation)
 		else:
 			animation.visible = false
@@ -65,7 +65,7 @@ func _stop_animation(context: Node, signal_name: String):
 		
 func fade_out(context: Node, item):
 	var tween = context.get_tree().create_tween()
-	tween.tween_property(item, "modulate:a", 0, fade_duration)
+	tween.tween_property(item, "modulate:a", 0, item.get_meta("fade_out"))
 	tween.play()
 	await tween.finished
 	tween.kill()
@@ -74,7 +74,7 @@ func fade_in(context: Node, item):
 	item.modulate.a = 0
 	item.visible = true
 	var tween = context.get_tree().create_tween()
-	tween.tween_property(item, "modulate:a", 1, fade_duration)
+	tween.tween_property(item, "modulate:a", 1, item.get_meta("fade_in"))
 	tween.play()
 	await tween.finished
 	tween.kill()
