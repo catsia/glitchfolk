@@ -17,7 +17,10 @@ func _manage_dialogic_signal(context: Node, data: Dictionary):
 func _play_animation(context: Node, signal_name: String):
 	var animation =  context.get_node_or_null(signal_name)
 	if animation:
-		animation.visible = true
+		if animation.get_meta("is_fade_in"):
+			fade_in(context, animation)
+		else:
+			animation.visible = true
 		animation.play()
 	else:
 		print("No animation ", signal_name)
@@ -25,7 +28,10 @@ func _play_animation(context: Node, signal_name: String):
 func _show_image(context: Node, image_path: String):
 	var texture = context.get_node_or_null(image_path)
 	if texture:
-		texture.visible = true
+		if texture.get_meta("is_fade_in"):
+			fade_in(context, texture)
+		else:
+			texture.visible = true
 	else:
 		print("No image ", image_path)	
 
@@ -33,17 +39,18 @@ func _show_image(context: Node, image_path: String):
 func _hide_image(context: Node, image_path: String):
 	var texture = context.get_node_or_null(image_path)
 	if texture:
-		fade_in(context, texture)
-		
-		#texture.visible = false
+		if texture.get_meta("is_fade_out"):
+			fade_out(context, texture)
+		else:
+			texture.visible = false
 	else:
 		print("No image ", image_path)	
 
 func _hide_animation(context: Node, signal_name: String):
 	var animation = context.get_node_or_null(signal_name)
 	if animation:
-		if animation.get_meta("is_fade_in"):
-			fade_in(context, animation)
+		if animation.get_meta("is_fade_out"):
+			fade_out(context, animation)
 		else:
 			animation.visible = false
 	else:
@@ -56,14 +63,16 @@ func _stop_animation(context: Node, signal_name: String):
 	else:
 		print("No animation ", signal_name)	
 		
-func fade_in(context: Node, item):
+func fade_out(context: Node, item):
 	var tween = context.get_tree().create_tween()
 	tween.tween_property(item, "modulate:a", 0, fade_duration)
 	tween.play()
 	await tween.finished
 	tween.kill()
 
-func fade_out(context: Node, item):
+func fade_in(context: Node, item):
+	item.modulate.a = 0
+	item.visible = true
 	var tween = context.get_tree().create_tween()
 	tween.tween_property(item, "modulate:a", 1, fade_duration)
 	tween.play()

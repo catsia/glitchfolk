@@ -418,22 +418,28 @@ mouse_filter = 2
 texture = ExtResource("2_td60s")
 
 [node name="father_sprite" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(960, 540)
 texture = ExtResource("3_dc6gq")
+metadata/is_fade_out = true
 metadata/is_fade_in = true
 
 [node name="father_crack" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(729, 312)
 sprite_frames = SubResource("SpriteFrames_3rh3o")
 frame_progress = 0.403787
 
 [node name="father_stain" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(822, 477)
 sprite_frames = SubResource("SpriteFrames_p1jvj")
 
 [node name="father_mak" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(934, 342)
 sprite_frames = SubResource("SpriteFrames_3q2cr")
+metadata/is_fade_out = true
 metadata/is_fade_in = true
 
 [node name="Control" type="Control" parent="."]
