@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgqi4p3btohyr"
-path="res://.godot/imported/folk_birth_end.png-2eecf8301c875ac21dc08c51625e854a.ctex"
+uid="uid://cpjad4gj4vddy"
+path="res://.godot/imported/RGB_square1.png-2aa113fa36e2d6403be5c801f20515cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/animations/folk_birth_end.png"
-dest_files=["res://.godot/imported/folk_birth_end.png-2eecf8301c875ac21dc08c51625e854a.ctex"]
+source_file="res://assets/art/animations/intro/RGB_square1.png"
+dest_files=["res://.godot/imported/RGB_square1.png-2aa113fa36e2d6403be5c801f20515cd.ctex"]
 
 [params]
 

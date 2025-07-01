@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cq0l14b5py32q"
-path="res://.godot/imported/willow_glitch.png-a4ef04b7655a59b0bb525df67d2a25ec.ctex"
+uid="uid://db60bpl5ljeqw"
+path="res://.godot/imported/flower_of_order.png-8b76b9b0d3782d27b17a9544e6b4720c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/animations/willow_glitch.png"
-dest_files=["res://.godot/imported/willow_glitch.png-a4ef04b7655a59b0bb525df67d2a25ec.ctex"]
+source_file="res://assets/art/animations/intro/flower_of_order.png"
+dest_files=["res://.godot/imported/flower_of_order.png-8b76b9b0d3782d27b17a9544e6b4720c.ctex"]
 
 [params]
 

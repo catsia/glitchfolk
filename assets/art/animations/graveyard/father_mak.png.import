@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://db60bpl5ljeqw"
-path="res://.godot/imported/flower_of_order.png-5602ab94b315347f44a3df36919edf26.ctex"
+uid="uid://dik1w32ikcxkw"
+path="res://.godot/imported/father_mak.png-456446c660f12be4792dcd96b87ac1a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/animations/flower_of_order.png"
-dest_files=["res://.godot/imported/flower_of_order.png-5602ab94b315347f44a3df36919edf26.ctex"]
+source_file="res://assets/art/animations/graveyard/father_mak.png"
+dest_files=["res://.godot/imported/father_mak.png-456446c660f12be4792dcd96b87ac1a1.ctex"]
 
 [params]
 

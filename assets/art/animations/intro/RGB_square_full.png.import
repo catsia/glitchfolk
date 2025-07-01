@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dm18jsdj7rimf"
-path="res://.godot/imported/pixel_cam_intro.png-e9d29b7fafd530fad5b7353f43d89f18.ctex"
+uid="uid://br4gbxanxd4j0"
+path="res://.godot/imported/RGB_square_full.png-0fae05e2a5298de21e479575e64a8732.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/animations/pixel_cam_intro.png"
-dest_files=["res://.godot/imported/pixel_cam_intro.png-e9d29b7fafd530fad5b7353f43d89f18.ctex"]
+source_file="res://assets/art/animations/intro/RGB_square_full.png"
+dest_files=["res://.godot/imported/RGB_square_full.png-0fae05e2a5298de21e479575e64a8732.ctex"]
 
 [params]
 

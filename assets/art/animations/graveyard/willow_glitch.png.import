@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dik1w32ikcxkw"
-path="res://.godot/imported/father_mak.png-100a218f3aab1abe4c348fb6dbd6f7b5.ctex"
+uid="uid://cq0l14b5py32q"
+path="res://.godot/imported/willow_glitch.png-7b4167023c7a9ab7961401a26e19e9b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/animations/father_mak.png"
-dest_files=["res://.godot/imported/father_mak.png-100a218f3aab1abe4c348fb6dbd6f7b5.ctex"]
+source_file="res://assets/art/animations/graveyard/willow_glitch.png"
+dest_files=["res://.godot/imported/willow_glitch.png-7b4167023c7a9ab7961401a26e19e9b2.ctex"]
 
 [params]
 

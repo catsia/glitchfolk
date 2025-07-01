@@ -1,6 +1,6 @@
 [signal arg_type="dict" arg="{"show_image":"background"}"]
-krey: – Просыпайся, папа.
 [signal arg_type="dict" arg="{"show_image":"father_sprite"}"]
+krey: – Просыпайся, папа.
 [signal arg_type="dict" arg="{"animation":"father_crack"}"]
 [signal arg_type="dict" arg="{"animation":"father_mak"}"]
 [signal arg_type="dict" arg="{"animation":"father_stain"}"]

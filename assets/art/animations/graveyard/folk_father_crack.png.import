@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwfumru8q8yol"
-path="res://.godot/imported/folk_father_crack.png-2040b51719bc6dc1827ccd0b5394754a.ctex"
+path="res://.godot/imported/folk_father_crack.png-027a8d9b42ee0b0c31f4ed132044eaca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/animations/folk_father_crack.png"
-dest_files=["res://.godot/imported/folk_father_crack.png-2040b51719bc6dc1827ccd0b5394754a.ctex"]
+source_file="res://assets/art/animations/graveyard/folk_father_crack.png"
+dest_files=["res://.godot/imported/folk_father_crack.png-027a8d9b42ee0b0c31f4ed132044eaca.ctex"]
 
 [params]
 

@@ -1,12 +1,12 @@
 [gd_scene load_steps=181 format=3 uid="uid://cnudvb67jea3t"]
 
 [ext_resource type="Script" uid="uid://dyboqe861m2gb" path="res://scenes/intro.gd" id="1_ayt76"]
-[ext_resource type="Texture2D" uid="uid://db60bpl5ljeqw" path="res://assets/art/animations/flower_of_order.png" id="2_7a8ye"]
-[ext_resource type="Texture2D" uid="uid://cpjad4gj4vddy" path="res://assets/art/animations/RGB_square1.png" id="3_4bx60"]
-[ext_resource type="Texture2D" uid="uid://8dvlelcqw6ro" path="res://assets/art/animations/RGB_square2.png" id="3_i2l1n"]
-[ext_resource type="Texture2D" uid="uid://br4gbxanxd4j0" path="res://assets/art/animations/RGB_square_full.png" id="5_wfs7u"]
-[ext_resource type="Texture2D" uid="uid://dm18jsdj7rimf" path="res://assets/art/animations/pixel_cam_intro.png" id="6_es01l"]
-[ext_resource type="Texture2D" uid="uid://bgqi4p3btohyr" path="res://assets/art/animations/folk_birth_end.png" id="7_0naf5"]
+[ext_resource type="Texture2D" uid="uid://db60bpl5ljeqw" path="res://assets/art/animations/intro/flower_of_order.png" id="2_7a8ye"]
+[ext_resource type="Texture2D" uid="uid://cpjad4gj4vddy" path="res://assets/art/animations/intro/RGB_square1.png" id="3_4bx60"]
+[ext_resource type="Texture2D" uid="uid://8dvlelcqw6ro" path="res://assets/art/animations/intro/RGB_square2.png" id="3_i2l1n"]
+[ext_resource type="Texture2D" uid="uid://br4gbxanxd4j0" path="res://assets/art/animations/intro/RGB_square_full.png" id="5_wfs7u"]
+[ext_resource type="Texture2D" uid="uid://dm18jsdj7rimf" path="res://assets/art/animations/intro/pixel_cam_intro.png" id="6_es01l"]
+[ext_resource type="Texture2D" uid="uid://bgqi4p3btohyr" path="res://assets/art/animations/intro/folk_birth_end.png" id="7_0naf5"]
 [ext_resource type="Texture2D" uid="uid://dfbarfjj2c38b" path="res://assets/art/main_art/cross.png" id="8_bu1yb"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0a7ni"]
@@ -1441,5 +1441,6 @@ animation = &"birthsxv"
 visible = false
 position = Vector2(960, 540)
 texture = ExtResource("8_bu1yb")
+metadata/fade_in = true
 
 [connection signal="animation_finished" from="cosmos" to="." method="_on_cosmos_animation_finished"]

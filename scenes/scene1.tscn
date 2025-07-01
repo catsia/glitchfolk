@@ -1,16 +1,16 @@
-[gd_scene load_steps=51 format=3 uid="uid://wn7rtr0ktpeh"]
+[gd_scene load_steps=50 format=3 uid="uid://wn7rtr0ktpeh"]
 
 [ext_resource type="Script" uid="uid://d2n2m578xrc1y" path="res://scenes/scene_1.gd" id="1_t413n"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_td60s"]
 [ext_resource type="Texture2D" uid="uid://ppnxcn7ra8c4" path="res://assets/art/main_art/folk_father_base.png" id="3_dc6gq"]
-[ext_resource type="Texture2D" uid="uid://cwfumru8q8yol" path="res://assets/art/animations/folk_father_crack.png" id="4_dc6gq"]
-[ext_resource type="Texture2D" uid="uid://dik1w32ikcxkw" path="res://assets/art/animations/father_mak.png" id="5_cg05x"]
-[ext_resource type="Texture2D" uid="uid://c6hnvsuaiq6jb" path="res://assets/art/animations/father_stain.png" id="6_ogaks"]
+[ext_resource type="Texture2D" uid="uid://cwfumru8q8yol" path="res://assets/art/animations/graveyard/folk_father_crack.png" id="4_dc6gq"]
+[ext_resource type="Texture2D" uid="uid://dik1w32ikcxkw" path="res://assets/art/animations/graveyard/father_mak.png" id="5_cg05x"]
+[ext_resource type="Texture2D" uid="uid://c6hnvsuaiq6jb" path="res://assets/art/animations/graveyard/father_stain.png" id="6_ogaks"]
 [ext_resource type="Script" uid="uid://o8dbsoi3lwfj" path="res://scenes/btn_father_mak.gd" id="6_s8jmr"]
 [ext_resource type="Script" uid="uid://bplemi0vfkd8u" path="res://scenes/father_strain.gd" id="8_suuxx"]
 [ext_resource type="Script" uid="uid://d0sx50kr10rau" path="res://scenes/father_crack.gd" id="9_f1jql"]
 [ext_resource type="Script" uid="uid://rcj1ra52lc55" path="res://scenes/next_scene_button.gd" id="10_lfno2"]
-[ext_resource type="Texture2D" uid="uid://cq0l14b5py32q" path="res://assets/art/animations/willow_glitch.png" id="11_ug83y"]
+[ext_resource type="Texture2D" uid="uid://cq0l14b5py32q" path="res://assets/art/animations/graveyard/willow_glitch.png" id="11_ug83y"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cg05x"]
 atlas = ExtResource("4_dc6gq")
@@ -335,10 +335,6 @@ animations = [{
 "speed": 9.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_p1jvj"]
-atlas = ExtResource("11_ug83y")
-region = Rect2(0, 0, 810, 810)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_a6r25"]
 atlas = ExtResource("11_ug83y")
 region = Rect2(810, 0, 810, 810)
@@ -375,9 +371,6 @@ region = Rect2(1620, 1620, 810, 810)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_p1jvj")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_a6r25")
 }, {
 "duration": 1.0,
@@ -403,7 +396,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 9.0
+"speed": 6.0
 }]
 
 [node name="Scene1" type="CanvasLayer"]
@@ -497,6 +490,8 @@ script = ExtResource("10_lfno2")
 visible = false
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_cakwj")
+frame_progress = 0.67724
+metadata/fade_in = true
 
 [connection signal="pressed" from="Control/btn_father_mak" to="." method="_on_btn_father_mak_pressed"]
 [connection signal="pressed" from="Control/btn_father_mak" to="Control/btn_father_mak" method="_on_pressed"]
