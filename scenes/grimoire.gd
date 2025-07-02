@@ -11,7 +11,8 @@ func _ready():
 	timeline_manager = timelineManager.new()
 	
 	Dialogic.signal_event.connect(_on_dialogic_signal)
-	Dialogic.start("graveyard1")
+
+	Dialogic.start("grimoire")
 
 func _on_dialogic_signal(data: Dictionary, args = []):
 	dialog_manager._manage_dialogic_signal(self, data)	

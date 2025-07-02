@@ -1,6 +1,6 @@
 extends Node
 
-var fade_duration = 1.5
+#var fade_duration = 1.5
 
 func _manage_dialogic_signal(context: Node, data: Dictionary):
 	if typeof(data) == TYPE_DICTIONARY:
@@ -11,8 +11,13 @@ func _manage_dialogic_signal(context: Node, data: Dictionary):
 		if data.has("hide_image"):
 			_hide_image(context, data["hide_image"])
 		if data.has("hide_animation"):
-			_hide_animation(context, data["hide_animation"])	
+			_hide_animation(context, data["hide_animation"])
+		if data.has("next_scene"):
+			_next_scene(context, data["next_scene"])	
 
+func _next_scene(context: Node, next_scene: String):
+	var path = "res://scenes/" + next_scene + ".tscn"
+	context.get_tree().change_scene_to_file(path)
 
 func _play_animation(context: Node, signal_name: String):
 	var animation =  context.get_node_or_null(signal_name)

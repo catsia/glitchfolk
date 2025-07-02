@@ -32,6 +32,7 @@ directories/dtl_directory={
 "father_stain": "res://timelines/short/father_stain.dtl",
 "graveyard1": "res://timelines/graveyard1.dtl",
 "graveyard2": "res://timelines/graveyard2.dtl",
+"grimoire": "res://timelines/grimoire.dtl",
 "intro": "res://timelines/intro.dtl"
 }
 layout/style_list=["res://styles/premade_visualnovel.tres"]
