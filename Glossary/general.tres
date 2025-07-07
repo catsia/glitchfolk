@@ -6,6 +6,7 @@
 script = ExtResource("1_jjma4")
 entries = {
 "New Entry 2": {
+"case_sensitive": true,
 "name": "New Entry 2"
 },
 "прореха": {

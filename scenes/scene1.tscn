@@ -487,6 +487,7 @@ flat = true
 script = ExtResource("10_lfno2")
 
 [node name="willow_anim" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_cakwj")
 frame_progress = 0.67724
