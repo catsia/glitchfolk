@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpwnp20ink5gy"
-path="res://.godot/imported/folk_grimoire2.png-7e0738abe40b6fdd9ba6d377afde9c1f.ctex"
+uid="uid://bfqh6lotqwoqc"
+path="res://.godot/imported/folk_grimoire.png-0ac17ad6586ff2c82f911672229e7567.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/main_art/folk_grimoire2.png"
-dest_files=["res://.godot/imported/folk_grimoire2.png-7e0738abe40b6fdd9ba6d377afde9c1f.ctex"]
+source_file="res://assets/art/main_art/folk_grimoire.png"
+dest_files=["res://.godot/imported/folk_grimoire.png-0ac17ad6586ff2c82f911672229e7567.ctex"]
 
 [params]
 
