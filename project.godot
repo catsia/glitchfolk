@@ -38,7 +38,7 @@ directories/dtl_directory={
 layout/style_list=["res://styles/premade_visualnovel.tres"]
 layout/default_style="res://styles/premade_visualnovel.tres"
 glossary/default_case_sensitive=true
-glossary/glossary_files=["res://Glossary/general.tres", "res://Glossary/test_glossary.tres"]
+glossary/glossary_files=["res://Glossary/general.tres"]
 glossary/default_color=Color(0.54902, 0.145098, 0.164706, 1)
 variables={}
 

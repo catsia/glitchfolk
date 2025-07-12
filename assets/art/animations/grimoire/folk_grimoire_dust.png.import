@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8k14gs127po7"
-path="res://.godot/imported/folk_grimoire_dust.png-9b3de7d532d27d08381ac2611edc5039.ctex"
+path="res://.godot/imported/folk_grimoire_dust.png-06ab47601f24b508386f91429ff5fefc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/animations/folk_grimoire_dust.png"
-dest_files=["res://.godot/imported/folk_grimoire_dust.png-9b3de7d532d27d08381ac2611edc5039.ctex"]
+source_file="res://assets/art/animations/grimoire/folk_grimoire_dust.png"
+dest_files=["res://.godot/imported/folk_grimoire_dust.png-06ab47601f24b508386f91429ff5fefc.ctex"]
 
 [params]
 
