@@ -1,4 +1,4 @@
-[gd_scene load_steps=181 format=3 uid="uid://cnudvb67jea3t"]
+[gd_scene load_steps=183 format=3 uid="uid://cnudvb67jea3t"]
 
 [ext_resource type="Script" uid="uid://dyboqe861m2gb" path="res://scenes/intro.gd" id="1_ayt76"]
 [ext_resource type="Texture2D" uid="uid://db60bpl5ljeqw" path="res://assets/art/animations/intro/flower_of_order.png" id="2_7a8ye"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://dm18jsdj7rimf" path="res://assets/art/animations/intro/pixel_cam_intro.png" id="6_es01l"]
 [ext_resource type="Texture2D" uid="uid://bgqi4p3btohyr" path="res://assets/art/animations/intro/folk_birth_end.png" id="7_0naf5"]
 [ext_resource type="Texture2D" uid="uid://dfbarfjj2c38b" path="res://assets/art/main_art/cross.png" id="8_bu1yb"]
+[ext_resource type="Texture2D" uid="uid://im4gr7ra8i6m" path="res://assets/art/placeholders/obrazy/flame1.png" id="9_t1qkj"]
+[ext_resource type="Texture2D" uid="uid://bk863bbf8u0po" path="res://assets/art/placeholders/obrazy/childhood.png" id="10_272cy"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0a7ni"]
 load_path = "res://.godot/imported/HB background red.png-cf34a7a21e851eb5a0ebefd2657265eb.ctex"
@@ -1441,6 +1443,18 @@ animation = &"birthsxv"
 visible = false
 position = Vector2(960, 540)
 texture = ExtResource("8_bu1yb")
+metadata/fade_in = true
+
+[node name="flame1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1470, 207)
+texture = ExtResource("9_t1qkj")
+metadata/fade_in = true
+
+[node name="childhood" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(254, 184)
+texture = ExtResource("10_272cy")
 metadata/fade_in = true
 
 [connection signal="animation_finished" from="cosmos" to="." method="_on_cosmos_animation_finished"]
