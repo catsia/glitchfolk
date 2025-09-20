@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b1d873buo5gti"]
+
+[node name="topdown" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 684.0
+offset_top = 419.0
+offset_right = 1050.0
+offset_bottom = 496.0
+text = "топдаун-часть = эпилог первой главы
+Никаких просьб добавить в вишлист!11"

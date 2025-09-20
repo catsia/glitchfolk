@@ -1,0 +1,64 @@
+[gd_scene load_steps=6 format=3 uid="uid://dh36w2naer3ja"]
+
+[ext_resource type="Script" uid="uid://bv7402ir0km7l" path="res://scenes/fields_button.gd" id="1_0cso3"]
+[ext_resource type="Script" uid="uid://s8ya767g4vd2" path="res://scenes/home_button.gd" id="1_2klcf"]
+[ext_resource type="Texture2D" uid="uid://c6s2h33ywdiqa" path="res://assets/art/placeholders/map.png" id="1_4xfga"]
+[ext_resource type="Script" uid="uid://c1dvuaurro2v8" path="res://scenes/cube.gd" id="2_gldc4"]
+[ext_resource type="Script" uid="uid://dbao77ixfi254" path="res://scenes/forest_button.gd" id="2_paxxb"]
+
+[node name="map" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="home" type="Button" parent="CanvasLayer"]
+offset_left = 700.0
+offset_top = 713.0
+offset_right = 1000.0
+offset_bottom = 813.0
+text = "ПОЯВЛЯЕТСЯ ТОЛЬКО ПОСЛЕ ПОСЕЩЕНИЯ ОСТАЛЬНЫХ (в идеале сразу после посещения третьей локации, без карты)"
+autowrap_mode = 3
+script = ExtResource("1_2klcf")
+
+[node name="fields" type="Button" parent="CanvasLayer"]
+offset_left = 1081.0
+offset_top = 615.0
+offset_right = 1182.0
+offset_bottom = 670.0
+text = "fields"
+script = ExtResource("1_0cso3")
+
+[node name="forest" type="Button" parent="CanvasLayer"]
+offset_left = 733.0
+offset_top = 345.0
+offset_right = 819.0
+offset_bottom = 379.0
+text = "forest"
+script = ExtResource("2_paxxb")
+
+[node name="cube" type="Button" parent="CanvasLayer"]
+offset_left = 1040.0
+offset_top = 353.0
+offset_right = 1127.0
+offset_bottom = 399.0
+text = "cube"
+script = ExtResource("2_gldc4")
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_right = 0.021000002
+anchor_bottom = 0.021000002
+offset_left = 744.0
+offset_top = 478.0
+offset_right = 1112.68
+offset_bottom = 607.32
+text = "Кнопки должны пропадать после нажатия и оставаться невидимыми после посещения соответствующей сцены (просто спрятать не могу, так как сцена каждый раз грузится заново в исходном состоянии)."
+autowrap_mode = 3
+
+[node name="map_art" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_4xfga")
+
+[connection signal="pressed" from="CanvasLayer/home" to="CanvasLayer/home" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/fields" to="CanvasLayer/fields" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/forest" to="CanvasLayer/forest" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/cube" to="CanvasLayer/cube" method="_on_pressed"]

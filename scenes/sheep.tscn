@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgi14r5fa5o7s"]
+
+[ext_resource type="Script" uid="uid://ctgyfgftg7srq" path="res://scenes/sheep.gd" id="1_gw4f6"]
+[ext_resource type="Texture2D" uid="uid://bfngea2hlec3e" path="res://assets/art/placeholders/sheep_road.png" id="2_6qn06"]
+
+[node name="sheep" type="CanvasLayer"]
+script = ExtResource("1_gw4f6")
+
+[node name="sheep_art" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_6qn06")

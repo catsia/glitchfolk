@@ -849,7 +849,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_fhfaf")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="grimoire_art" type="Sprite2D" parent="."]
 position = Vector2(960, 509)
 texture = ExtResource("3_lbjj8")
 

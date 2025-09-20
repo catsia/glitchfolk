@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://copi7d1m7y8u"]
+
+[ext_resource type="Script" uid="uid://b565d7l2x843v" path="res://scenes/cube_1.gd" id="1_nted5"]
+[ext_resource type="Texture2D" uid="uid://ba2ecphi2d4py" path="res://assets/art/placeholders/fingers2.png" id="2_tn7xk"]
+
+[node name="cube" type="CanvasLayer"]
+script = ExtResource("1_nted5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_tn7xk")

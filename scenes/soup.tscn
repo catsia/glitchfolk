@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfcgeq37otkor"]
+
+[ext_resource type="Script" uid="uid://bvnsiqgdkwt5b" path="res://scenes/soup.gd" id="1_gj4c3"]
+[ext_resource type="Texture2D" uid="uid://d4ka21ccai6x4" path="res://assets/art/placeholders/folk_soup 600x600 no glitch.png" id="2_lw81e"]
+
+[node name="Soup" type="CanvasLayer"]
+script = ExtResource("1_gj4c3")
+
+[node name="soup_art" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_lw81e")

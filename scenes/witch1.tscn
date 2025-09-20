@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://vqau5l2rremv"]
+
+[ext_resource type="Script" uid="uid://c1tqnu48v45ky" path="res://scenes/witch_1.gd" id="1_onceh"]
+[ext_resource type="Texture2D" uid="uid://x3dunqg4doro" path="res://assets/art/placeholders/witch2.png" id="2_w2h3f"]
+
+[node name="witch" type="CanvasLayer"]
+script = ExtResource("1_onceh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_w2h3f")

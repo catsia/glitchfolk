@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cg5utao56404e"]
+
+[ext_resource type="Script" uid="uid://khv1dt0ng4ww" path="res://bride.gd" id="1_h8c4d"]
+[ext_resource type="Texture2D" uid="uid://bdjqoa13135cm" path="res://assets/art/placeholders/bride.png" id="2_v7yvv"]
+
+[node name="bride" type="CanvasLayer"]
+script = ExtResource("1_h8c4d")
+
+[node name="bride_art" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_v7yvv")
