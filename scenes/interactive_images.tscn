@@ -1,0 +1,84 @@
+[gd_scene load_steps=12 format=3 uid="uid://bnwkx3jd1b8cg"]
+
+[ext_resource type="Texture2D" uid="uid://im4gr7ra8i6m" path="res://assets/art/placeholders/obrazy/flame1.png" id="1_gc667"]
+[ext_resource type="Script" uid="uid://8nhu1kwixmam" path="res://scenes/interactive_images.gd" id="1_vqs1a"]
+[ext_resource type="Texture2D" uid="uid://bk863bbf8u0po" path="res://assets/art/placeholders/obrazy/childhood.png" id="2_vqs1a"]
+[ext_resource type="Texture2D" uid="uid://dm18jsdj7rimf" path="res://assets/art/animations/intro/pixel_cam_intro.png" id="4_j712g"]
+[ext_resource type="Script" uid="uid://dkpfcw6hyh57u" path="res://scripts/interactive_image.gd" id="5_a6g1q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vynlr"]
+atlas = ExtResource("4_j712g")
+region = Rect2(0, 1800, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uwrfh"]
+atlas = ExtResource("4_j712g")
+region = Rect2(600, 1800, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l82bo"]
+atlas = ExtResource("4_j712g")
+region = Rect2(1200, 1800, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8veky"]
+atlas = ExtResource("4_j712g")
+region = Rect2(1800, 1800, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ugerw"]
+atlas = ExtResource("4_j712g")
+region = Rect2(2400, 1800, 600, 600)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a6g1q"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"test",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.11,
+"texture": SubResource("AtlasTexture_vynlr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uwrfh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l82bo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8veky")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ugerw")
+}],
+"loop": false,
+"name": &"test1",
+"speed": 1.0
+}]
+
+[node name="InteractiveImages" type="Node2D"]
+script = ExtResource("1_vqs1a")
+
+[node name="flame1" type="Sprite2D" parent="."]
+position = Vector2(1470, 207)
+texture = ExtResource("1_gc667")
+metadata/fade_in = true
+metadata/image_id = "flame1"
+
+[node name="childhood" type="Sprite2D" parent="."]
+position = Vector2(254, 184)
+texture = ExtResource("2_vqs1a")
+metadata/fade_in = true
+metadata/image_id = "pixel"
+
+[node name="pixel" type="AnimatedSprite2D" parent="."]
+position = Vector2(222, 574)
+scale = Vector2(0.34666666, 0.33)
+sprite_frames = SubResource("SpriteFrames_a6g1q")
+animation = &"test1"
+frame = 5
+frame_progress = 1.0
+speed_scale = 0.995
+script = ExtResource("5_a6g1q")
+metadata/image_id = "pixel"

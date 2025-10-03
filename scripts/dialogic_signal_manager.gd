@@ -13,11 +13,17 @@ func _manage_dialogic_signal(context: Node, data: Dictionary):
 		if data.has("hide_animation"):
 			_hide_animation(context, data["hide_animation"])
 		if data.has("next_scene"):
-			_next_scene(context, data["next_scene"])	
+			_next_scene(context, data["next_scene"])
+		if data.has("set_state"):
+			_set_state(context, data["set_state"])	
 
 func _next_scene(context: Node, next_scene: String):
 	var path = "res://scenes/" + next_scene + ".tscn"
 	context.get_tree().change_scene_to_file(path)
+
+func _set_state(context: Node, argument: String):
+	var parts = argument.split("_")
+	ImageSceneManager.set_image_state(parts[0], parts[1])
 
 func _play_animation(context: Node, signal_name: String):
 	var animation =  context.get_node_or_null(signal_name)

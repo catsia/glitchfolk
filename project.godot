@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 ScreenFade="*res://scenes/ScreenFade.tscn"
 InteractiveObjManager="*res://scripts/interactive_obj_manager.gd"
+ImageSceneManager="*res://scripts/image_scene_manager.gd"
 
 [dialogic]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=3 uid="uid://wn7rtr0ktpeh"]
+[gd_scene load_steps=63 format=3 uid="uid://wn7rtr0ktpeh"]
 
 [ext_resource type="Script" uid="uid://d2n2m578xrc1y" path="res://scenes/scene_1.gd" id="1_t413n"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_td60s"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://34dxdewvx1wc" path="res://assets/art/placeholders/obrazy/flame2anim.png" id="14_jyay1"]
 [ext_resource type="Texture2D" uid="uid://ckelav8140vif" path="res://assets/art/placeholders/obrazy/eye_closed.png" id="15_4gngc"]
 [ext_resource type="Texture2D" uid="uid://csvcf1k1r8pmc" path="res://assets/art/placeholders/obrazy/eye_anim.png" id="16_k2ng3"]
+[ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="17_k2ng3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cg05x"]
 atlas = ExtResource("4_dc6gq")
@@ -574,6 +575,8 @@ texture = ExtResource("15_4gngc")
 visible = false
 position = Vector2(1660, 618)
 sprite_frames = SubResource("SpriteFrames_vmkjd")
+
+[node name="InteractiveImages" parent="." instance=ExtResource("17_k2ng3")]
 
 [connection signal="pressed" from="Control/btn_father_mak" to="." method="_on_btn_father_mak_pressed"]
 [connection signal="pressed" from="Control/btn_father_mak" to="Control/btn_father_mak" method="_on_pressed"]
