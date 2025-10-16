@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwyia6nqt7yic"]
+
+[ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="1_j47sk"]
+[ext_resource type="Script" uid="uid://b2gbc873irblg" path="res://scenes/preintro.gd" id="1_jhjos"]
+[ext_resource type="Texture2D" uid="uid://otb6725aelka" path="res://assets/art/placeholders/obrazy/BACK_INTRO.png" id="3_7vr7g"]
+
+[node name="Preintro" type="Node2D"]
+
+[node name="preintro" type="CanvasLayer" parent="."]
+script = ExtResource("1_jhjos")
+
+[node name="back" type="TextureRect" parent="preintro"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_j47sk")
+
+[node name="obrazy" type="Sprite2D" parent="preintro"]
+visible = false
+position = Vector2(956, 544)
+texture = ExtResource("3_7vr7g")
+metadata/fade_in = true

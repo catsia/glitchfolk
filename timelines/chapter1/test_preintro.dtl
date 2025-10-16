@@ -1,0 +1,15 @@
+(начало)
+[signal arg_type="dict" arg="{"show_image":"obrazy"}"]
+
+(клик на образ)
+– вопрос 1
+- Ответ реб
+	set {child} += 1.0
+- Ответ муд
+	set {wisdom} += 1.0
+- Ответ нот
+	set {notstupid} += 1.0
+- Ответ дест
+	set {destruction} += 1.0
+<Empty Text Event>
+Не тупой {notstupid} Разр {destruction} Мудр {wisdom} Ребен {child}

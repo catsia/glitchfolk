@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dh36w2naer3ja"]
+[gd_scene load_steps=7 format=3 uid="uid://dh36w2naer3ja"]
 
 [ext_resource type="Script" uid="uid://bv7402ir0km7l" path="res://scenes/fields_button.gd" id="1_0cso3"]
 [ext_resource type="Script" uid="uid://s8ya767g4vd2" path="res://scenes/home_button.gd" id="1_2klcf"]
 [ext_resource type="Texture2D" uid="uid://c6s2h33ywdiqa" path="res://assets/art/placeholders/map.png" id="1_4xfga"]
 [ext_resource type="Script" uid="uid://c1dvuaurro2v8" path="res://scenes/cube.gd" id="2_gldc4"]
 [ext_resource type="Script" uid="uid://dbao77ixfi254" path="res://scenes/forest_button.gd" id="2_paxxb"]
+[ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="6_2lpho"]
 
 [node name="map" type="Node2D"]
 
@@ -57,6 +58,8 @@ autowrap_mode = 3
 [node name="map_art" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 texture = ExtResource("1_4xfga")
+
+[node name="InteractiveImages" parent="." instance=ExtResource("6_2lpho")]
 
 [connection signal="pressed" from="CanvasLayer/home" to="CanvasLayer/home" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/fields" to="CanvasLayer/fields" method="_on_pressed"]

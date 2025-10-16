@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dxjt7271en1jf"]
+[gd_scene load_steps=4 format=3 uid="uid://dxjt7271en1jf"]
 
 [ext_resource type="Script" uid="uid://ku0xqyjadf0o" path="res://scenes/swamp.gd" id="1_4x8ov"]
 [ext_resource type="Texture2D" uid="uid://bpdgrh0ps0xjd" path="res://assets/art/placeholders/folk_swamp0-export.png" id="2_wvwyq"]
+[ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="3_wvwyq"]
 
 [node name="swamp" type="CanvasLayer"]
 script = ExtResource("1_4x8ov")
@@ -9,3 +10,5 @@ script = ExtResource("1_4x8ov")
 [node name="swamp_art" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 texture = ExtResource("2_wvwyq")
+
+[node name="InteractiveImages" parent="." instance=ExtResource("3_wvwyq")]

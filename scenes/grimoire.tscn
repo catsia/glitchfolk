@@ -1,4 +1,4 @@
-[gd_scene load_steps=117 format=3 uid="uid://csj4uua3yj0dl"]
+[gd_scene load_steps=118 format=3 uid="uid://csj4uua3yj0dl"]
 
 [ext_resource type="Script" uid="uid://cej7nd7kbpug7" path="res://scenes/grimoire.gd" id="1_slun2"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_fhfaf"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://di4rarcsejqyo" path="res://assets/art/animations/grimoire/folk_grimoire_3.png" id="8_0rc8h"]
 [ext_resource type="Texture2D" uid="uid://du4l0e62ymddn" path="res://assets/art/animations/grimoire/folk_grimoire_4.png" id="9_0rbfy"]
 [ext_resource type="Texture2D" uid="uid://bn3vp74xy54tl" path="res://assets/art/animations/grimoire/folk_grimoire_5.png" id="10_iqyjh"]
+[ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="11_374y1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vrino"]
 atlas = ExtResource("4_q2v0p")
@@ -890,3 +891,5 @@ frame_progress = 0.28608
 [node name="paragraph5" type="AnimatedSprite2D" parent="."]
 position = Vector2(1121, 401)
 sprite_frames = SubResource("SpriteFrames_p03a8")
+
+[node name="InteractiveImages" parent="." instance=ExtResource("11_374y1")]

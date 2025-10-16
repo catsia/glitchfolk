@@ -41,6 +41,7 @@ directories/dtl_directory={
 "sheep1": "res://timelines/chapter1/sheep1.dtl",
 "soup1": "res://timelines/chapter1/soup1.dtl",
 "swamp1": "res://timelines/chapter1/swamp1.dtl",
+"test_preintro": "res://timelines/chapter1/test_preintro.dtl",
 "witch1": "res://timelines/chapter1/witch1.dtl"
 }
 layout/style_list=["res://styles/premade_visualnovel.tres"]
@@ -48,7 +49,12 @@ layout/default_style="res://styles/premade_visualnovel.tres"
 glossary/default_case_sensitive=true
 glossary/glossary_files=["res://Glossary/general.tres"]
 glossary/default_color=Color(0.54902, 0.145098, 0.164706, 1)
-variables={}
+variables={
+"child": 0,
+"destruction": 0,
+"notstupid": 0,
+"wisdom": 0
+}
 
 [display]
 

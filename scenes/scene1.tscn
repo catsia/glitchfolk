@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://wn7rtr0ktpeh"]
+[gd_scene load_steps=57 format=3 uid="uid://wn7rtr0ktpeh"]
 
 [ext_resource type="Script" uid="uid://d2n2m578xrc1y" path="res://scenes/scene_1.gd" id="1_t413n"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_td60s"]
@@ -11,9 +11,6 @@
 [ext_resource type="Script" uid="uid://d0sx50kr10rau" path="res://scenes/father_crack.gd" id="9_f1jql"]
 [ext_resource type="Script" uid="uid://rcj1ra52lc55" path="res://scenes/next_scene_button.gd" id="10_lfno2"]
 [ext_resource type="Texture2D" uid="uid://cq0l14b5py32q" path="res://assets/art/animations/graveyard/willow_glitch.png" id="11_ug83y"]
-[ext_resource type="Texture2D" uid="uid://6gb8an7ivtk5" path="res://assets/art/placeholders/obrazy/childhood2.png" id="12_btauh"]
-[ext_resource type="Texture2D" uid="uid://hi8i3o28b4l1" path="res://assets/art/placeholders/obrazy/flame2.png" id="13_jyay1"]
-[ext_resource type="Texture2D" uid="uid://34dxdewvx1wc" path="res://assets/art/placeholders/obrazy/flame2anim.png" id="14_jyay1"]
 [ext_resource type="Texture2D" uid="uid://ckelav8140vif" path="res://assets/art/placeholders/obrazy/eye_closed.png" id="15_4gngc"]
 [ext_resource type="Texture2D" uid="uid://csvcf1k1r8pmc" path="res://assets/art/placeholders/obrazy/eye_anim.png" id="16_k2ng3"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="17_k2ng3"]
@@ -405,28 +402,6 @@ animations = [{
 "speed": 6.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_p1jvj"]
-atlas = ExtResource("14_jyay1")
-region = Rect2(0, 0, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cakwj"]
-atlas = ExtResource("14_jyay1")
-region = Rect2(96, 0, 96, 96)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ugssf"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_p1jvj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cakwj")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_ugssf"]
 atlas = ExtResource("16_k2ng3")
 region = Rect2(384, 0, 192, 192)
@@ -552,19 +527,6 @@ position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_cakwj")
 frame_progress = 0.67724
 metadata/fade_in = true
-
-[node name="childhood2" type="Sprite2D" parent="."]
-position = Vector2(254, 184)
-texture = ExtResource("12_btauh")
-
-[node name="flame2" type="Sprite2D" parent="."]
-position = Vector2(1470, 207)
-texture = ExtResource("13_jyay1")
-
-[node name="flame2_anim" type="AnimatedSprite2D" parent="."]
-visible = false
-position = Vector2(1470, 207)
-sprite_frames = SubResource("SpriteFrames_ugssf")
 
 [node name="eye_closed" type="Sprite2D" parent="."]
 visible = false

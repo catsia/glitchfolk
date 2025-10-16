@@ -1,4 +1,7 @@
 Перед болотом
 ОБРАЗ\: огонь затухает
+[signal arg_type="dict" arg="{"set_state":"flame_smallburn"}"]
 ОБРАЗ\: огонь разгорается с новой силой
+[signal arg_type="dict" arg="{"set_state":"flame_bigburn"}"]
+тест
 [signal arg_type="dict" arg="{"next_scene":"swamp"}"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://copi7d1m7y8u"]
+[gd_scene load_steps=4 format=3 uid="uid://copi7d1m7y8u"]
 
 [ext_resource type="Script" uid="uid://b565d7l2x843v" path="res://scenes/cube_1.gd" id="1_nted5"]
 [ext_resource type="Texture2D" uid="uid://ba2ecphi2d4py" path="res://assets/art/placeholders/fingers2.png" id="2_tn7xk"]
+[ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="3_6t1sr"]
 
 [node name="cube" type="CanvasLayer"]
 script = ExtResource("1_nted5")
@@ -9,3 +10,5 @@ script = ExtResource("1_nted5")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 texture = ExtResource("2_tn7xk")
+
+[node name="InteractiveImages" parent="." instance=ExtResource("3_6t1sr")]

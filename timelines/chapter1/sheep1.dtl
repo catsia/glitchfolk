@@ -1,5 +1,6 @@
 Встреча с цыганом
 ОБРАЗ\: анимация огня2
+[signal arg_type="dict" arg="{"set_state":"flame_bigburn"}"]
 ОБРАЗ\: сердце с ключами
 ОБРАЗ\: ромашка2
 [signal arg_type="dict" arg="{"next_scene":"map"}"]

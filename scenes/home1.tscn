@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bvwfadmu8h53p"]
+[gd_scene load_steps=4 format=3 uid="uid://bvwfadmu8h53p"]
 
 [ext_resource type="Texture2D" uid="uid://bpsdw88pi4lfn" path="res://assets/art/placeholders/folk_home.png" id="1_ckhyc"]
 [ext_resource type="Script" uid="uid://bo2ah7v5fh54t" path="res://scenes/home_1.gd" id="1_sg3rp"]
+[ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="3_cdcac"]
 
 [node name="Home" type="CanvasLayer"]
 script = ExtResource("1_sg3rp")
@@ -9,3 +10,5 @@ script = ExtResource("1_sg3rp")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 texture = ExtResource("1_ckhyc")
+
+[node name="InteractiveImages" parent="." instance=ExtResource("3_cdcac")]
