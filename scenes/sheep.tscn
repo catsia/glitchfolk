@@ -1,14 +1,110 @@
-[gd_scene load_steps=4 format=3 uid="uid://dgi14r5fa5o7s"]
+[gd_scene load_steps=13 format=3 uid="uid://dgi14r5fa5o7s"]
 
 [ext_resource type="Script" uid="uid://ctgyfgftg7srq" path="res://scenes/sheep.gd" id="1_gw4f6"]
-[ext_resource type="Texture2D" uid="uid://bfngea2hlec3e" path="res://assets/art/placeholders/sheep_road.png" id="2_6qn06"]
+[ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_n54i3"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="3_6qn06"]
+[ext_resource type="Texture2D" uid="uid://xjjv6u84rwg" path="res://assets/art/main_art/sheep_road-export.png" id="3_vrdyb"]
+[ext_resource type="Texture2D" uid="uid://bdj4rdrfn73wv" path="res://assets/art/animations/sheep/cloud.png" id="4_vbo3h"]
+[ext_resource type="Texture2D" uid="uid://dnowsy5nyec5f" path="res://assets/art/main_art/sheep_road_ring.png" id="6_s32ju"]
+[ext_resource type="Texture2D" uid="uid://dn36nwkfh3l81" path="res://assets/art/main_art/characters_art/sheep_char2.png" id="7_4uhln"]
+[ext_resource type="Texture2D" uid="uid://cehgexcyr7rmi" path="res://assets/art/main_art/characters_art/sheep_char3.png" id="8_ujskf"]
+[ext_resource type="Texture2D" uid="uid://dgug36j52o413" path="res://assets/art/main_art/characters_art/sheep_char1.png" id="9_ycxms"]
+
+[sub_resource type="Animation" id="Animation_s32ju"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cloud:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(394, 320)]
+}
+
+[sub_resource type="Animation" id="Animation_5g05w"]
+resource_name = "move"
+loop_mode = 1
+step = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cloud:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(394, 320), Vector2(1556, 320)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4uhln"]
+_data = {
+&"RESET": SubResource("Animation_s32ju"),
+&"move": SubResource("Animation_5g05w")
+}
 
 [node name="sheep" type="CanvasLayer"]
 script = ExtResource("1_gw4f6")
 
+[node name="back" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_n54i3")
+
 [node name="sheep_art" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
-texture = ExtResource("2_6qn06")
+texture = ExtResource("3_vrdyb")
+
+[node name="cloud" type="Sprite2D" parent="."]
+position = Vector2(394, 320)
+texture = ExtResource("4_vbo3h")
+
+[node name="cloud_back" type="TextureRect" parent="."]
+offset_left = 1266.0
+offset_top = 92.0
+offset_right = 3186.0
+offset_bottom = 1172.0
+scale = Vector2(0.34449884, 0.80251527)
+texture = ExtResource("2_n54i3")
+
+[node name="cloud_back2" type="TextureRect" parent="."]
+offset_left = 64.0
+offset_top = 32.0
+offset_right = 1984.0
+offset_bottom = 1112.0
+scale = Vector2(0.3066469, 0.85335094)
+texture = ExtResource("2_n54i3")
 
 [node name="InteractiveImages" parent="." instance=ExtResource("3_6qn06")]
+
+[node name="cloud_anim" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_4uhln")
+}
+autoplay = "move"
+speed_scale = 0.002
+
+[node name="sheep_ringed" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(960, 540)
+texture = ExtResource("6_s32ju")
+
+[node name="smile" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(937, 811)
+texture = ExtResource("7_4uhln")
+
+[node name="staff" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(964, 540)
+texture = ExtResource("8_ujskf")
+
+[node name="cloth" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(760, 451)
+texture = ExtResource("9_ycxms")

@@ -1,7 +1,6 @@
 
 Вначале не было ничего — ни начала, ни бытия, ни самого ничего.
 Ничего это такое количество беспредметности и бессодержательности, при котором не образуется даже вакуум пустоты.
-[signal arg_type="dict" arg="{"set_state":"flame_appearing"}"]
 Иными словами, сон без сновидений — да, прямо как когда ты слишком долго гуляешь по маковому полю.
 Ничего длилось целую вечность. Однако всему рано или поздно наступает конец\: даже вечности; даже парадоксам; даже долгим снам.
 Потому, в сущности, ничего не длилось вовсе.
@@ -66,7 +65,8 @@
 Если бы в далёком прошлом кто-то сорвал первый маковый цветок, не появились бы ни ты, ни я, ни наша вселенная. Представляешь?
 
 Маки росли, люди рождались, и всё было хорошо.
-[signal arg_type="dict" arg="{"show_image":"cross_bird"}"]
+[signal arg_type="dict" arg="{"show_image":"back_technical"}"]
+[signal arg_type="dict" arg="{"animation":"cross_bird_animation"}"]
 [signal arg_type="dict" arg="{"hide_animation":"rgb_pixel_full"}"]
 [signal arg_type="dict" arg="{"hide_animation":"rgb_pixel1"}"]
 [signal arg_type="dict" arg="{"hide_animation":"rgb_pixel2"}"]
