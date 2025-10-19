@@ -33,7 +33,7 @@ func set_image_state_and_play(image_id: String, state: String):
 	if image_node:
 		image_node.set_state_and_play(state)
 
-func play_idle(image_id: String):
+func play_idle(image_id: String, state: String):
 	var image_node = get_image(image_id)
 	if image_node:
-		image_node.play("idle")
+		image_node.play("idle_" + state)

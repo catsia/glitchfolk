@@ -19,7 +19,7 @@ func find_images_node() -> Node:
 	return scene.find_child("InteractiveImages", true, false)
 
 func play_idle(image_id: String):
-	current_images_node.play_idle(image_id)
+	current_images_node.play_idle(image_id, get_image_state(image_id))
 
 func restore_images():
 	if not current_images_node:
