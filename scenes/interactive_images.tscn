@@ -5,10 +5,10 @@
 [ext_resource type="Texture2D" uid="uid://dm18jsdj7rimf" path="res://assets/art/animations/intro/pixel_cam_intro.png" id="4_j712g"]
 [ext_resource type="Script" uid="uid://dkpfcw6hyh57u" path="res://scripts/interactive_image.gd" id="5_a6g1q"]
 [ext_resource type="Texture2D" uid="uid://dod6m041dpiwb" path="res://assets/art/placeholders/obrazy/flame3-sheet.png" id="5_qfvrl"]
-[ext_resource type="Script" uid="uid://cstpnxgx12c00" path="res://scenes/flame_animation.gd" id="6_27d15"]
 [ext_resource type="Texture2D" uid="uid://34dxdewvx1wc" path="res://assets/art/placeholders/obrazy/flame2anim.png" id="6_qfvrl"]
 [ext_resource type="Texture2D" uid="uid://ckelav8140vif" path="res://assets/art/placeholders/obrazy/eye_closed.png" id="8_l1kxa"]
 [ext_resource type="Texture2D" uid="uid://csvcf1k1r8pmc" path="res://assets/art/placeholders/obrazy/eye_anim.png" id="9_413m3"]
+[ext_resource type="Script" uid="uid://bf6adsugjk6lc" path="res://scripts/interactive_image_button.gd" id="10_413m3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vynlr"]
 atlas = ExtResource("4_j712g")
@@ -213,10 +213,20 @@ metadata/image_id = "pixel"
 [node name="flame" type="AnimatedSprite2D" parent="."]
 position = Vector2(1537, 187)
 sprite_frames = SubResource("SpriteFrames_fu5s6")
-animation = &"smallburn"
-script = ExtResource("6_27d15")
+animation = &"appearing"
+script = ExtResource("5_a6g1q")
 
 [node name="eye" type="AnimatedSprite2D" parent="."]
-visible = false
 sprite_frames = SubResource("SpriteFrames_o3su5")
 animation = &"looking"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="flame" type="Button" parent="CanvasLayer"]
+offset_left = 1478.0
+offset_top = 144.0
+offset_right = 1597.0
+offset_bottom = 256.0
+flat = true
+script = ExtResource("10_413m3")

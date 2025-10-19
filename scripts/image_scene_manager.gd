@@ -18,6 +18,9 @@ func find_images_node() -> Node:
 	var scene = get_tree().current_scene
 	return scene.find_child("InteractiveImages", true, false)
 
+func play_idle(image_id: String):
+	current_images_node.play_idle(image_id)
+
 func restore_images():
 	if not current_images_node:
 		return
@@ -39,12 +42,12 @@ func remove_active_image(image_id: String):
 func get_image_state(image_id: String) -> String:
 	return image_states.get(image_id, {}).get("state", "default")
 
-func set_image_state(image_id: String, state: String):
+func set_image_state_and_play(image_id: String, state: String):
 	if image_id not in active_images:
 		active_images.append(image_id)
 	if image_id in image_states:
 		image_states[image_id].state = state
 	else:
 		image_states[image_id] = {"state": state}
-	if current_images_node and current_images_node.has_method("set_image_state"):
-		current_images_node.set_image_state(image_id, state)
+	if current_images_node and current_images_node.has_method("set_image_state_and_play"):
+		current_images_node.set_image_state_and_play(image_id, state)

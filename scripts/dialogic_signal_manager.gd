@@ -23,7 +23,7 @@ func _next_scene(context: Node, next_scene: String):
 
 func _set_state(context: Node, argument: String):
 	var parts = argument.split("_")
-	ImageSceneManager.set_image_state(parts[0], parts[1])
+	ImageSceneManager.set_image_state_and_play(parts[0], parts[1])
 
 func _play_animation(context: Node, signal_name: String):
 	var animation =  context.get_node_or_null(signal_name)
