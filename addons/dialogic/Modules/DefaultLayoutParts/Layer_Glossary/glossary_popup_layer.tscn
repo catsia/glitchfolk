@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dsbwnp5hegnu3"]
 
-[ext_resource type="Script" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.gd" id="1_3nmfj"]
+[ext_resource type="Script" uid="uid://b1fc8purpl5e6" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.gd" id="1_3nmfj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a3cyk"]
 bg_color = Color(0.12549, 0.12549, 0.12549, 1)
@@ -22,6 +22,7 @@ layout_mode = 3
 anchors_preset = 0
 mouse_filter = 2
 script = ExtResource("1_3nmfj")
+width = null
 
 [node name="Pointer" type="Control" parent="."]
 anchors_preset = 0
@@ -50,9 +51,6 @@ theme_override_constants/separation = 0
 
 [node name="Title" type="Label" parent="Pointer/Panel/VBox"]
 unique_name_in_owner = true
-layout_mode = 2
-
-[node name="HSeparator" type="HSeparator" parent="Pointer/Panel/VBox"]
 layout_mode = 2
 
 [node name="Text" type="RichTextLabel" parent="Pointer/Panel/VBox"]

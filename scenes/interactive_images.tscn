@@ -538,6 +538,8 @@ script = ExtResource("5_a6g1q")
 layer = 10
 
 [node name="flame" type="Button" parent="CanvasLayer"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 321.0
 offset_top = 640.0
 offset_right = 440.0

@@ -38,6 +38,8 @@ enum ModulateModes {BASE_COLOR_ONLY, ENTRY_COLOR_ON_BOX, GLOBAL_BG_COLOR}
 @export var box_base_modulate: Color = Color.WHITE
 @export_subgroup("Size")
 @export var box_width: int = 200
+@export var width: int = 500
+
 
 const MISSING_INDEX := -1
 func get_pointer() -> Control:
@@ -84,15 +86,16 @@ func _on_dialogic_display_dialog_text_meta_hover_started(meta: String) -> void:
 		return
 
 	get_pointer().show()
-	get_title().text = entry_info.title
+	get_title().text = ""
+	get_title().hide()
 	get_text().text = entry_info.text
 	get_text().text = ['', '[center]', '[right]'][text_alignment] + get_text().text
 	get_extra().text = entry_info.extra
 	get_extra().text = ['', '[center]', '[right]'][extra_alignment] + get_extra().text
 	get_pointer().global_position = get_pointer().get_global_mouse_position()
 
-	if title_color_mode == TextColorModes.ENTRY:
-		get_title().add_theme_color_override(&"font_color", entry_info.color)
+	#if title_color_mode == TextColorModes.ENTRY:
+		#get_title().add_theme_color_override(&"font_color", entry_info.color)
 	if text_color_mode == TextColorModes.ENTRY:
 		get_text().add_theme_color_override(&"default_color", entry_info.color)
 	if extra_color_mode == TextColorModes.ENTRY:
@@ -164,8 +167,8 @@ func _apply_export_overrides() -> void:
 
 	# Apply box size
 	var panel: PanelContainer = get_panel()
-	panel.size.x = box_width
-	panel.position.x = -box_width/2.0
+	panel.size.x = width
+	panel.position.x = -width/2.0
 
 	# Apply box coloring
 	match box_modulate_mode:
