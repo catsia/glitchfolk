@@ -43,6 +43,9 @@ func get_image_state(image_id: String) -> String:
 	return image_states.get(image_id, {}).get("state", "default")
 
 func set_image_state_and_play(image_id: String, state: String):
+	if state == GlobalVariables.next:
+		state = create_next_state(image_id)
+		
 	if image_id not in active_images:
 		active_images.append(image_id)
 	if image_id in image_states:
@@ -51,3 +54,9 @@ func set_image_state_and_play(image_id: String, state: String):
 		image_states[image_id] = {"state": state}
 	if current_images_node and current_images_node.has_method("set_image_state_and_play"):
 		current_images_node.set_image_state_and_play(image_id, state)
+
+func create_next_state(image_id: String):
+	var state = int(get_image_state(image_id))
+	state = 1 if state == null else state + 1
+	return str(state)
+	
