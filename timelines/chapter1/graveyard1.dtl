@@ -1,13 +1,10 @@
 [signal arg_type="dict" arg="{"show_image":"background"}"]
 [signal arg_type="dict" arg="{"show_image":"father_sprite"}"]
 [signal arg_type="dict" arg="{"set_state":"flame_smallFire"}"]
-(мне кажется, нужно фейд-ин ВСЕЙ сцены сделать, чтобы образы резко не менялись, показать таймскип)
-(ОБРАЗ\: огонь 2, без вступительной анимации. Имеется в виду, что огонь стал больше за время таймскипа) (то же самое с образом счастливого детства, он замылился и потускнел за прошедшее время)
-krey: – Просыпайся, папа.
+krey: – Просыпайся, [color=#8B0000][url="g1"]папа[/url][/color].
 [signal arg_type="dict" arg="{"set_state":"flame_smallburn"}"]
 [signal arg_type="dict" arg="{"set_state":"flame_bigFire"}"]
 [signal arg_type="dict" arg="{"set_state":"flame_bigFire"}"]
-(ОБРАЗ одновременно с интерактивом\: глаз с анимацией, при наведении на который подсвечиваются интерактивные элементы. после конца интерактива закрывается и остается закрытым до следующего интерактива)
 [signal arg_type="dict" arg="{"animation":"father_crack"}"]
 [signal arg_type="dict" arg="{"animation":"father_mak"}"]
 [signal arg_type="dict" arg="{"animation":"father_stain"}"]
