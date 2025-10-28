@@ -2,6 +2,8 @@
 [signal arg_type="dict" arg="{"show_image":"father_sprite"}"]
 [signal arg_type="dict" arg="{"set_state":"flame_smallFire"}"]
 krey: – Просыпайся, [color=#8B0000][url="g1"]папа[/url][/color].
+[i](появляется надпись на весь экран)[/i]
+[color=#FF0000]ДЕНЬ 2. ЭКСГУМАЦИЯ[/color]
 [signal arg_type="dict" arg="{"set_state":"flame_smallburn"}"]
 [signal arg_type="dict" arg="{"set_state":"flame_bigFire"}"]
 [signal arg_type="dict" arg="{"set_state":"flame_bigFire"}"]
