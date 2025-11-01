@@ -1,4 +1,4 @@
-[gd_scene load_steps=189 format=3 uid="uid://cnudvb67jea3t"]
+[gd_scene load_steps=190 format=3 uid="uid://cnudvb67jea3t"]
 
 [ext_resource type="Script" uid="uid://dyboqe861m2gb" path="res://scenes/intro.gd" id="1_ayt76"]
 [ext_resource type="Texture2D" uid="uid://db60bpl5ljeqw" path="res://assets/art/animations/intro/flower_of_order.png" id="2_7a8ye"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="10_37iue"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="11_37iue"]
 [ext_resource type="Texture2D" uid="uid://dop1t3kmteyek" path="res://assets/art/animations/intro/cross_spark.png" id="11_n6p8m"]
+[ext_resource type="Texture2D" uid="uid://d0ctot3gsm32a" path="res://assets/art/obrazy/main_images/childhood_og.png" id="12_n6p8m"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0a7ni"]
 load_path = "res://.godot/imported/HB background red.png-cf34a7a21e851eb5a0ebefd2657265eb.ctex"
@@ -1496,6 +1497,13 @@ position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_fc3e2")
 frame = 3
 frame_progress = 0.7841494
+metadata/fade_in = true
+
+[node name="childhood" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1223, 124)
+scale = Vector2(0.333, 0.333)
+texture = ExtResource("12_n6p8m")
 metadata/fade_in = true
 
 [connection signal="animation_finished" from="cosmos" to="." method="_on_cosmos_animation_finished"]
