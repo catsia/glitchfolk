@@ -1756,14 +1756,12 @@ offset_bottom = 187.0
 script = ExtResource("10_413m3")
 
 [node name="flower" type="AnimatedSprite2D" parent="."]
-visible = false
-position = Vector2(1691, 354)
+position = Vector2(1410, 156)
 sprite_frames = SubResource("SpriteFrames_2rkvg")
 animation = &"fourthPetal"
 
 [node name="eye" type="AnimatedSprite2D" parent="."]
-visible = false
-position = Vector2(566, 159)
+position = Vector2(1708, 484)
 sprite_frames = SubResource("SpriteFrames_j8rno")
 animation = &"eyeLooks"
 frame = 18
@@ -1778,8 +1776,7 @@ animation = &"raspAppearing"
 script = ExtResource("5_a6g1q")
 
 [node name="childhood" type="AnimatedSprite2D" parent="."]
-visible = false
-position = Vector2(1223, 124)
+position = Vector2(204, 487)
 sprite_frames = SubResource("SpriteFrames_00w7j")
 animation = &"idle_wipe"
 script = ExtResource("5_a6g1q")
