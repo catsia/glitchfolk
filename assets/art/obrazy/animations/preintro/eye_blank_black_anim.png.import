@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwupocwesu5w0"
-path="res://.godot/imported/eye_blank.png-fe4b90aed8ab7b6b15cd56c147ebd604.ctex"
+uid="uid://puf7n1fxkthe"
+path="res://.godot/imported/eye_blank_black_anim.png-40f72d4e68f0f6c1951f426be745a3bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/obrazy/main_images/eye_blank.png"
-dest_files=["res://.godot/imported/eye_blank.png-fe4b90aed8ab7b6b15cd56c147ebd604.ctex"]
+source_file="res://assets/art/obrazy/animations/preintro/eye_blank_black_anim.png"
+dest_files=["res://.godot/imported/eye_blank_black_anim.png-40f72d4e68f0f6c1951f426be745a3bf.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://etlis68vu4h3"
-path="res://.godot/imported/flower_blank_anim.png-8106a8622416030d887104d5c0da61df.ctex"
+uid="uid://bhbktuw36fr4w"
+path="res://.godot/imported/something_blank-sheet.png-193fcdd300bca255711a9accb6d06cfa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/obrazy/animations/flower_blank_anim.png"
-dest_files=["res://.godot/imported/flower_blank_anim.png-8106a8622416030d887104d5c0da61df.ctex"]
+source_file="res://assets/art/obrazy/animations/preintro/something_blank-sheet.png"
+dest_files=["res://.godot/imported/something_blank-sheet.png-193fcdd300bca255711a9accb6d06cfa.ctex"]
 
 [params]
 

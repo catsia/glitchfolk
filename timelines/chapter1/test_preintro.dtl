@@ -8,15 +8,12 @@
 Беспристрастность – вот главная ценность моей любви.
 И сейчас я тебе её покажу.
 
-[signal arg_type="dict" arg="{"show_image":"eye_blank"}"]
-[signal arg_type="dict" arg="{"show_image":"flower_static"}"]
+[signal arg_type="dict" arg="{"animation":"eye_blank"}"]
 [signal arg_type="dict" arg="{"animation":"childhood_blank"}"]
-[signal arg_type="dict" arg="{"show_image":"childhood_static"}"]
-[signal arg_type="dict" arg="{"show_image":"something_blank"}"]
-[signal arg_type="dict" arg="{"show_image":"something_blank2"}"]
+[signal arg_type="dict" arg="{"animation":"something_blank"}"]
+[signal arg_type="dict" arg="{"animation":"something_blank2"}"]
 [signal arg_type="dict" arg="{"animation":"flower_blank"}"]
-
-(клик на силуэт ромашки)
+(клик на ромашку)
 – Любовники с кинжалом за спиной. Если известно, что кто-то рано или поздно обязательно воспользуется своим, воткнув другому в спину, предпочтёшь ли ты ударить первым?
 - Пойду на всё, лишь бы не быть преданным. Даже на предательство.
 	set {notstupid} += 1.0

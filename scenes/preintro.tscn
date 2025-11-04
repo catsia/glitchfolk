@@ -1,13 +1,12 @@
-[gd_scene load_steps=21 format=3 uid="uid://dwyia6nqt7yic"]
+[gd_scene load_steps=31 format=3 uid="uid://dwyia6nqt7yic"]
 
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="1_j47sk"]
 [ext_resource type="Script" uid="uid://b2gbc873irblg" path="res://scenes/preintro.gd" id="1_jhjos"]
-[ext_resource type="Texture2D" uid="uid://cwupocwesu5w0" path="res://assets/art/obrazy/main_images/eye_blank.png" id="3_qnl2w"]
-[ext_resource type="Texture2D" uid="uid://cjp567hlahqnq" path="res://assets/art/obrazy/main_images/flower_blank_black.png" id="4_iecda"]
-[ext_resource type="Texture2D" uid="uid://b3haxn2t1eapm" path="res://assets/art/obrazy/main_images/child_blank_black.png" id="5_iecda"]
+[ext_resource type="Texture2D" uid="uid://bhbktuw36fr4w" path="res://assets/art/obrazy/animations/preintro/something_blank-sheet.png" id="6_44sji"]
 [ext_resource type="Texture2D" uid="uid://x1oscq8bm3y" path="res://assets/art/obrazy/main_images/something_blank.png" id="6_pw2hx"]
-[ext_resource type="Texture2D" uid="uid://b1eg4g03eupcl" path="res://assets/art/obrazy/animations/child_blank.png" id="7_u8pmo"]
-[ext_resource type="Texture2D" uid="uid://etlis68vu4h3" path="res://assets/art/obrazy/animations/flower_blank_anim.png" id="8_iecda"]
+[ext_resource type="Texture2D" uid="uid://puf7n1fxkthe" path="res://assets/art/obrazy/animations/preintro/eye_blank_black_anim.png" id="7_iecda"]
+[ext_resource type="Texture2D" uid="uid://b1eg4g03eupcl" path="res://assets/art/obrazy/animations/preintro/child_blank.png" id="7_u8pmo"]
+[ext_resource type="Texture2D" uid="uid://etlis68vu4h3" path="res://assets/art/obrazy/animations/preintro/flower_blank_anim.png" id="8_iecda"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iecda"]
 atlas = ExtResource("7_u8pmo")
@@ -62,6 +61,100 @@ animations = [{
 "speed": 7.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_5x7bm"]
+atlas = ExtResource("6_44sji")
+region = Rect2(0, 0, 162, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o5itn"]
+atlas = ExtResource("6_44sji")
+region = Rect2(162, 0, 162, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b81pc"]
+atlas = ExtResource("6_44sji")
+region = Rect2(0, 114, 162, 114)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x4oiu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5x7bm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o5itn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5x7bm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b81pc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kahvx"]
+atlas = ExtResource("7_iecda")
+region = Rect2(0, 0, 189, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ytx64"]
+atlas = ExtResource("7_iecda")
+region = Rect2(189, 0, 189, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1olgr"]
+atlas = ExtResource("7_iecda")
+region = Rect2(378, 0, 189, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d15r1"]
+atlas = ExtResource("7_iecda")
+region = Rect2(0, 120, 189, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yollo"]
+atlas = ExtResource("7_iecda")
+region = Rect2(189, 120, 189, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xa1nr"]
+atlas = ExtResource("7_iecda")
+region = Rect2(378, 120, 189, 120)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5x7bm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kahvx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ytx64")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1olgr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d15r1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yollo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xa1nr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yollo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d15r1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1olgr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ytx64")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_202pr"]
 atlas = ExtResource("8_iecda")
 region = Rect2(0, 0, 126, 213)
@@ -114,41 +207,26 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_j47sk")
 
-[node name="eye_blank" type="Sprite2D" parent="preintro"]
-visible = false
-position = Vector2(1728, 516)
-texture = ExtResource("3_qnl2w")
-metadata/fade_in = true
-
-[node name="flower_static" type="Sprite2D" parent="preintro"]
-visible = false
-position = Vector2(1443, 175)
-texture = ExtResource("4_iecda")
-metadata/fade_in = true
-
-[node name="childhood_static" type="Sprite2D" parent="preintro"]
-visible = false
-position = Vector2(214, 529)
-texture = ExtResource("5_iecda")
-metadata/fade_in = true
-
-[node name="something_blank" type="Sprite2D" parent="preintro"]
-visible = false
-position = Vector2(437, 227)
-texture = ExtResource("6_pw2hx")
-metadata/fade_in = true
-
-[node name="something_blank2" type="Sprite2D" parent="preintro"]
-visible = false
-position = Vector2(960, 124)
-texture = ExtResource("6_pw2hx")
-metadata/fade_in = true
-
 [node name="childhood_blank" type="AnimatedSprite2D" parent="preintro"]
 visible = false
 position = Vector2(214, 529)
 sprite_frames = SubResource("SpriteFrames_202pr")
 frame_progress = 0.62309045
+
+[node name="something_blank2" type="AnimatedSprite2D" parent="preintro"]
+visible = false
+position = Vector2(902, 97)
+sprite_frames = SubResource("SpriteFrames_x4oiu")
+
+[node name="something_blank" type="AnimatedSprite2D" parent="preintro"]
+visible = false
+position = Vector2(404, 193)
+sprite_frames = SubResource("SpriteFrames_x4oiu")
+
+[node name="eye_blank" type="AnimatedSprite2D" parent="preintro"]
+visible = false
+position = Vector2(1708, 484)
+sprite_frames = SubResource("SpriteFrames_5x7bm")
 
 [node name="flower_blank" type="AnimatedSprite2D" parent="preintro"]
 visible = false
