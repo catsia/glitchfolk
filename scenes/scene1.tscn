@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://wn7rtr0ktpeh"]
+[gd_scene load_steps=49 format=3 uid="uid://wn7rtr0ktpeh"]
 
 [ext_resource type="Script" uid="uid://d2n2m578xrc1y" path="res://scenes/scene_1.gd" id="1_t413n"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_td60s"]
@@ -9,8 +9,6 @@
 [ext_resource type="Script" uid="uid://c1t2finxoc4c6" path="res://scripts/basic_button.gd" id="7_rayba"]
 [ext_resource type="Script" uid="uid://rcj1ra52lc55" path="res://scenes/next_scene_button.gd" id="10_lfno2"]
 [ext_resource type="Texture2D" uid="uid://cq0l14b5py32q" path="res://assets/art/animations/graveyard/willow_glitch.png" id="11_ug83y"]
-[ext_resource type="Texture2D" uid="uid://ckelav8140vif" path="res://assets/art/placeholders/obrazy/eye_closed.png" id="15_4gngc"]
-[ext_resource type="Texture2D" uid="uid://csvcf1k1r8pmc" path="res://assets/art/placeholders/obrazy/eye_anim.png" id="16_k2ng3"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="17_k2ng3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cg05x"]
@@ -400,38 +398,6 @@ animations = [{
 "speed": 6.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ugssf"]
-atlas = ExtResource("16_k2ng3")
-region = Rect2(384, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fak3g"]
-atlas = ExtResource("16_k2ng3")
-region = Rect2(192, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_txdug"]
-atlas = ExtResource("16_k2ng3")
-region = Rect2(0, 0, 192, 192)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_vmkjd"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ugssf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fak3g")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_txdug")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fak3g")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [node name="Scene1" type="CanvasLayer"]
 script = ExtResource("1_t413n")
 
@@ -527,16 +493,6 @@ position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_cakwj")
 frame_progress = 0.67724
 metadata/fade_in = true
-
-[node name="eye_closed" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(1658, 622)
-texture = ExtResource("15_4gngc")
-
-[node name="eye_anim" type="AnimatedSprite2D" parent="."]
-visible = false
-position = Vector2(1660, 618)
-sprite_frames = SubResource("SpriteFrames_vmkjd")
 
 [node name="InteractiveImages" parent="." instance=ExtResource("17_k2ng3")]
 

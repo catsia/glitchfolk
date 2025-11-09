@@ -1,4 +1,4 @@
-[gd_scene load_steps=234 format=3 uid="uid://bnwkx3jd1b8cg"]
+[gd_scene load_steps=237 format=3 uid="uid://bnwkx3jd1b8cg"]
 
 [ext_resource type="Script" uid="uid://8nhu1kwixmam" path="res://scenes/interactive_images.gd" id="1_vqs1a"]
 [ext_resource type="Texture2D" uid="uid://d0fvtskwvwlod" path="res://assets/art/background/obrazy_ref1.png" id="2_b6xrf"]
@@ -771,6 +771,18 @@ region = Rect2(552, 600, 276, 300)
 atlas = ExtResource("12_i4cod")
 region = Rect2(828, 300, 276, 300)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_o420c"]
+atlas = ExtResource("12_i4cod")
+region = Rect2(828, 300, 276, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mif4d"]
+atlas = ExtResource("12_i4cod")
+region = Rect2(276, 300, 276, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e1cuc"]
+atlas = ExtResource("12_i4cod")
+region = Rect2(552, 300, 276, 300)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_j8rno"]
 animations = [{
 "frames": [{
@@ -857,9 +869,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_uh7q4")
 }],
-"loop": true,
+"loop": false,
 "name": &"eyeLooks",
-"speed": 6.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -883,6 +895,26 @@ animations = [{
 "loop": false,
 "name": &"eyeOpens",
 "speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o420c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mif4d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e1cuc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mif4d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o420c")
+}],
+"loop": false,
+"name": &"eyeSide",
+"speed": 8.0
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2rkvg"]
@@ -1773,7 +1805,7 @@ animation = &"fourthPetal"
 [node name="eye" type="AnimatedSprite2D" parent="."]
 position = Vector2(1708, 484)
 sprite_frames = SubResource("SpriteFrames_j8rno")
-animation = &"eyeCloses"
+animation = &"eyeLooks"
 script = ExtResource("5_a6g1q")
 
 [node name="raspberry" type="AnimatedSprite2D" parent="."]
