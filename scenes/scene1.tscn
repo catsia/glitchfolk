@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://wn7rtr0ktpeh"]
+[gd_scene load_steps=55 format=3 uid="uid://wn7rtr0ktpeh"]
 
 [ext_resource type="Script" uid="uid://d2n2m578xrc1y" path="res://scenes/scene_1.gd" id="1_t413n"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_td60s"]
@@ -6,9 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cwfumru8q8yol" path="res://assets/art/animations/graveyard/folk_father_crack.png" id="4_dc6gq"]
 [ext_resource type="Texture2D" uid="uid://dik1w32ikcxkw" path="res://assets/art/animations/graveyard/father_mak.png" id="5_cg05x"]
 [ext_resource type="Texture2D" uid="uid://c6hnvsuaiq6jb" path="res://assets/art/animations/graveyard/father_stain.png" id="6_ogaks"]
-[ext_resource type="Script" uid="uid://o8dbsoi3lwfj" path="res://scenes/btn_father_mak.gd" id="6_s8jmr"]
-[ext_resource type="Script" uid="uid://bplemi0vfkd8u" path="res://scenes/father_strain.gd" id="8_suuxx"]
-[ext_resource type="Script" uid="uid://d0sx50kr10rau" path="res://scenes/father_crack.gd" id="9_f1jql"]
+[ext_resource type="Script" uid="uid://c1t2finxoc4c6" path="res://scripts/basic_button.gd" id="7_rayba"]
 [ext_resource type="Script" uid="uid://rcj1ra52lc55" path="res://scenes/next_scene_button.gd" id="10_lfno2"]
 [ext_resource type="Texture2D" uid="uid://cq0l14b5py32q" path="res://assets/art/animations/graveyard/willow_glitch.png" id="11_ug83y"]
 [ext_resource type="Texture2D" uid="uid://ckelav8140vif" path="res://assets/art/placeholders/obrazy/eye_closed.png" id="15_4gngc"]
@@ -149,7 +147,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_tjo67")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 12.0
 }]
@@ -230,7 +228,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_3q2cr")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 9.0
 }]
@@ -333,7 +331,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_3rh3o")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 9.0
 }]
@@ -464,7 +462,6 @@ position = Vector2(822, 477)
 sprite_frames = SubResource("SpriteFrames_p1jvj")
 
 [node name="father_mak" type="AnimatedSprite2D" parent="."]
-visible = false
 position = Vector2(934, 342)
 sprite_frames = SubResource("SpriteFrames_3q2cr")
 metadata/fade_in = 1.0
@@ -478,7 +475,7 @@ offset_top = -38.0
 offset_right = 2076.0
 offset_bottom = 1157.0
 
-[node name="btn_father_mak" type="Button" parent="Control"]
+[node name="btn_father_mak" type="Button" parent="Control" node_paths=PackedStringArray("animation")]
 modulate = Color(1, 1, 1, 0)
 visibility_layer = 3
 layout_mode = 0
@@ -488,9 +485,10 @@ offset_right = 992.0
 offset_bottom = 462.0
 action_mode = 0
 flat = true
-script = ExtResource("6_s8jmr")
+script = ExtResource("7_rayba")
+animation = NodePath("../../father_mak")
 
-[node name="father_strain" type="Button" parent="Control"]
+[node name="father_strain" type="Button" parent="Control" node_paths=PackedStringArray("animation")]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 816.0
@@ -498,9 +496,10 @@ offset_top = 446.0
 offset_right = 899.0
 offset_bottom = 563.0
 flat = true
-script = ExtResource("8_suuxx")
+script = ExtResource("7_rayba")
+animation = NodePath("../../father_stain")
 
-[node name="father_crack" type="Button" parent="Control"]
+[node name="father_crack" type="Button" parent="Control" node_paths=PackedStringArray("animation")]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 716.0
@@ -509,7 +508,8 @@ offset_right = 814.0
 offset_bottom = 391.0
 rotation = -0.65903
 flat = true
-script = ExtResource("9_f1jql")
+script = ExtResource("7_rayba")
+animation = NodePath("../../father_crack")
 
 [node name="next_scene_button" type="Button" parent="Control"]
 layout_mode = 0

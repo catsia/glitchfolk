@@ -1,4 +1,4 @@
-[gd_scene load_steps=233 format=3 uid="uid://bnwkx3jd1b8cg"]
+[gd_scene load_steps=234 format=3 uid="uid://bnwkx3jd1b8cg"]
 
 [ext_resource type="Script" uid="uid://8nhu1kwixmam" path="res://scenes/interactive_images.gd" id="1_vqs1a"]
 [ext_resource type="Texture2D" uid="uid://d0fvtskwvwlod" path="res://assets/art/background/obrazy_ref1.png" id="2_b6xrf"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bj3i64dj6eqye" path="res://assets/art/obrazy/animations/flame_big_fire.png" id="8_b6xrf"]
 [ext_resource type="Script" uid="uid://bf6adsugjk6lc" path="res://scripts/interactive_image_button.gd" id="10_413m3"]
 [ext_resource type="Texture2D" uid="uid://d15y2q17k585k" path="res://assets/art/obrazy/animations/flame_small_fire.png" id="10_fu5s6"]
+[ext_resource type="Script" uid="uid://nygnneadbx43" path="res://scripts/buttons/eye_button.gd" id="11_4et2e"]
 [ext_resource type="Texture2D" uid="uid://degrgh855vk2g" path="res://assets/art/obrazy/animations/flower.png" id="11_b6xrf"]
 [ext_resource type="Texture2D" uid="uid://cs43gm1o1nuy0" path="res://assets/art/obrazy/animations/eye_anim.png" id="12_i4cod"]
 [ext_resource type="Texture2D" uid="uid://b66tgye0e2dow" path="res://assets/art/obrazy/animations/rasp.png" id="13_i4cod"]
@@ -791,7 +792,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_goqm5")
 }],
-"loop": true,
+"loop": false,
 "name": &"eyeCloses",
 "speed": 5.0
 }, {
@@ -1755,6 +1756,15 @@ offset_right = 1287.0
 offset_bottom = 187.0
 script = ExtResource("10_413m3")
 
+[node name="eye" type="Button" parent="CanvasLayer"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 1616.0
+offset_top = 423.0
+offset_right = 1823.0
+offset_bottom = 561.0
+flat = true
+script = ExtResource("11_4et2e")
+
 [node name="flower" type="AnimatedSprite2D" parent="."]
 position = Vector2(1410, 156)
 sprite_frames = SubResource("SpriteFrames_2rkvg")
@@ -1763,9 +1773,7 @@ animation = &"fourthPetal"
 [node name="eye" type="AnimatedSprite2D" parent="."]
 position = Vector2(1708, 484)
 sprite_frames = SubResource("SpriteFrames_j8rno")
-animation = &"eyeLooks"
-frame = 18
-frame_progress = 0.26616815
+animation = &"eyeCloses"
 script = ExtResource("5_a6g1q")
 
 [node name="raspberry" type="AnimatedSprite2D" parent="."]
