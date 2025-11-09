@@ -1,11 +1,7 @@
-extends "res://scripts/basic_button.gd"
-
-var button_name = "father_mak"
+extends Button
 
 func _ready():
 	self.hide()
-
-	super._ready()
 	InteractiveObjManager.connect("next_timeline", next_timeline)
 
 func next_timeline():

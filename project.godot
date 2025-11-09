@@ -22,6 +22,7 @@ ScreenFade="*res://scenes/ScreenFade.tscn"
 InteractiveObjManager="*res://scripts/interactive_obj_manager.gd"
 ImageSceneManager="*res://scripts/image_scene_manager.gd"
 GlobalVariables="*res://scripts/global_variables.gd"
+SignalManager="*res://scripts/singletones/signal_manager.gd"
 
 [dialogic]
 
@@ -37,8 +38,14 @@ directories/dtl_directory={
 "graveyard1": "res://timelines/chapter1/graveyard1.dtl",
 "graveyard2": "res://timelines/chapter1/graveyard2.dtl",
 "grimoire": "res://timelines/chapter1/grimoire.dtl",
+"grimoire2": "res://timelines/chapter1/grimoire2.dtl",
 "home1": "res://timelines/chapter1/home1.dtl",
 "intro": "res://timelines/chapter1/intro.dtl",
+"paragraph1": "res://timelines/chapter1/short/paragraph1.dtl",
+"paragraph2": "res://timelines/chapter1/short/paragraph2.dtl",
+"paragraph3": "res://timelines/chapter1/short/paragraph3.dtl",
+"paragraph4": "res://timelines/chapter1/short/paragraph4.dtl",
+"paragraph5": "res://timelines/chapter1/short/paragraph5.dtl",
 "sheep1": "res://timelines/chapter1/sheep1.dtl",
 "soup1": "res://timelines/chapter1/soup1.dtl",
 "swamp1": "res://timelines/chapter1/swamp1.dtl",

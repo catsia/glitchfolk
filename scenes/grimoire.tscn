@@ -1,4 +1,4 @@
-[gd_scene load_steps=118 format=3 uid="uid://csj4uua3yj0dl"]
+[gd_scene load_steps=120 format=3 uid="uid://csj4uua3yj0dl"]
 
 [ext_resource type="Script" uid="uid://cej7nd7kbpug7" path="res://scenes/grimoire.gd" id="1_slun2"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_fhfaf"]
@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://du4l0e62ymddn" path="res://assets/art/animations/grimoire/folk_grimoire_4.png" id="9_0rbfy"]
 [ext_resource type="Texture2D" uid="uid://bn3vp74xy54tl" path="res://assets/art/animations/grimoire/folk_grimoire_5.png" id="10_iqyjh"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="11_374y1"]
+[ext_resource type="Script" uid="uid://cv0a2357kwrke" path="res://scripts/buttons/not_ending_anim_button.gd" id="12_8ltuu"]
+[ext_resource type="Script" uid="uid://8dpq410r4yb0" path="res://scripts/buttons/grimoire_last_button.gd" id="13_nyjrj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vrino"]
 atlas = ExtResource("4_q2v0p")
@@ -518,7 +520,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ijox5")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 9.0
 }]
@@ -596,7 +598,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_kk3c3")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 9.0
 }]
@@ -674,7 +676,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_0535k")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 9.0
 }]
@@ -759,7 +761,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5sltq")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 9.0
 }]
@@ -837,7 +839,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_1ujn7")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 9.0
 }]
@@ -867,14 +869,12 @@ frame_progress = 0.425169
 [node name="paragraph1" type="AnimatedSprite2D" parent="."]
 position = Vector2(853, 481)
 sprite_frames = SubResource("SpriteFrames_knld4")
-frame = 6
-frame_progress = 0.0644997
+frame_progress = 0.086525016
 
 [node name="paragraph2" type="AnimatedSprite2D" parent="."]
 position = Vector2(929, 556)
 sprite_frames = SubResource("SpriteFrames_4l0v7")
-frame = 4
-frame_progress = 0.631053
+frame_progress = 0.9347604
 
 [node name="paragraph3" type="AnimatedSprite2D" parent="."]
 position = Vector2(1002, 627)
@@ -889,7 +889,72 @@ frame = 4
 frame_progress = 0.28608
 
 [node name="paragraph5" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(1121, 401)
 sprite_frames = SubResource("SpriteFrames_p03a8")
 
 [node name="InteractiveImages" parent="." instance=ExtResource("11_374y1")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 11
+
+[node name="paragraph1" type="Button" parent="CanvasLayer" node_paths=PackedStringArray("animation")]
+modulate = Color(1, 1, 1, 0)
+offset_left = 731.5067
+offset_top = 470.6493
+offset_right = 954.7983
+offset_bottom = 580.6048
+rotation = -0.5466247
+flat = true
+script = ExtResource("12_8ltuu")
+animation = NodePath("../../paragraph1")
+
+[node name="paragraph2" type="Button" parent="CanvasLayer" node_paths=PackedStringArray("animation")]
+modulate = Color(1, 1, 1, 0)
+offset_left = 804.0
+offset_top = 564.0
+offset_right = 1027.2915
+offset_bottom = 668.1661
+rotation = -0.5466247
+flat = true
+script = ExtResource("12_8ltuu")
+animation = NodePath("../../paragraph2")
+
+[node name="paragraph3" type="Button" parent="CanvasLayer" node_paths=PackedStringArray("animation")]
+modulate = Color(1, 1, 1, 0)
+offset_left = 879.0
+offset_top = 643.99994
+offset_right = 1102.2915
+offset_bottom = 753.95544
+rotation = -0.5466247
+flat = true
+script = ExtResource("12_8ltuu")
+animation = NodePath("../../paragraph3")
+
+[node name="paragraph4" type="Button" parent="CanvasLayer" node_paths=PackedStringArray("animation")]
+modulate = Color(1, 1, 1, 0)
+offset_left = 910.0
+offset_top = 323.99994
+offset_right = 1133.2915
+offset_bottom = 433.95544
+rotation = -0.72351086
+flat = true
+script = ExtResource("12_8ltuu")
+animation = NodePath("../../paragraph4")
+
+[node name="paragraph5" type="Button" parent="CanvasLayer" node_paths=PackedStringArray("animation")]
+modulate = Color(1, 1, 1, 0)
+offset_left = 999.99994
+offset_top = 413.99994
+offset_right = 1223.2915
+offset_bottom = 537.7822
+rotation = -0.7317907
+flat = true
+script = ExtResource("13_nyjrj")
+animation = NodePath("../../paragraph5")
+
+[connection signal="pressed" from="CanvasLayer/paragraph1" to="CanvasLayer/paragraph1" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/paragraph2" to="CanvasLayer/paragraph2" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/paragraph3" to="CanvasLayer/paragraph3" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/paragraph4" to="CanvasLayer/paragraph4" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/paragraph5" to="CanvasLayer/paragraph5" method="_on_pressed"]

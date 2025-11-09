@@ -3,26 +3,31 @@ extends Button
 var dialogSignalManager = preload("res://scripts/dialogic_signal_manager.gd")
 var timelineManager = preload("res://scripts/timeline_manager.gd")
 
-var dialog_manager
-var timeline_manager
 
 @export var animation: AnimatedSprite2D
 
+var isPressed: bool = false
+
 func _ready():
 	SignalManager.play_all_interactive.connect(play_animation)
-	dialog_manager = dialogSignalManager.new()
-	timeline_manager = timelineManager.new()
 	InteractiveObjManager.register_object()
-	
-func after_pressed():
+	InteractiveObjManager.connect(GlobalVariables.stop_all, stop_animation)
+
+func stop_animation():
+	animation.visible = false
+	animation.stop()
 	self.hide()
-	InteractiveObjManager.object_clicked()
-	
+
+
 func play_animation():
 	animation.visible = true
 	animation.play()
-	
+
+func register_click():
+	if !isPressed:
+		isPressed = true
+		InteractiveObjManager.object_clicked()
+
 func _on_pressed() -> void:
-	animation.stop()
 	Dialogic.start(animation.name.substr(0,animation.name.length()))
-	after_pressed()
+	register_click()
