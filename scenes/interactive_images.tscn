@@ -907,6 +907,18 @@ animations = [{
 "texture": SubResource("AtlasTexture_e1cuc")
 }, {
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_e1cuc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e1cuc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e1cuc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e1cuc")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_mif4d")
 }, {
 "duration": 1.0,
@@ -1805,7 +1817,9 @@ animation = &"fourthPetal"
 [node name="eye" type="AnimatedSprite2D" parent="."]
 position = Vector2(1708, 484)
 sprite_frames = SubResource("SpriteFrames_j8rno")
-animation = &"eyeLooks"
+animation = &"eyeSide"
+frame = 8
+frame_progress = 1.0
 script = ExtResource("5_a6g1q")
 
 [node name="raspberry" type="AnimatedSprite2D" parent="."]

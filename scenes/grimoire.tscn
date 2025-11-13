@@ -271,7 +271,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 8.0
+"speed": 6.0
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6pgbq"]
@@ -458,39 +458,6 @@ animations = [{
 "texture": null
 }, {
 "duration": 1.0,
-"texture": null
-}, {
-"duration": 1.0,
-"texture": null
-}, {
-"duration": 1.0,
-"texture": null
-}, {
-"duration": 1.0,
-"texture": null
-}, {
-"duration": 1.0,
-"texture": null
-}, {
-"duration": 1.0,
-"texture": null
-}, {
-"duration": 1.0,
-"texture": null
-}, {
-"duration": 1.0,
-"texture": null
-}, {
-"duration": 1.0,
-"texture": null
-}, {
-"duration": 1.0,
-"texture": null
-}, {
-"duration": 1.0,
-"texture": null
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_7wr43")
 }, {
 "duration": 1.0,
@@ -575,6 +542,21 @@ region = Rect2(250, 400, 250, 200)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_knld4")
 }, {
 "duration": 1.0,
@@ -655,6 +637,27 @@ region = Rect2(250, 400, 250, 200)
 [sub_resource type="SpriteFrames" id="SpriteFrames_otx87"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_4l0v7")
 }, {
@@ -740,6 +743,30 @@ region = Rect2(400, 400, 200, 200)
 [sub_resource type="SpriteFrames" id="SpriteFrames_3mrqb"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_otx87")
 }, {
@@ -877,7 +904,7 @@ texture = ExtResource("3_lbjj8")
 [node name="grimoire_dust" type="AnimatedSprite2D" parent="."]
 position = Vector2(953, 519)
 sprite_frames = SubResource("SpriteFrames_6pgbq")
-frame_progress = 0.805923
+frame_progress = 0.107331164
 
 [node name="header" type="AnimatedSprite2D" parent="."]
 position = Vector2(774, 428)
