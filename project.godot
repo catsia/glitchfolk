@@ -55,8 +55,8 @@ directories/dtl_directory={
 layout/style_list=["res://styles/premade_visualnovel.tres"]
 layout/default_style="res://styles/premade_visualnovel.tres"
 glossary/default_case_sensitive=true
-glossary/glossary_files=["res://Glossary/general.tres", "res://Glossary/grimoire.tres"]
-glossary/default_color=Color(0.54902, 0.145098, 0.164706, 1)
+glossary/glossary_files=["res://Glossary/general.tres", "res://Glossary/grimoire.tres", "res://Glossary/soup.tres"]
+glossary/default_color=Color(0.56640625, 0.11062622, 0.11062622, 1)
 variables={
 "child": 0,
 "destruction": 0,
