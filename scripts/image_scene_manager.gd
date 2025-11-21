@@ -43,6 +43,7 @@ func get_image_state(image_id: String) -> String:
 	return image_states.get(image_id, {}).get("state", "default")
 
 func set_image_state_and_play(image_id: String, state: String):
+	print(state)
 	if state == GlobalVariables.next:
 		state = create_next_state(image_id)
 		
