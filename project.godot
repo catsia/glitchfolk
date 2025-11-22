@@ -27,7 +27,9 @@ SignalManager="*res://scripts/singletones/signal_manager.gd"
 [dialogic]
 
 directories/dch_directory={
-"krey": "res://Characters/krey.dch"
+"dad": "res://Characters/dad.dch",
+"krey": "res://Characters/krey.dch",
+"mom": "res://Characters/mom.dch"
 }
 directories/dtl_directory={
 "bride1": "res://timelines/chapter1/bride1.dtl",
