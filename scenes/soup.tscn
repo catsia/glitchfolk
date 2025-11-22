@@ -23,9 +23,6 @@ visible = false
 position = Vector2(957, 529)
 texture = ExtResource("3_k4gy1")
 
-[node name="InteractiveImages" parent="." instance=ExtResource("3_lw81e")]
-position = Vector2(-3, -11)
-
 [node name="soup2" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(957, 529)
@@ -45,3 +42,6 @@ texture = ExtResource("7_ofds0")
 visible = false
 position = Vector2(957, 529)
 texture = ExtResource("8_mejb6")
+
+[node name="InteractiveImages" parent="." instance=ExtResource("3_lw81e")]
+position = Vector2(-3, -11)
