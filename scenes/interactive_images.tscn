@@ -1,4 +1,4 @@
-[gd_scene load_steps=237 format=3 uid="uid://bnwkx3jd1b8cg"]
+[gd_scene load_steps=238 format=3 uid="uid://bnwkx3jd1b8cg"]
 
 [ext_resource type="Script" uid="uid://8nhu1kwixmam" path="res://scenes/interactive_images.gd" id="1_vqs1a"]
 [ext_resource type="Texture2D" uid="uid://d0fvtskwvwlod" path="res://assets/art/background/obrazy_ref1.png" id="2_b6xrf"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://cs43gm1o1nuy0" path="res://assets/art/obrazy/animations/eye_anim.png" id="12_i4cod"]
 [ext_resource type="Texture2D" uid="uid://b66tgye0e2dow" path="res://assets/art/obrazy/animations/rasp.png" id="13_i4cod"]
 [ext_resource type="Texture2D" uid="uid://0h0jn8mv2kp7" path="res://assets/art/obrazy/animations/childhood.png" id="14_2iwvu"]
+[ext_resource type="Script" uid="uid://c6ugsdvwxgljc" path="res://scripts/eye_interactive_image.gd" id="14_o3su5"]
 [ext_resource type="Texture2D" uid="uid://d2ufoby7dfhbs" path="res://assets/art/obrazy/animations/childhood_idle.png" id="15_3e3ps"]
 [ext_resource type="Texture2D" uid="uid://8wjkpcdrdhsf" path="res://assets/art/obrazy/animations/childhood_idle_wiped.png" id="16_vhour"]
 
@@ -1806,6 +1807,7 @@ offset_left = 1616.0
 offset_top = 423.0
 offset_right = 1823.0
 offset_bottom = 561.0
+disabled = true
 flat = true
 script = ExtResource("11_4et2e")
 
@@ -1814,13 +1816,14 @@ position = Vector2(1410, 156)
 sprite_frames = SubResource("SpriteFrames_2rkvg")
 animation = &"fourthPetal"
 
-[node name="eye" type="AnimatedSprite2D" parent="."]
+[node name="eye" type="AnimatedSprite2D" parent="." node_paths=PackedStringArray("eye_button")]
 position = Vector2(1708, 484)
 sprite_frames = SubResource("SpriteFrames_j8rno")
 animation = &"eyeSide"
 frame = 8
 frame_progress = 1.0
-script = ExtResource("5_a6g1q")
+script = ExtResource("14_o3su5")
+eye_button = NodePath("../CanvasLayer/eye")
 
 [node name="raspberry" type="AnimatedSprite2D" parent="."]
 visible = false

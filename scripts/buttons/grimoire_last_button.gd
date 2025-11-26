@@ -14,9 +14,7 @@ func next_timeline():
 	animation.play()
 
 func play_animation():
-	#animation.visible = true
 	animation.play()
-	
 
 func _on_pressed() -> void:
 	animation.stop()

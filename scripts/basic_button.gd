@@ -8,6 +8,8 @@ var timeline_manager
 
 @export var animation: AnimatedSprite2D
 
+var isPressed: bool = false
+
 func _ready():
 	SignalManager.play_all_interactive.connect(play_animation)
 	dialog_manager = dialogSignalManager.new()
@@ -15,12 +17,14 @@ func _ready():
 	InteractiveObjManager.register_object()
 	
 func after_pressed():
+	isPressed = true
 	self.hide()
 	InteractiveObjManager.object_clicked()
 	
 func play_animation():
-	animation.visible = true
-	animation.play()
+	if !isPressed:
+		animation.visible = true
+		animation.play()
 	
 func _on_pressed() -> void:
 	animation.stop()

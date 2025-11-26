@@ -940,22 +940,15 @@ sprite_frames = SubResource("SpriteFrames_p03a8")
 
 [node name="InteractiveImages" parent="." instance=ExtResource("11_374y1")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-layer = 11
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="paragraph1" type="Button" parent="CanvasLayer" node_paths=PackedStringArray("animation")]
+[node name="paragraph2" type="Button" parent="Control" node_paths=PackedStringArray("animation")]
 modulate = Color(1, 1, 1, 0)
-offset_left = 731.5067
-offset_top = 470.6493
-offset_right = 954.7983
-offset_bottom = 580.6048
-rotation = -0.5466247
-flat = true
-script = ExtResource("12_8ltuu")
-animation = NodePath("../../paragraph1")
-
-[node name="paragraph2" type="Button" parent="CanvasLayer" node_paths=PackedStringArray("animation")]
-modulate = Color(1, 1, 1, 0)
+layout_mode = 0
 offset_left = 804.0
 offset_top = 564.0
 offset_right = 1027.2915
@@ -965,19 +958,9 @@ flat = true
 script = ExtResource("12_8ltuu")
 animation = NodePath("../../paragraph2")
 
-[node name="paragraph3" type="Button" parent="CanvasLayer" node_paths=PackedStringArray("animation")]
+[node name="paragraph4" type="Button" parent="Control" node_paths=PackedStringArray("animation")]
 modulate = Color(1, 1, 1, 0)
-offset_left = 879.0
-offset_top = 643.99994
-offset_right = 1102.2915
-offset_bottom = 753.95544
-rotation = -0.5466247
-flat = true
-script = ExtResource("12_8ltuu")
-animation = NodePath("../../paragraph3")
-
-[node name="paragraph4" type="Button" parent="CanvasLayer" node_paths=PackedStringArray("animation")]
-modulate = Color(1, 1, 1, 0)
+layout_mode = 0
 offset_left = 910.0
 offset_top = 323.99994
 offset_right = 1133.2915
@@ -987,8 +970,9 @@ flat = true
 script = ExtResource("12_8ltuu")
 animation = NodePath("../../paragraph4")
 
-[node name="paragraph5" type="Button" parent="CanvasLayer" node_paths=PackedStringArray("animation")]
+[node name="paragraph5" type="Button" parent="Control" node_paths=PackedStringArray("animation")]
 modulate = Color(1, 1, 1, 0)
+layout_mode = 0
 offset_left = 999.99994
 offset_top = 413.99994
 offset_right = 1223.2915
@@ -998,8 +982,35 @@ flat = true
 script = ExtResource("13_nyjrj")
 animation = NodePath("../../paragraph5")
 
-[connection signal="pressed" from="CanvasLayer/paragraph1" to="CanvasLayer/paragraph1" method="_on_pressed"]
-[connection signal="pressed" from="CanvasLayer/paragraph2" to="CanvasLayer/paragraph2" method="_on_pressed"]
-[connection signal="pressed" from="CanvasLayer/paragraph3" to="CanvasLayer/paragraph3" method="_on_pressed"]
-[connection signal="pressed" from="CanvasLayer/paragraph4" to="CanvasLayer/paragraph4" method="_on_pressed"]
-[connection signal="pressed" from="CanvasLayer/paragraph5" to="CanvasLayer/paragraph5" method="_on_pressed"]
+[node name="paragraph3" type="Button" parent="Control" node_paths=PackedStringArray("animation")]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 879.0
+offset_top = 643.99994
+offset_right = 1102.2915
+offset_bottom = 753.95544
+rotation = -0.5466247
+flat = true
+script = ExtResource("12_8ltuu")
+animation = NodePath("../../paragraph3")
+
+[node name="paragraph1" type="Button" parent="Control" node_paths=PackedStringArray("animation")]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 731.5067
+offset_top = 470.6493
+offset_right = 954.7983
+offset_bottom = 580.6048
+rotation = -0.5466247
+flat = true
+script = ExtResource("12_8ltuu")
+animation = NodePath("../../paragraph1")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 11
+
+[connection signal="pressed" from="Control/paragraph2" to="Control/paragraph2" method="_on_pressed"]
+[connection signal="pressed" from="Control/paragraph4" to="Control/paragraph4" method="_on_pressed"]
+[connection signal="pressed" from="Control/paragraph5" to="Control/paragraph5" method="_on_pressed"]
+[connection signal="pressed" from="Control/paragraph3" to="Control/paragraph3" method="_on_pressed"]
+[connection signal="pressed" from="Control/paragraph1" to="Control/paragraph1" method="_on_pressed"]

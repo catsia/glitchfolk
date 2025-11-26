@@ -20,8 +20,9 @@ func stop_animation():
 
 
 func play_animation():
-	animation.visible = true
-	animation.play()
+	if !isPressed:
+		animation.visible = true
+		animation.play()
 
 func register_click():
 	if !isPressed:
