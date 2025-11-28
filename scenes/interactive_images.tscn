@@ -1812,6 +1812,7 @@ flat = true
 script = ExtResource("11_4et2e")
 
 [node name="flower" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(1410, 156)
 sprite_frames = SubResource("SpriteFrames_2rkvg")
 animation = &"fourthPetal"

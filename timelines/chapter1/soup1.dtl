@@ -3,17 +3,13 @@ mom: Сегодня у нас новое угощение, Каюшка. [pause=
 mom: Я украсила её для тебя особым образом...
 dad: Не приучай ребёнка к излишествам, милая. Пища должна быть питательной, в лучшем случае – вкусной.
 dad: Украшая её, ты прививаешь ему ложные представления.
-
-[i](затемнение. арт меняется)
 [signal arg_type="dict" arg="{"hide_image":"soup1"}"]
 [signal arg_type="dict" arg="{"show_image":"soup2"}"]
 
 mom: Только посмотри, как он радуется каждый раз при виде ухи! Глазки так и сяють!
 dad: Я бы предпочёл смотреть, как у него текут слюнки. Ты совсем не замечаешь, что тарель всегда остаётся полной? Ему нравится рассматривать твою уху, а не вкушать.
 mom: …Красивый цветочек, да, сынко?
-dad: Поздравляю: ты превратила для него блюдо в очередное развлечение...
-
-[i](затемнение. арт меняется)
+dad: Поздравляю\: ты превратила для него блюдо в очередное развлечение...
 [signal arg_type="dict" arg="{"hide_image":"soup2"}"]
 [signal arg_type="dict" arg="{"show_image":"soup3"}"]
 
@@ -23,15 +19,12 @@ dad: Ох...
 dad: Ты правда хочешь поговорить о том, как на его аппетит влияют твои угощения до еды? Когда мы сели за стол, его гороховый стручок был наполовину пуст!
 mom: ...
 mom: А в [i]этих[/i] слезах ты тоже обвинишь недоеденную уху?..
-
-[i] (затемнение. в тарелке чуть меньше супа, чем обычно. рыба смотрит на игрока мигающим глазом)
 [signal arg_type="dict" arg="{"hide_image":"soup3"}"]
 [signal arg_type="dict" arg="{"show_image":"soup4"}"]
+[signal arg_type="dict" arg="{"animation":"fisheye"}"]
 
 krey: А где папа?
 *звуки слёз*
-
-[i] (затемнение. арт меняется)
 [signal arg_type="dict" arg="{"hide_image":"soup4"}"]
 [signal arg_type="dict" arg="{"show_image":"soup5"}"]
 
@@ -39,39 +32,53 @@ mom: До чего быстро летит время! Ещё вчера ты в
 - Угу...
 - Ага...
 - ...
-
-[i] (затемнение. укрупняется план на уху)
+[signal arg_type="dict" arg="{"hide_animation":"fisheye"}"]
+[signal arg_type="dict" arg="{"hide_image":"soup5"}"]
+[signal arg_type="dict" arg="{"show_image":"glitch"}"]
+[signal arg_type="dict" arg="{"hide_animation":"fisheye"}"]
+[signal arg_type="dict" arg="{"animation":"fisheye_glitch"}"]
 
 mom: Как минув день? Писарь с тобой не слишком строг? А то слышала я всякое…
 
 - Угу...
 - Ага...
 - ...
-
-[i] (затемнение. ещё более крупный план ухи)
+[signal arg_type="dict" arg="{"hide_image":"glitch"}"]
+[signal arg_type="dict" arg="{"show_image":"glitch1"}"]
+[signal arg_type="dict" arg="{"hide_animation":"fisheye_glitch"}"]
+[signal arg_type="dict" arg="{"animation":"fisheye_glitch1"}"]
 
 mom: Отчего ты кволый такой? Нос повесил. Остыло, что ль?
 
 - Угу...
 - Ага...
 - ...
+[signal arg_type="dict" arg="{"hide_image":"glitch1"}"]
+[signal arg_type="dict" arg="{"show_image":"glitch2"}"]
+[signal arg_type="dict" arg="{"hide_animation":"fisheye_glitch1"}"]
+[signal arg_type="dict" arg="{"animation":"fisheye_glitch2"}"]
 
-[i] (ещё более крупный план ухи, появляется первый глитч на рыбе)
-
-mom: Повторяй за мной: да благословит...
+mom: Повторяй за мной\: да благословит...
 - ...
-
-[i] (затемнение. максимально крупный план ухи + расползается глитч)
+[signal arg_type="dict" arg="{"hide_image":"glitch2"}"]
+[signal arg_type="dict" arg="{"show_image":"glitch3"}"]
+[signal arg_type="dict" arg="{"hide_animation":"fisheye_glitch2"}"]
+[signal arg_type="dict" arg="{"animation":"fisheye_glitch3"}"]
 
 mom: ...сию скромну трапезу…
 - .........
-
-[i] (полная пикселизация ухи + расползается глитч)
+[signal arg_type="dict" arg="{"hide_image":"glitch3"}"]
+[signal arg_type="dict" arg="{"show_image":"glitch4"}"]
+[signal arg_type="dict" arg="{"hide_animation":"fisheye_glitch3"}"]
+[signal arg_type="dict" arg="{"animation":"fisheye_glitch4"}"]
 
 mom: ...святой Глитч…
 - ...............................
+[signal arg_type="dict" arg="{"hide_image":"glitch4"}"]
+[signal arg_type="dict" arg="{"hide_animation":"fisheye_glitch4"}"]
 
 [i] (затемнение. *звук перевёрнутой тарелки* *звук всплеска* *звук человеческого “ах!”)
+[signal arg_type="dict" arg="{"show_image":"soup1"}"]
 
 Бывало, во время обедов К. испытывал проблемы с аппетитом; ему казалось, что он медленно тонет в ухе.
 
