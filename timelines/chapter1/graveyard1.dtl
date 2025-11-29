@@ -5,7 +5,4 @@
 krey: – Просыпайся, [color=#8B0000][url="g1"]папа[/url][/color].
 [i](появляется надпись на весь экран)[/i]
 [color=#FF0000]ДЕНЬ 2. ЭКСГУМАЦИЯ[/color]
-[signal arg_type="dict" arg="{"set_state":"flame_smallburn"}"]
-[signal arg_type="dict" arg="{"animation":"father_crack"}"]
-[signal arg_type="dict" arg="{"animation":"father_mak"}"]
-[signal arg_type="dict" arg="{"animation":"father_stain"}"]
+[signal arg_type="dict" arg="{"set_state":"eye_eyeOpens"}"]

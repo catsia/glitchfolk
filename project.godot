@@ -22,11 +22,14 @@ ScreenFade="*res://scenes/ScreenFade.tscn"
 InteractiveObjManager="*res://scripts/interactive_obj_manager.gd"
 ImageSceneManager="*res://scripts/image_scene_manager.gd"
 GlobalVariables="*res://scripts/global_variables.gd"
+SignalManager="*res://scripts/singletones/signal_manager.gd"
 
 [dialogic]
 
 directories/dch_directory={
-"krey": "res://Characters/krey.dch"
+"dad": "res://Characters/dad.dch",
+"krey": "res://Characters/krey.dch",
+"mom": "res://Characters/mom.dch"
 }
 directories/dtl_directory={
 "bride1": "res://timelines/chapter1/bride1.dtl",
@@ -37,8 +40,14 @@ directories/dtl_directory={
 "graveyard1": "res://timelines/chapter1/graveyard1.dtl",
 "graveyard2": "res://timelines/chapter1/graveyard2.dtl",
 "grimoire": "res://timelines/chapter1/grimoire.dtl",
+"grimoire2": "res://timelines/chapter1/grimoire2.dtl",
 "home1": "res://timelines/chapter1/home1.dtl",
 "intro": "res://timelines/chapter1/intro.dtl",
+"paragraph1": "res://timelines/chapter1/short/paragraph1.dtl",
+"paragraph2": "res://timelines/chapter1/short/paragraph2.dtl",
+"paragraph3": "res://timelines/chapter1/short/paragraph3.dtl",
+"paragraph4": "res://timelines/chapter1/short/paragraph4.dtl",
+"paragraph5": "res://timelines/chapter1/short/paragraph5.dtl",
 "sheep1": "res://timelines/chapter1/sheep1.dtl",
 "soup1": "res://timelines/chapter1/soup1.dtl",
 "swamp1": "res://timelines/chapter1/swamp1.dtl",
@@ -48,8 +57,8 @@ directories/dtl_directory={
 layout/style_list=["res://styles/premade_visualnovel.tres"]
 layout/default_style="res://styles/premade_visualnovel.tres"
 glossary/default_case_sensitive=true
-glossary/glossary_files=["res://Glossary/general.tres"]
-glossary/default_color=Color(0.54902, 0.145098, 0.164706, 1)
+glossary/glossary_files=["res://Glossary/general.tres", "res://Glossary/grimoire.tres", "res://Glossary/soup.tres"]
+glossary/default_color=Color(0.56640625, 0.11062622, 0.11062622, 1)
 variables={
 "child": 0,
 "destruction": 0,
