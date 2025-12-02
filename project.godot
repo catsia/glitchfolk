@@ -41,6 +41,9 @@ directories/dtl_directory={
 "graveyard2": "res://timelines/chapter1/graveyard2.dtl",
 "grimoire": "res://timelines/chapter1/grimoire.dtl",
 "grimoire2": "res://timelines/chapter1/grimoire2.dtl",
+"gypsy1": "res://timelines/chapter1/short/gypsy1.dtl",
+"gypsy2": "res://timelines/chapter1/short/gypsy2.dtl",
+"gypsy3": "res://timelines/chapter1/short/gypsy3.dtl",
 "home1": "res://timelines/chapter1/home1.dtl",
 "intro": "res://timelines/chapter1/intro.dtl",
 "paragraph1": "res://timelines/chapter1/short/paragraph1.dtl",
@@ -63,6 +66,7 @@ variables={
 "child": 0,
 "destruction": 0,
 "notstupid": 0,
+"questions_asked": 0.0,
 "wisdom": 0
 }
 extensions_folder="res://addons/dialogic_additions"

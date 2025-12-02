@@ -3,4 +3,14 @@
 [signal arg_type="dict" arg="{"set_state":"flame_bigburn"}"]
 ОБРАЗ\: сердце с ключами
 ОБРАЗ\: ромашка2
+hii
+label label1 (LABEL 1)
+if {questions_asked} < 3.0:
+	- 3
+		jump gypsy3/
+	- 1
+		jump gypsy1/
+	- 2
+		jump gypsy2/
+Ляляляля
 [signal arg_type="dict" arg="{"next_scene":"map"}"]
