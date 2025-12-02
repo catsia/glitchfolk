@@ -1,3 +1,4 @@
 1
 set {questions_asked} += 1.0
+set {first_asked} = true
 jump sheep1/label1

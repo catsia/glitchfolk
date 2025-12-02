@@ -6,10 +6,10 @@
 hii
 label label1 (LABEL 1)
 if {questions_asked} < 3.0:
-	- 3
-		jump gypsy3/
 	- 1
 		jump gypsy1/
+	- 3 | [if {first_asked} == false]
+		jump gypsy3/
 	- 2
 		jump gypsy2/
 Ляляляля
