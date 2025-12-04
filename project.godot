@@ -28,6 +28,7 @@ SignalManager="*res://scripts/singletones/signal_manager.gd"
 
 directories/dch_directory={
 "dad": "res://Characters/dad.dch",
+"gypsy": "res://Characters/gypsy.dch",
 "krey": "res://Characters/krey.dch",
 "mom": "res://Characters/mom.dch"
 }
@@ -60,12 +61,29 @@ directories/dtl_directory={
 layout/style_list=["res://styles/premade_visualnovel.tres"]
 layout/default_style="res://styles/premade_visualnovel.tres"
 glossary/default_case_sensitive=true
-glossary/glossary_files=["res://Glossary/general.tres", "res://Glossary/grimoire.tres", "res://Glossary/soup.tres"]
+glossary/glossary_files=["res://Glossary/general.tres", "res://Glossary/grimoire.tres", "res://Glossary/soup.tres", "res://Glossary/sheep.tres"]
 glossary/default_color=Color(0.56640625, 0.11062622, 0.11062622, 1)
 variables={
 "child": 0,
 "destruction": 0,
 "first_asked": false,
+"gypsy": {
+"argument1": false,
+"argument2": false,
+"argument3": false,
+"arguments": 0,
+"both": false,
+"bride": false,
+"church": false,
+"hey": false,
+"joke": false,
+"real": false,
+"roadtalk": false,
+"theo": false,
+"visits": 0,
+"visitstalk": false,
+"znax": false
+},
 "notstupid": 0,
 "questions_asked": 0.0,
 "wisdom": 0
