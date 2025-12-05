@@ -1,14 +1,20 @@
-[gd_scene load_steps=13 format=3 uid="uid://dgi14r5fa5o7s"]
+[gd_scene load_steps=19 format=3 uid="uid://dgi14r5fa5o7s"]
 
 [ext_resource type="Script" uid="uid://ctgyfgftg7srq" path="res://scenes/sheep.gd" id="1_gw4f6"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_n54i3"]
+[ext_resource type="Texture2D" uid="uid://20sf0t8torow" path="res://assets/art/main_art/sheep/road_main.png" id="3_5g05w"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="3_6qn06"]
-[ext_resource type="Texture2D" uid="uid://xjjv6u84rwg" path="res://assets/art/main_art/sheep_road-export.png" id="3_vrdyb"]
+[ext_resource type="Texture2D" uid="uid://dnkmh0o6taafv" path="res://assets/art/main_art/sheep/road_final.png" id="4_4apx6"]
 [ext_resource type="Texture2D" uid="uid://bdj4rdrfn73wv" path="res://assets/art/animations/sheep/cloud.png" id="4_vbo3h"]
-[ext_resource type="Texture2D" uid="uid://dnowsy5nyec5f" path="res://assets/art/main_art/sheep_road_ring.png" id="6_s32ju"]
-[ext_resource type="Texture2D" uid="uid://dn36nwkfh3l81" path="res://assets/art/main_art/characters_art/sheep_char2.png" id="7_4uhln"]
-[ext_resource type="Texture2D" uid="uid://cehgexcyr7rmi" path="res://assets/art/main_art/characters_art/sheep_char3.png" id="8_ujskf"]
-[ext_resource type="Texture2D" uid="uid://dgug36j52o413" path="res://assets/art/main_art/characters_art/sheep_char1.png" id="9_ycxms"]
+[ext_resource type="Texture2D" uid="uid://buty82j82w2kc" path="res://assets/art/main_art/sheep/sheep_king.png" id="6_s32ju"]
+[ext_resource type="Texture2D" uid="uid://c475xrwb0g7eo" path="res://assets/art/main_art/sheep/sheep2.png" id="6_ujskf"]
+[ext_resource type="Texture2D" uid="uid://k4dlxduwppw3" path="res://assets/art/main_art/sheep/sheep4.png" id="6_wkjkd"]
+[ext_resource type="Texture2D" uid="uid://b3cnsumkijj06" path="res://assets/art/main_art/sheep/sheep3.png" id="6_ycxms"]
+[ext_resource type="Texture2D" uid="uid://hgv5jarmrs6g" path="res://assets/art/main_art/sheep/sheep1.png" id="7_ycxms"]
+[ext_resource type="Texture2D" uid="uid://drwdg1inenxrb" path="res://assets/art/main_art/characters_art/smile_long.png" id="11_wkjkd"]
+[ext_resource type="Texture2D" uid="uid://cvwppwnvrxpw5" path="res://assets/art/main_art/characters_art/smile_short.png" id="12_jjfva"]
+[ext_resource type="Texture2D" uid="uid://d33iajcqa7tvl" path="res://assets/art/main_art/characters_art/staff.png" id="12_wkjkd"]
+[ext_resource type="Texture2D" uid="uid://dm32is5au1rlp" path="res://assets/art/main_art/characters_art/cloth.png" id="13_jjfva"]
 
 [sub_resource type="Animation" id="Animation_s32ju"]
 length = 0.001
@@ -58,7 +64,13 @@ texture = ExtResource("2_n54i3")
 
 [node name="sheep_art" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
-texture = ExtResource("3_vrdyb")
+texture = ExtResource("3_5g05w")
+metadata/fade_in = true
+
+[node name="sheep_road_final" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(960, 540)
+texture = ExtResource("4_4apx6")
 
 [node name="cloud" type="Sprite2D" parent="."]
 position = Vector2(394, 320)
@@ -89,22 +101,64 @@ libraries = {
 autoplay = "move"
 speed_scale = 0.002
 
-[node name="sheep_ringed" type="Sprite2D" parent="."]
+[node name="sheep4" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(960, 540)
-texture = ExtResource("6_s32ju")
+position = Vector2(960, 724)
+texture = ExtResource("6_wkjkd")
+metadata/fade_in = true
+metadata/fade_out = true
 
-[node name="smile" type="Sprite2D" parent="."]
+[node name="sheep3" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(937, 811)
-texture = ExtResource("7_4uhln")
+position = Vector2(926, 748)
+texture = ExtResource("6_ycxms")
+metadata/fade_in = true
+metadata/fade_out = true
+
+[node name="sheep2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1178, 781)
+texture = ExtResource("6_ujskf")
+metadata/fade_in = true
+metadata/fade_out = true
+
+[node name="sheep1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(876, 792)
+texture = ExtResource("7_ycxms")
+metadata/fade_in = true
+metadata/fade_out = true
+
+[node name="sheepking" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1055, 792)
+texture = ExtResource("6_s32ju")
+metadata/fade_in = true
+
+[node name="smile_long" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(937, 835)
+texture = ExtResource("11_wkjkd")
+metadata/fade_in = true
+metadata/fade_out = true
+
+[node name="smile_short" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(937, 788)
+texture = ExtResource("12_jjfva")
+metadata/fade_in = true
+metadata/fade_out = true
 
 [node name="staff" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(964, 540)
-texture = ExtResource("8_ujskf")
+position = Vector2(1225, 541)
+texture = ExtResource("12_wkjkd")
+metadata/fade_in = true
+metadata/fade_out = true
 
 [node name="cloth" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(760, 451)
-texture = ExtResource("9_ycxms")
+texture = ExtResource("13_jjfva")
+metadata/fade_in = true
+metadata/fade_out = true

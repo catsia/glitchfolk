@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwqwl3txdwu13"
-path="res://.godot/imported/folk_soup2.png-d91b93bb4087c912b611de2ec64b68db.ctex"
+uid="uid://bd0w0p8ppje1p"
+path="res://.godot/imported/smile.png-28b53dd8e14ea9aa80adf7eee94c2fdb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/main_art/folk_soup2.png"
-dest_files=["res://.godot/imported/folk_soup2.png-d91b93bb4087c912b611de2ec64b68db.ctex"]
+source_file="res://assets/art/main_art/characters_art/smile.png"
+dest_files=["res://.godot/imported/smile.png-28b53dd8e14ea9aa80adf7eee94c2fdb.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8q7s74yjg2b0"
-path="res://.godot/imported/childhood_og.png-61267a0e46c4357a87c6e7873a9b8c2b.ctex"
+uid="uid://dm32is5au1rlp"
+path="res://.godot/imported/cloth.png-494fccdcca5a6a2b6d5af5df9cd72320.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/obrazy/main_images/childhood_og.png"
-dest_files=["res://.godot/imported/childhood_og.png-61267a0e46c4357a87c6e7873a9b8c2b.ctex"]
+source_file="res://assets/art/main_art/characters_art/cloth.png"
+dest_files=["res://.godot/imported/cloth.png-494fccdcca5a6a2b6d5af5df9cd72320.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8q7s74yjg2b0"
-path="res://.godot/imported/childhood_og.png-61267a0e46c4357a87c6e7873a9b8c2b.ctex"
+uid="uid://b3g42rikt2rhh"
+path="res://.godot/imported/folk_soup3.png-deebdf8decdd3718708cc082a99b4386.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/obrazy/main_images/childhood_og.png"
-dest_files=["res://.godot/imported/childhood_og.png-61267a0e46c4357a87c6e7873a9b8c2b.ctex"]
+source_file="res://assets/art/main_art/soup/folk_soup3.png"
+dest_files=["res://.godot/imported/folk_soup3.png-deebdf8decdd3718708cc082a99b4386.ctex"]
 
 [params]
 

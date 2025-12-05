@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8q7s74yjg2b0"
-path="res://.godot/imported/childhood_og.png-61267a0e46c4357a87c6e7873a9b8c2b.ctex"
+uid="uid://k4dlxduwppw3"
+path="res://.godot/imported/sheep4.png-6603e2fccd2c4e0cb5e084b2756963a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/obrazy/main_images/childhood_og.png"
-dest_files=["res://.godot/imported/childhood_og.png-61267a0e46c4357a87c6e7873a9b8c2b.ctex"]
+source_file="res://assets/art/main_art/sheep/sheep4.png"
+dest_files=["res://.godot/imported/sheep4.png-6603e2fccd2c4e0cb5e084b2756963a8.ctex"]
 
 [params]
 

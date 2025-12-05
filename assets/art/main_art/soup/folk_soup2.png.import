@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn36nwkfh3l81"
-path="res://.godot/imported/sheep_char2.png-1a1d9805dfcd0920abc9e1de616ff836.ctex"
+uid="uid://cwqwl3txdwu13"
+path="res://.godot/imported/folk_soup2.png-51f41cc8e7ddd3b0f4b7e2667dcf41af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/main_art/characters_art/sheep_char2.png"
-dest_files=["res://.godot/imported/sheep_char2.png-1a1d9805dfcd0920abc9e1de616ff836.ctex"]
+source_file="res://assets/art/main_art/soup/folk_soup2.png"
+dest_files=["res://.godot/imported/folk_soup2.png-51f41cc8e7ddd3b0f4b7e2667dcf41af.ctex"]
 
 [params]
 

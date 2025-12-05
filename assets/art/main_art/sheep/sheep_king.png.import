@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xjjv6u84rwg"
-path="res://.godot/imported/sheep_road-export.png-21b70cb51894de51bc9b1bf518a9324d.ctex"
+uid="uid://buty82j82w2kc"
+path="res://.godot/imported/sheep_king.png-6b24927772ee78f78e3947316397b685.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/main_art/sheep_road-export.png"
-dest_files=["res://.godot/imported/sheep_road-export.png-21b70cb51894de51bc9b1bf518a9324d.ctex"]
+source_file="res://assets/art/main_art/sheep/sheep_king.png"
+dest_files=["res://.godot/imported/sheep_king.png-6b24927772ee78f78e3947316397b685.ctex"]
 
 [params]
 
