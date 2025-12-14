@@ -1,7 +1,8 @@
-[gd_scene load_steps=190 format=3 uid="uid://cnudvb67jea3t"]
+[gd_scene load_steps=191 format=3 uid="uid://cnudvb67jea3t"]
 
-[ext_resource type="Script" uid="uid://dyboqe861m2gb" path="res://scenes/intro.gd" id="1_ayt76"]
+[ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_m3r7s"]
 [ext_resource type="Texture2D" uid="uid://db60bpl5ljeqw" path="res://assets/art/animations/intro/flower_of_order.png" id="2_7a8ye"]
+[ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="2_xwriy"]
 [ext_resource type="Texture2D" uid="uid://cpjad4gj4vddy" path="res://assets/art/animations/intro/RGB_square1.png" id="3_4bx60"]
 [ext_resource type="Texture2D" uid="uid://8dvlelcqw6ro" path="res://assets/art/animations/intro/RGB_square2.png" id="3_i2l1n"]
 [ext_resource type="Texture2D" uid="uid://br4gbxanxd4j0" path="res://assets/art/animations/intro/RGB_square_full.png" id="5_wfs7u"]
@@ -11,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="10_37iue"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="11_37iue"]
 [ext_resource type="Texture2D" uid="uid://dop1t3kmteyek" path="res://assets/art/animations/intro/cross_spark.png" id="11_n6p8m"]
-[ext_resource type="Texture2D" uid="uid://d0ctot3gsm32a" path="res://assets/art/obrazy/main_images/childhood_og.png" id="12_n6p8m"]
+[ext_resource type="Texture2D" uid="uid://b8q7s74yjg2b0" path="res://assets/art/obrazy/main_images/childhood_og.png" id="12_n6p8m"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0a7ni"]
 load_path = "res://.godot/imported/HB background red.png-cf34a7a21e851eb5a0ebefd2657265eb.ctex"
@@ -1404,9 +1405,15 @@ animations = [{
 }]
 
 [node name="intro" type="Node2D"]
-script = ExtResource("1_ayt76")
+metadata/timeline = "intro"
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_m3r7s")
+metadata/timeline = "intro"
+
+[node name="pause_menu" parent="CanvasLayer" instance=ExtResource("2_xwriy")]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
 offset_left = -110.0
 offset_top = -67.0
 offset_right = 2086.0
@@ -1414,84 +1421,84 @@ offset_bottom = 1157.0
 texture = SubResource("CompressedTexture2D_0a7ni")
 expand_mode = 2
 
-[node name="rgb_pixel1" type="AnimatedSprite2D" parent="."]
+[node name="rgb_pixel1" type="AnimatedSprite2D" parent="CanvasLayer"]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_urird")
 animation = &"RGB_1"
 
-[node name="rgb_pixel2" type="AnimatedSprite2D" parent="."]
+[node name="rgb_pixel2" type="AnimatedSprite2D" parent="CanvasLayer"]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_7kkmp")
 animation = &"RGB2"
 
-[node name="flower_of_order" type="AnimatedSprite2D" parent="."]
+[node name="flower_of_order" type="AnimatedSprite2D" parent="CanvasLayer"]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_7xutd")
 animation = &"new_animation"
 
-[node name="rgb_pixel_full" type="AnimatedSprite2D" parent="."]
+[node name="rgb_pixel_full" type="AnimatedSprite2D" parent="CanvasLayer"]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_hbvmi")
 
-[node name="pixel_life_birth1" type="AnimatedSprite2D" parent="."]
+[node name="pixel_life_birth1" type="AnimatedSprite2D" parent="CanvasLayer"]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_qkcvs")
 animation = &"birthsxv"
 
-[node name="pixel_life_birth2" type="AnimatedSprite2D" parent="."]
+[node name="pixel_life_birth2" type="AnimatedSprite2D" parent="CanvasLayer"]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_dhsud")
 
-[node name="pixel_life_birth3" type="AnimatedSprite2D" parent="."]
+[node name="pixel_life_birth3" type="AnimatedSprite2D" parent="CanvasLayer"]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_es01l")
 animation = &"birthsxv"
 
-[node name="pixel_life_birth4" type="AnimatedSprite2D" parent="."]
+[node name="pixel_life_birth4" type="AnimatedSprite2D" parent="CanvasLayer"]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_0naf5")
 animation = &"birthsxv"
 
-[node name="pixel_life_birth5" type="AnimatedSprite2D" parent="."]
+[node name="pixel_life_birth5" type="AnimatedSprite2D" parent="CanvasLayer"]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_t1qkj")
 animation = &"birthsxv"
 
-[node name="pixel_life_birth6" type="AnimatedSprite2D" parent="."]
+[node name="pixel_life_birth6" type="AnimatedSprite2D" parent="CanvasLayer"]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_272cy")
 animation = &"birthsxv"
 
-[node name="cosmos" type="AnimatedSprite2D" parent="."]
+[node name="cosmos" type="AnimatedSprite2D" parent="CanvasLayer"]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_ep0vl")
 
-[node name="cosmos_cycle" type="AnimatedSprite2D" parent="."]
+[node name="cosmos_cycle" type="AnimatedSprite2D" parent="CanvasLayer"]
 visible = false
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_37iue")
 frame_progress = 0.96132
 
-[node name="pixel_life_birth_temp" type="AnimatedSprite2D" parent="."]
+[node name="pixel_life_birth_temp" type="AnimatedSprite2D" parent="CanvasLayer"]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_bu1yb")
 animation = &"birthsxv"
 
-[node name="cross_bird" type="Sprite2D" parent="."]
+[node name="cross_bird" type="Sprite2D" parent="CanvasLayer"]
 visible = false
 position = Vector2(960, 540)
 texture = ExtResource("8_bu1yb")
 metadata/fade_in = true
 
-[node name="InteractiveImages" parent="." instance=ExtResource("11_37iue")]
+[node name="InteractiveImages" parent="CanvasLayer" instance=ExtResource("11_37iue")]
 
-[node name="back_technical" type="Sprite2D" parent="."]
+[node name="back_technical" type="Sprite2D" parent="CanvasLayer"]
 visible = false
 position = Vector2(998, 539)
 scale = Vector2(0.41041666, 0.70092595)
 texture = ExtResource("10_37iue")
 
-[node name="cross_bird_animation" type="AnimatedSprite2D" parent="."]
+[node name="cross_bird_animation" type="AnimatedSprite2D" parent="CanvasLayer"]
 visible = false
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_fc3e2")
@@ -1499,11 +1506,11 @@ frame = 3
 frame_progress = 0.7841494
 metadata/fade_in = true
 
-[node name="childhood" type="Sprite2D" parent="."]
+[node name="childhood" type="Sprite2D" parent="CanvasLayer"]
 visible = false
 position = Vector2(1223, 124)
 scale = Vector2(0.333, 0.333)
 texture = ExtResource("12_n6p8m")
 metadata/fade_in = true
 
-[connection signal="animation_finished" from="cosmos" to="." method="_on_cosmos_animation_finished"]
+[connection signal="animation_finished" from="CanvasLayer/cosmos" to="." method="_on_cosmos_animation_finished"]

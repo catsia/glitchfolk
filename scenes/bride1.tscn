@@ -1,14 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://cg5utao56404e"]
+[gd_scene load_steps=5 format=3 uid="uid://cg5utao56404e"]
 
-[ext_resource type="Script" uid="uid://khv1dt0ng4ww" path="res://bride.gd" id="1_h8c4d"]
+[ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_v7yvv"]
 [ext_resource type="Texture2D" uid="uid://bdjqoa13135cm" path="res://assets/art/placeholders/bride.png" id="2_v7yvv"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="3_v7yvv"]
+[ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="4_cs5wp"]
 
 [node name="bride" type="CanvasLayer"]
-script = ExtResource("1_h8c4d")
+script = ExtResource("1_v7yvv")
+metadata/timeline = "bride1"
 
 [node name="bride_art" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 texture = ExtResource("2_v7yvv")
 
 [node name="InteractiveImages" parent="." instance=ExtResource("3_v7yvv")]
+
+[node name="pause_menu" parent="." instance=ExtResource("4_cs5wp")]

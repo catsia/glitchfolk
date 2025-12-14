@@ -1,6 +1,6 @@
-[gd_scene load_steps=120 format=3 uid="uid://csj4uua3yj0dl"]
+[gd_scene load_steps=121 format=3 uid="uid://csj4uua3yj0dl"]
 
-[ext_resource type="Script" uid="uid://cej7nd7kbpug7" path="res://scenes/grimoire.gd" id="1_slun2"]
+[ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_nyjrj"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_fhfaf"]
 [ext_resource type="Texture2D" uid="uid://bfqh6lotqwoqc" path="res://assets/art/main_art/folk_grimoire.png" id="3_lbjj8"]
 [ext_resource type="Texture2D" uid="uid://c8k14gs127po7" path="res://assets/art/animations/grimoire/folk_grimoire_dust.png" id="4_q2v0p"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="11_374y1"]
 [ext_resource type="Script" uid="uid://cv0a2357kwrke" path="res://scripts/buttons/not_ending_anim_button.gd" id="12_8ltuu"]
 [ext_resource type="Script" uid="uid://8dpq410r4yb0" path="res://scripts/buttons/grimoire_last_button.gd" id="13_nyjrj"]
+[ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="14_su1je"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vrino"]
 atlas = ExtResource("4_q2v0p")
@@ -890,7 +891,8 @@ animations = [{
 }]
 
 [node name="Grimoire" type="CanvasLayer"]
-script = ExtResource("1_slun2")
+script = ExtResource("1_nyjrj")
+metadata/timeline = "grimoire"
 
 [node name="background" type="TextureRect" parent="."]
 offset_right = 40.0
@@ -1005,6 +1007,8 @@ rotation = -0.5466247
 flat = true
 script = ExtResource("12_8ltuu")
 animation = NodePath("../../paragraph1")
+
+[node name="pause_menu" parent="." instance=ExtResource("14_su1je")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 11

@@ -10,3 +10,5 @@ var eye_side_state = "eyeSide"
 
 var stop_all = "stop_all_interactive"
 var play_all = "play_all_interactive"
+
+var resume_game = "resume_game_signal"

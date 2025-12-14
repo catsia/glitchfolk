@@ -28,7 +28,8 @@ func _next_timeline(context: Node, next_timeline: String):
 
 func _set_state(context: Node, argument: String):
 	var parts = argument.split("_")
-	ImageSceneManager.set_image_state_and_play(parts[0], parts[1])
+	if(parts.size() >= 2): 
+		ImageSceneManager.set_image_state_and_play(parts[0], parts[1])
 
 func _play_animation(context: Node, signal_name: String):
 	var animation =  context.get_node_or_null(signal_name)

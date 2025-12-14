@@ -1,6 +1,6 @@
-[gd_scene load_steps=49 format=3 uid="uid://wn7rtr0ktpeh"]
+[gd_scene load_steps=50 format=3 uid="uid://wn7rtr0ktpeh"]
 
-[ext_resource type="Script" uid="uid://d2n2m578xrc1y" path="res://scenes/scene_1.gd" id="1_t413n"]
+[ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_ug83y"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_td60s"]
 [ext_resource type="Texture2D" uid="uid://ppnxcn7ra8c4" path="res://assets/art/main_art/folk_father_base.png" id="3_dc6gq"]
 [ext_resource type="Texture2D" uid="uid://cwfumru8q8yol" path="res://assets/art/animations/graveyard/folk_father_crack.png" id="4_dc6gq"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://c6hnvsuaiq6jb" path="res://assets/art/animations/graveyard/father_stain.png" id="6_ogaks"]
 [ext_resource type="Script" uid="uid://c1t2finxoc4c6" path="res://scripts/basic_button.gd" id="7_rayba"]
 [ext_resource type="Script" uid="uid://rcj1ra52lc55" path="res://scenes/next_scene_button.gd" id="10_lfno2"]
+[ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="11_rayba"]
 [ext_resource type="Texture2D" uid="uid://cq0l14b5py32q" path="res://assets/art/animations/graveyard/willow_glitch.png" id="11_ug83y"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="17_k2ng3"]
 
@@ -399,7 +400,11 @@ animations = [{
 }]
 
 [node name="Scene1" type="CanvasLayer"]
-script = ExtResource("1_t413n")
+script = ExtResource("1_ug83y")
+metadata/timeline = "graveyard1"
+
+[node name="pause_menu" parent="." instance=ExtResource("11_rayba")]
+visible = false
 
 [node name="background" type="TextureRect" parent="."]
 offset_left = -78.0

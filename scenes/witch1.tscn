@@ -1,17 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://vqau5l2rremv"]
+[gd_scene load_steps=5 format=3 uid="uid://vqau5l2rremv"]
 
-[ext_resource type="Script" uid="uid://c1tqnu48v45ky" path="res://scenes/witch_1.gd" id="1_onceh"]
+[ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_17fb0"]
 [ext_resource type="Texture2D" uid="uid://x3dunqg4doro" path="res://assets/art/placeholders/witch2.png" id="2_w2h3f"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="3_w2h3f"]
+[ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="4_6co03"]
 
 [node name="witch" type="CanvasLayer"]
-script = ExtResource("1_onceh")
+script = ExtResource("1_17fb0")
+metadata/timeline = "witch1"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 texture = ExtResource("2_w2h3f")
 
 [node name="InteractiveImages" parent="." instance=ExtResource("3_w2h3f")]
+
+[node name="pause_menu" parent="." instance=ExtResource("4_6co03")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 10

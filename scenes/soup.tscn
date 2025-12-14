@@ -1,6 +1,7 @@
-[gd_scene load_steps=75 format=3 uid="uid://cfcgeq37otkor"]
+[gd_scene load_steps=76 format=3 uid="uid://cfcgeq37otkor"]
 
-[ext_resource type="Script" uid="uid://bvnsiqgdkwt5b" path="res://scenes/soup.gd" id="1_gj4c3"]
+[ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_dasuy"]
+[ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="2_tkwxn"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="3_dh2wj"]
 [ext_resource type="Texture2D" uid="uid://crdrsvivi3758" path="res://assets/art/main_art/soup/folk_soup1.png" id="3_k4gy1"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="3_lw81e"]
@@ -586,7 +587,10 @@ animations = [{
 }]
 
 [node name="Soup" type="CanvasLayer"]
-script = ExtResource("1_gj4c3")
+script = ExtResource("1_dasuy")
+metadata/timeline = "soup1"
+
+[node name="pause_menu" parent="." instance=ExtResource("2_tkwxn")]
 
 [node name="background" type="TextureRect" parent="."]
 offset_top = -2.0

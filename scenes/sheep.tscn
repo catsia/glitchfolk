@@ -1,7 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://dgi14r5fa5o7s"]
+[gd_scene load_steps=20 format=3 uid="uid://dgi14r5fa5o7s"]
 
-[ext_resource type="Script" uid="uid://ctgyfgftg7srq" path="res://scenes/sheep.gd" id="1_gw4f6"]
+[ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_pt82y"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_n54i3"]
+[ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="2_xfjls"]
 [ext_resource type="Texture2D" uid="uid://20sf0t8torow" path="res://assets/art/main_art/sheep/road_main.png" id="3_5g05w"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="3_6qn06"]
 [ext_resource type="Texture2D" uid="uid://dnkmh0o6taafv" path="res://assets/art/main_art/sheep/road_final.png" id="4_4apx6"]
@@ -55,7 +56,10 @@ _data = {
 }
 
 [node name="sheep" type="CanvasLayer"]
-script = ExtResource("1_gw4f6")
+script = ExtResource("1_pt82y")
+metadata/timeline = "sheep1"
+
+[node name="pause_menu" parent="." instance=ExtResource("2_xfjls")]
 
 [node name="back" type="TextureRect" parent="."]
 offset_right = 1920.0
