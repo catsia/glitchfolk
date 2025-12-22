@@ -1,0 +1,36 @@
+[gd_scene load_steps=8 format=3 uid="uid://cl8jadjqnigqm"]
+
+[ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="1_2cs67"]
+[ext_resource type="Texture2D" uid="uid://vc4tekd0k7bw" path="res://assets/art/main_art/graveyard/mindmap_parallax.png" id="2_sl1mc"]
+[ext_resource type="Texture2D" uid="uid://b6ftxm7hg4qyu" path="res://assets/art/main_art/graveyard/mindmap_crack.png" id="3_wi8xs"]
+[ext_resource type="Script" uid="uid://c2s6jdt736vfw" path="res://scenes/crack.gd" id="4_871h2"]
+[ext_resource type="Texture2D" uid="uid://sh7a1kviywac" path="res://assets/art/main_art/graveyard/birds.png" id="5_msq6e"]
+[ext_resource type="Script" uid="uid://ghetvdh1bcv" path="res://scenes/parallax_2d.gd" id="5_r4wu0"]
+[ext_resource type="Texture2D" uid="uid://c1uvjrko364vx" path="res://assets/art/main_art/graveyard/feathers.png" id="5_wi8xs"]
+
+[node name="skull_insides" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_2cs67")
+
+[node name="mindmap" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_sl1mc")
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+script = ExtResource("5_r4wu0")
+
+[node name="feathers" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(739, 585)
+texture = ExtResource("5_wi8xs")
+
+[node name="birds" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(986, 459)
+texture = ExtResource("5_msq6e")
+
+[node name="crack" type="Sprite2D" parent="."]
+position = Vector2(1034, 729)
+texture = ExtResource("3_wi8xs")
+script = ExtResource("4_871h2")
