@@ -1,4 +1,4 @@
-[gd_scene load_steps=244 format=3 uid="uid://bnwkx3jd1b8cg"]
+[gd_scene load_steps=245 format=3 uid="uid://bnwkx3jd1b8cg"]
 
 [ext_resource type="Script" uid="uid://8nhu1kwixmam" path="res://scenes/interactive_images.gd" id="1_vqs1a"]
 [ext_resource type="Texture2D" uid="uid://d0fvtskwvwlod" path="res://assets/art/background/obrazy_ref1.png" id="2_b6xrf"]
@@ -19,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://b8q7s74yjg2b0" path="res://assets/art/obrazy/main_images/childhood_og.png" id="16_rdurm"]
 [ext_resource type="Texture2D" uid="uid://8wjkpcdrdhsf" path="res://assets/art/obrazy/animations/childhood_idle_wiped.png" id="16_vhour"]
 [ext_resource type="Texture2D" uid="uid://cqc3ora41yoyp" path="res://assets/art/obrazy/animations/folk_child_obraz.png" id="18_12h02"]
+[ext_resource type="Script" uid="uid://0hf2fmqgabf6" path="res://scripts/buttons/manage_buttons.gd" id="18_84f6e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_52a4t"]
 atlas = ExtResource("8_b6xrf")
@@ -1839,8 +1840,10 @@ eye_button = NodePath("../CanvasLayer/eye")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 10
+script = ExtResource("18_84f6e")
 
 [node name="flame" type="Button" parent="CanvasLayer"]
+visible = false
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 offset_left = 321.0
@@ -1851,6 +1854,7 @@ flat = true
 script = ExtResource("10_413m3")
 
 [node name="childhood" type="Button" parent="CanvasLayer"]
+visible = false
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 offset_left = 152.0
@@ -1860,6 +1864,7 @@ offset_bottom = 590.0
 script = ExtResource("10_413m3")
 
 [node name="eye" type="Button" parent="CanvasLayer"]
+visible = false
 modulate = Color(1, 1, 1, 0)
 offset_left = 1616.0
 offset_top = 423.0
