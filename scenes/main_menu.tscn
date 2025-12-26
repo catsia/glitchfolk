@@ -1,17 +1,18 @@
-[gd_scene load_steps=63 format=3 uid="uid://civyingfxsin4"]
+[gd_scene load_steps=71 format=3 uid="uid://civyingfxsin4"]
 
 [ext_resource type="Script" uid="uid://ckfj3eobqep2w" path="res://scripts/ui/main_menu.gd" id="1_l6cm7"]
-[ext_resource type="Texture2D" uid="uid://cd2rv3pqprrn3" path="res://assets/art/main_art/main_menu/background_gradient.png" id="2_flqon"]
+[ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_1ajci"]
 [ext_resource type="Texture2D" uid="uid://co86png2r0vlb" path="res://assets/art/main_art/main_menu/sun_final.png" id="3_8ln24"]
 [ext_resource type="Texture2D" uid="uid://bkurpafomp52w" path="res://assets/art/animations/sun_anim2.png" id="4_oa1go"]
 [ext_resource type="Texture2D" uid="uid://0a8cdv7fw25u" path="res://assets/art/animations/sun_anim.png" id="5_8ln24"]
-[ext_resource type="Script" uid="uid://cu43eresmpds2" path="res://scenes/anim_border.gd" id="6_rtw2f"]
 [ext_resource type="Texture2D" uid="uid://ct3x8sgkrmuks" path="res://assets/art/main_art/main_menu/menu_button.png" id="7_jk1qb"]
 [ext_resource type="Texture2D" uid="uid://e7wtm3x745b7" path="res://assets/art/main_art/main_menu/menu_grass.png" id="7_lgwnu"]
 [ext_resource type="Texture2D" uid="uid://b1866rnky0pvw" path="res://assets/art/main_art/main_menu/exit_button.png" id="8_lgwnu"]
 [ext_resource type="Texture2D" uid="uid://d0mgyntk7r5iq" path="res://assets/art/animations/match.png" id="9_jk1qb"]
 [ext_resource type="Script" uid="uid://4roa54nhnxkp" path="res://scenes/hover_anim.gd" id="10_5dd4i"]
 [ext_resource type="Texture2D" uid="uid://bevhltpgild2x" path="res://assets/art/main_art/main_menu/logo.png" id="12_flqon"]
+[ext_resource type="Texture2D" uid="uid://b6wrdoyfb8pt2" path="res://assets/art/main_art/main_menu/logo_cyrillic.png" id="13_rcqid"]
+[ext_resource type="Texture2D" uid="uid://d1vft73u7es3v" path="res://assets/art/main_art/main_menu/logo_anim.png" id="14_1ajci"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rtw2f"]
 atlas = ExtResource("5_8ln24")
@@ -84,12 +85,12 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0.033333335, 0.96666664),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1567, 227), Vector2(1567, 235)]
+"values": [Vector2(1567, 300), Vector2(1567, 325)]
 }
 
 [sub_resource type="Animation" id="Animation_rcqid"]
 resource_name = "rise"
-length = 7.0
+length = 3.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -97,10 +98,10 @@ tracks/0/path = NodePath("SunFinal:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 7),
+"times": PackedFloat32Array(0, 3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1567, 1283), Vector2(1567, 227)]
+"values": [Vector2(1567, 1283), Vector2(1567, 300)]
 }
 tracks/1/type = "method"
 tracks/1/imported = false
@@ -109,7 +110,7 @@ tracks/1/path = NodePath("sun")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(7),
+"times": PackedFloat32Array(3),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": ["idle"],
@@ -389,6 +390,48 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_wadof"]
+atlas = ExtResource("14_1ajci")
+region = Rect2(0, 0, 1200, 441)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b4jiv"]
+atlas = ExtResource("14_1ajci")
+region = Rect2(1200, 0, 1200, 441)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_68b7m"]
+atlas = ExtResource("14_1ajci")
+region = Rect2(0, 441, 1200, 441)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vanrq"]
+atlas = ExtResource("14_1ajci")
+region = Rect2(1200, 441, 1200, 441)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ybca7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wadof")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b4jiv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_68b7m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vanrq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="SystemFont" id="SystemFont_rcqid"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1ajci"]
+font = SubResource("SystemFont_rcqid")
+font_color = Color(0.4617368, 0.00045997355, 0.00025249392, 1)
+
 [node name="MainMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -404,14 +447,13 @@ layer = 10
 [node name="back" type="TextureRect" parent="CanvasLayer"]
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("2_flqon")
+texture = ExtResource("2_1ajci")
 
 [node name="anim_border1" type="AnimatedSprite2D" parent="CanvasLayer"]
 visible = false
 position = Vector2(436, 721)
 sprite_frames = SubResource("SpriteFrames_lgwnu")
 frame_progress = 0.99321485
-script = ExtResource("6_rtw2f")
 
 [node name="SunFinal" type="Sprite2D" parent="CanvasLayer"]
 position = Vector2(1567, 248)
@@ -428,7 +470,6 @@ visible = false
 position = Vector2(46, 829)
 sprite_frames = SubResource("SpriteFrames_5pajh")
 frame_progress = 0.43146056
-script = ExtResource("6_rtw2f")
 
 [node name="MenuGrass" type="Sprite2D" parent="CanvasLayer"]
 position = Vector2(1535, 841)
@@ -444,17 +485,6 @@ offset_right = 411.0
 offset_bottom = -277.0
 grow_vertical = 0
 metadata/_edit_group_ = true
-
-[node name="startButton" type="Button" parent="CanvasLayer/VBoxContainer"]
-visible = false
-layout_mode = 2
-action_mode = 0
-text = "Начать игру"
-
-[node name="quitButton" type="Button" parent="CanvasLayer/VBoxContainer"]
-visible = false
-layout_mode = 2
-text = "Выйти"
 
 [node name="startBut" type="TextureButton" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
@@ -486,10 +516,36 @@ script = ExtResource("10_5dd4i")
 button = NodePath("../VBoxContainer/exitButton")
 
 [node name="Logo" type="Sprite2D" parent="CanvasLayer"]
+visible = false
 position = Vector2(931, 273)
 texture = ExtResource("12_flqon")
 
-[connection signal="pressed" from="CanvasLayer/VBoxContainer/startButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="CanvasLayer/VBoxContainer/quitButton" to="." method="_on_quit_button_pressed"]
+[node name="LogoCyrillic" type="Sprite2D" parent="CanvasLayer"]
+visible = false
+position = Vector2(676, 257)
+texture = ExtResource("13_rcqid")
+
+[node name="logo_anim" type="AnimatedSprite2D" parent="CanvasLayer"]
+position = Vector2(666, 274)
+sprite_frames = SubResource("SpriteFrames_ybca7")
+autoplay = "default"
+frame_progress = 0.1666785
+
+[node name="playtest" type="Label" parent="CanvasLayer"]
+offset_left = 14.0
+offset_top = 1028.0
+offset_right = 90.0
+offset_bottom = 1051.0
+rotation = -1.5761353
+text = "Playtest 1"
+label_settings = SubResource("LabelSettings_1ajci")
+
+[node name="fade_out" type="TextureRect" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.68, 0.7600001)
+mouse_filter = 2
+texture = ExtResource("2_1ajci")
+
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/startBut" to="." method="_on_start_but_pressed"]
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/exitButton" to="." method="_on_exit_button_pressed"]

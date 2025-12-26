@@ -1804,10 +1804,10 @@ texture = ExtResource("3_i4cod")
 metadata/fade_in = true
 
 [node name="flame" type="AnimatedSprite2D" parent="."]
-visible = false
 position = Vector2(568, 534)
 sprite_frames = SubResource("SpriteFrames_fu5s6")
-animation = &"bigFire"
+animation = &"smallFire"
+frame_progress = 1.0
 script = ExtResource("5_a6g1q")
 
 [node name="flower" type="AnimatedSprite2D" parent="."]
