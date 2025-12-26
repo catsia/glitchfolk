@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=3 uid="uid://civyingfxsin4"]
+[gd_scene load_steps=72 format=3 uid="uid://civyingfxsin4"]
 
 [ext_resource type="Script" uid="uid://ckfj3eobqep2w" path="res://scripts/ui/main_menu.gd" id="1_l6cm7"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_1ajci"]
@@ -6,11 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://bkurpafomp52w" path="res://assets/art/animations/sun_anim2.png" id="4_oa1go"]
 [ext_resource type="Texture2D" uid="uid://0a8cdv7fw25u" path="res://assets/art/animations/sun_anim.png" id="5_8ln24"]
 [ext_resource type="Texture2D" uid="uid://ct3x8sgkrmuks" path="res://assets/art/main_art/main_menu/menu_button.png" id="7_jk1qb"]
-[ext_resource type="Texture2D" uid="uid://e7wtm3x745b7" path="res://assets/art/main_art/main_menu/menu_grass.png" id="7_lgwnu"]
 [ext_resource type="Texture2D" uid="uid://b1866rnky0pvw" path="res://assets/art/main_art/main_menu/exit_button.png" id="8_lgwnu"]
 [ext_resource type="Texture2D" uid="uid://d0mgyntk7r5iq" path="res://assets/art/animations/match.png" id="9_jk1qb"]
 [ext_resource type="Script" uid="uid://4roa54nhnxkp" path="res://scenes/hover_anim.gd" id="10_5dd4i"]
 [ext_resource type="Texture2D" uid="uid://bevhltpgild2x" path="res://assets/art/main_art/main_menu/logo.png" id="12_flqon"]
+[ext_resource type="Texture2D" uid="uid://lpytjgujfiue" path="res://assets/art/main_art/main_menu/menu_grass2.png" id="13_1ajci"]
+[ext_resource type="Texture2D" uid="uid://hgv5jarmrs6g" path="res://assets/art/main_art/sheep/sheep1.png" id="13_7b55j"]
 [ext_resource type="Texture2D" uid="uid://b6wrdoyfb8pt2" path="res://assets/art/main_art/main_menu/logo_cyrillic.png" id="13_rcqid"]
 [ext_resource type="Texture2D" uid="uid://d1vft73u7es3v" path="res://assets/art/main_art/main_menu/logo_anim.png" id="14_1ajci"]
 
@@ -471,10 +472,6 @@ position = Vector2(46, 829)
 sprite_frames = SubResource("SpriteFrames_5pajh")
 frame_progress = 0.43146056
 
-[node name="MenuGrass" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(1535, 841)
-texture = ExtResource("7_lgwnu")
-
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
 anchors_preset = 2
 anchor_top = 1.0
@@ -532,20 +529,35 @@ autoplay = "default"
 frame_progress = 0.1666785
 
 [node name="playtest" type="Label" parent="CanvasLayer"]
-offset_left = 14.0
-offset_top = 1028.0
+offset_left = 14.000002
+offset_top = 812.00006
 offset_right = 90.0
-offset_bottom = 1051.0
+offset_bottom = 835.00006
 rotation = -1.5761353
 text = "Playtest 1"
 label_settings = SubResource("LabelSettings_1ajci")
 
+[node name="eye1" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(431, 898.00006)
+scale = Vector2(0.1200006, 0.1600012)
+texture = ExtResource("13_7b55j")
+
+[node name="eye2" type="Sprite2D" parent="CanvasLayer/eye1"]
+position = Vector2(1199.9946, 31.249512)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("13_7b55j")
+
 [node name="fade_out" type="TextureRect" parent="CanvasLayer"]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 1920.0
+offset_bottom = 1210.5261
 scale = Vector2(0.68, 0.7600001)
 mouse_filter = 2
 texture = ExtResource("2_1ajci")
+
+[node name="MenuGrass" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(981.99994, 915.99994)
+scale = Vector2(0.9999999, 0.99999994)
+texture = ExtResource("13_1ajci")
 
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/startBut" to="." method="_on_start_but_pressed"]
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/exitButton" to="." method="_on_exit_button_pressed"]
