@@ -1,7 +1,6 @@
 extends Button
 
 var dialogSignalManager = preload("res://scripts/dialogic_signal_manager.gd")
-var timelineManager = preload("res://scripts/timeline_manager.gd")
 
 var dialog_manager
 var timeline_manager
@@ -13,7 +12,6 @@ var isPressed: bool = false
 func _ready():
 	SignalManager.play_all_interactive.connect(play_animation)
 	dialog_manager = dialogSignalManager.new()
-	timeline_manager = timelineManager.new()
 	InteractiveObjManager.register_object()
 	
 func after_pressed():

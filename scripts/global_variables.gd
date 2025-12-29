@@ -12,3 +12,5 @@ var stop_all = "stop_all_interactive"
 var play_all = "play_all_interactive"
 
 var resume_game = "resume_game_signal"
+
+var second_part_graveyard_scene = "graveyard2"

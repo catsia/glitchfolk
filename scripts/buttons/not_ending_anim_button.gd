@@ -1,8 +1,6 @@
 extends Button
 
 var dialogSignalManager = preload("res://scripts/dialogic_signal_manager.gd")
-var timelineManager = preload("res://scripts/timeline_manager.gd")
-
 
 @export var animation: AnimatedSprite2D
 

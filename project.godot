@@ -40,6 +40,7 @@ directories/dtl_directory={
 "father_stain": "res://timelines/chapter1/short/father_stain.dtl",
 "graveyard1": "res://timelines/chapter1/graveyard1.dtl",
 "graveyard2": "res://timelines/chapter1/graveyard2.dtl",
+"graveyard3": "res://timelines/chapter1/graveyard3.dtl",
 "grimoire": "res://timelines/chapter1/grimoire.dtl",
 "grimoire2": "res://timelines/chapter1/grimoire2.dtl",
 "gypsy1": "res://timelines/chapter1/short/gypsy1.dtl",
