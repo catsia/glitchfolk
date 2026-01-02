@@ -9,7 +9,11 @@ var has_started: bool = false
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	call_deferred("_center_mouse")
 	start_pos = position
+
+func _center_mouse():
+	get_viewport().warp_mouse(get_viewport_rect().size / 2)
 
 func _process(delta):
 	var mouse = get_global_mouse_position()

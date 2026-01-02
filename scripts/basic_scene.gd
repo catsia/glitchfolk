@@ -22,7 +22,7 @@ func _process(delta: float) -> void:
 		pause_game()
 
 func start_timeline():
-	if (self.get_meta("timeline")):
+	if (self.has_meta("timeline")):
 		Dialogic.start(self.get_meta("timeline"))
 
 func pause_game():

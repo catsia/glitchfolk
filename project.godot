@@ -23,6 +23,7 @@ InteractiveObjManager="*res://scripts/interactive_obj_manager.gd"
 ImageSceneManager="*res://scripts/image_scene_manager.gd"
 GlobalVariables="*res://scripts/global_variables.gd"
 SignalManager="*res://scripts/singletones/signal_manager.gd"
+ImageManager="*res://scripts/image_manager.gd"
 
 [dialogic]
 
