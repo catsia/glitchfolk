@@ -14,3 +14,7 @@ var play_all = "play_all_interactive"
 var resume_game = "resume_game_signal"
 
 var second_part_graveyard_scene = "graveyard2"
+
+var timeline_signal_arg = "timeline_name"
+
+var timeline_meta = "timeline"

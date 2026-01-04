@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dujrbldfix4gu"
+path="res://.godot/imported/eye_blank_bitmap.png-8e4b22e329a049f1be4ea874518178b9.res"
+
+[deps]
+
+source_file="res://assets/buttons/eye_blank_bitmap.png"
+dest_files=["res://.godot/imported/eye_blank_bitmap.png-8e4b22e329a049f1be4ea874518178b9.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

@@ -1,7 +1,13 @@
-[gd_scene load_steps=32 format=3 uid="uid://dwyia6nqt7yic"]
+[gd_scene load_steps=38 format=3 uid="uid://dwyia6nqt7yic"]
 
+[ext_resource type="Script" uid="uid://d3vq7frx2rfqp" path="res://scripts/preintro.gd" id="1_44sji"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="1_j47sk"]
 [ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_u8pmo"]
+[ext_resource type="BitMap" uid="uid://drejhm36ybxa6" path="res://assets/buttons/childhood_bitmap.png" id="2_8mf85"]
+[ext_resource type="Script" uid="uid://c2q0m5l8cw7ry" path="res://scripts/buttons/preintro_button.gd" id="2_202pr"]
+[ext_resource type="BitMap" uid="uid://dujrbldfix4gu" path="res://assets/buttons/eye_blank_bitmap.png" id="3_202pr"]
+[ext_resource type="BitMap" uid="uid://dvrve3n2mtxte" path="res://assets/buttons/flower_bitmap.png" id="3_igb2n"]
+[ext_resource type="BitMap" uid="uid://dryr10uevv6jp" path="res://assets/buttons/something_bitmap.png" id="4_h8022"]
 [ext_resource type="Texture2D" uid="uid://bhbktuw36fr4w" path="res://assets/art/obrazy/animations/preintro/something_blank-sheet.png" id="6_44sji"]
 [ext_resource type="Texture2D" uid="uid://x1oscq8bm3y" path="res://assets/art/obrazy/main_images/something_blank.png" id="6_pw2hx"]
 [ext_resource type="Texture2D" uid="uid://puf7n1fxkthe" path="res://assets/art/obrazy/animations/preintro/eye_blank_black_anim.png" id="7_iecda"]
@@ -200,7 +206,67 @@ animations = [{
 
 [node name="Preintro" type="Node2D"]
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="flower" type="TextureButton" parent="CanvasLayer"]
+visible = false
+offset_left = 1381.0
+offset_top = 66.0
+offset_right = 1512.0
+offset_bottom = 296.0
+disabled = true
+texture_click_mask = ExtResource("3_igb2n")
+ignore_texture_size = true
+script = ExtResource("2_202pr")
+metadata/timeline = "flower"
+
+[node name="childhood" type="TextureButton" parent="CanvasLayer"]
+visible = false
+offset_left = 150.0
+offset_top = 462.0
+offset_right = 274.0
+offset_bottom = 583.0
+disabled = true
+texture_click_mask = ExtResource("2_8mf85")
+script = ExtResource("2_202pr")
+metadata/timeline = "childhood"
+
+[node name="eye" type="TextureButton" parent="CanvasLayer"]
+visible = false
+offset_left = 1613.0
+offset_top = 421.0
+offset_right = 1803.0
+offset_bottom = 543.0
+disabled = true
+texture_click_mask = ExtResource("3_202pr")
+script = ExtResource("2_202pr")
+metadata/timeline = "eye"
+
+[node name="mask" type="TextureButton" parent="CanvasLayer"]
+visible = false
+offset_left = 322.0
+offset_top = 137.0
+offset_right = 492.0
+offset_bottom = 254.0
+disabled = true
+texture_click_mask = ExtResource("4_h8022")
+script = ExtResource("2_202pr")
+metadata/timeline = "mask"
+
+[node name="blade" type="TextureButton" parent="CanvasLayer"]
+visible = false
+offset_left = 819.0
+offset_top = 41.0
+offset_right = 989.0
+offset_bottom = 158.0
+disabled = true
+texture_click_mask = ExtResource("4_h8022")
+script = ExtResource("2_202pr")
+metadata/timeline = "blade"
+
 [node name="preintro" type="CanvasLayer" parent="."]
+layer = -10
 script = ExtResource("1_u8pmo")
 metadata/timeline = "test_preintro"
 
@@ -210,32 +276,32 @@ offset_bottom = 40.0
 texture = ExtResource("1_j47sk")
 
 [node name="childhood_blank" type="AnimatedSprite2D" parent="preintro"]
-visible = false
 position = Vector2(214, 529)
 sprite_frames = SubResource("SpriteFrames_202pr")
 frame_progress = 0.62309045
 
 [node name="something_blank2" type="AnimatedSprite2D" parent="preintro"]
-visible = false
 position = Vector2(902, 97)
 sprite_frames = SubResource("SpriteFrames_x4oiu")
 
 [node name="something_blank" type="AnimatedSprite2D" parent="preintro"]
-visible = false
 position = Vector2(404, 193)
 sprite_frames = SubResource("SpriteFrames_x4oiu")
 
 [node name="eye_blank" type="AnimatedSprite2D" parent="preintro"]
-visible = false
 position = Vector2(1708, 484)
 sprite_frames = SubResource("SpriteFrames_5x7bm")
 
 [node name="flower_blank" type="AnimatedSprite2D" parent="preintro"]
-visible = false
 position = Vector2(1443, 175)
 sprite_frames = SubResource("SpriteFrames_kahvx")
 
 [node name="pause_menu" parent="preintro" instance=ExtResource("7_pw2hx")]
+visible = false
+offset_left = -46.0
+offset_top = -18.0
+offset_right = -46.0
+offset_bottom = -18.0
 
 [node name="rest_of_it" type="Node2D" parent="preintro"]
 visible = false
@@ -280,3 +346,13 @@ texture = ExtResource("6_pw2hx")
 [node name="something_blank10" type="Sprite2D" parent="preintro/rest_of_it"]
 position = Vector2(1799, 798)
 texture = ExtResource("6_pw2hx")
+
+[node name="Node" type="Node" parent="preintro"]
+script = ExtResource("1_44sji")
+metadata/timeline = ""
+
+[connection signal="pressed" from="CanvasLayer/flower" to="CanvasLayer/flower" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/childhood" to="CanvasLayer/childhood" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/eye" to="CanvasLayer/eye" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/mask" to="CanvasLayer/mask" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/blade" to="CanvasLayer/blade" method="_on_pressed"]

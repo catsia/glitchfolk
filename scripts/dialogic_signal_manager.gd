@@ -1,7 +1,5 @@
 extends Node
 
-#var fade_duration = 1.5
-
 func _manage_dialogic_signal(context: Node, data: Dictionary):
 	if typeof(data) == TYPE_DICTIONARY:
 		if data.has("animation"):
@@ -18,13 +16,23 @@ func _manage_dialogic_signal(context: Node, data: Dictionary):
 			_set_state(context, data["set_state"])	
 		if data.has("next_timeline"):
 			_next_timeline(context, data["next_timeline"])	
-
+		if data.has("play_all_interactive"):
+			_play_all_interactive()
+		if data.has("stop_all"):
+			_stop_all()	
+			
 func _next_scene(context: Node, next_scene: String):
 	var path = "res://scenes/" + next_scene + ".tscn"
 	context.get_tree().change_scene_to_file(path)
 
 func _next_timeline(context: Node, next_timeline: String):
 	Dialogic.start_timeline(next_timeline)
+
+func _play_all_interactive():
+	SignalManager.emit_play_all_interactive()
+
+func _stop_all():
+	SignalManager.emit_stop_all()
 
 func _set_state(context: Node, argument: String):
 	var parts = argument.split("_")

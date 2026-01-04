@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://vc4tekd0k7bw" path="res://assets/art/main_art/graveyard/skull/mindmap_parallax.png" id="2_sl1mc"]
 [ext_resource type="Script" uid="uid://bosxcyjrb6ap6" path="res://scenes/mindmap.gd" id="3_sl1mc"]
 [ext_resource type="Script" uid="uid://dmw6cc32uqgsi" path="res://scripts/visiting_manager.gd" id="4_krt3p"]
-[ext_resource type="Script" uid="uid://doyje2gplgf4i" path="res://scripts/basic_area.gd" id="5_ejj50"]
+[ext_resource type="Script" uid="uid://doyje2gplgf4i" path="res://scripts/basic_area_enter.gd" id="5_ejj50"]
 [ext_resource type="Texture2D" uid="uid://sh7a1kviywac" path="res://assets/art/main_art/graveyard/skull/birds.png" id="5_msq6e"]
 [ext_resource type="Script" uid="uid://ghetvdh1bcv" path="res://scenes/parallax_2d.gd" id="5_r4wu0"]
 [ext_resource type="Texture2D" uid="uid://c1uvjrko364vx" path="res://assets/art/main_art/graveyard/skull/feathers.png" id="5_wi8xs"]
