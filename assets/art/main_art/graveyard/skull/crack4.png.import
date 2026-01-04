@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dad11tevvja2c"
-path="res://.godot/imported/mindmap.png-c7aa153670a808305426351909e8864b.ctex"
+uid="uid://cenvowub0ykyd"
+path="res://.godot/imported/crack4.png-70f6aed9ceb642543a1a76ea49ddc0cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/main_art/graveyard/mindmap.png"
-dest_files=["res://.godot/imported/mindmap.png-c7aa153670a808305426351909e8864b.ctex"]
+source_file="res://assets/art/main_art/graveyard/skull/crack4.png"
+dest_files=["res://.godot/imported/crack4.png-70f6aed9ceb642543a1a76ea49ddc0cb.ctex"]
 
 [params]
 

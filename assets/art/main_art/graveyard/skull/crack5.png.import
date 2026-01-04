@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckelav8140vif"
-path="res://.godot/imported/eye_closed.png-65e7453ce9e903a512d0cc8d73486332.ctex"
+uid="uid://bprxeg07rcrai"
+path="res://.godot/imported/crack5.png-c576c7627a6bc57694b6f8ef4830abbe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/placeholders/obrazy/eye_closed.png"
-dest_files=["res://.godot/imported/eye_closed.png-65e7453ce9e903a512d0cc8d73486332.ctex"]
+source_file="res://assets/art/main_art/graveyard/skull/crack5.png"
+dest_files=["res://.godot/imported/crack5.png-c576c7627a6bc57694b6f8ef4830abbe.ctex"]
 
 [params]
 

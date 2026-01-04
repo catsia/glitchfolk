@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://34dxdewvx1wc"
-path="res://.godot/imported/flame2anim.png-352e8e1ef4413790154b1e25523bc77f.ctex"
+uid="uid://ygip6lxn4tou"
+path="res://.godot/imported/crack_sharp.png-7da1a1a01d51945d2165e7edb78b2fff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/placeholders/obrazy/flame2anim.png"
-dest_files=["res://.godot/imported/flame2anim.png-352e8e1ef4413790154b1e25523bc77f.ctex"]
+source_file="res://assets/art/main_art/graveyard/skull/crack_sharp.png"
+dest_files=["res://.godot/imported/crack_sharp.png-7da1a1a01d51945d2165e7edb78b2fff.ctex"]
 
 [params]
 

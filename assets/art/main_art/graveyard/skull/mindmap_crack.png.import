@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vc4tekd0k7bw"
-path="res://.godot/imported/mindmap_parallax.png-b1a13fb89477ff40e194bef5c2007976.ctex"
+uid="uid://b6ftxm7hg4qyu"
+path="res://.godot/imported/mindmap_crack.png-c8e3b62503be371381f3c19210978d59.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/main_art/graveyard/mindmap_parallax.png"
-dest_files=["res://.godot/imported/mindmap_parallax.png-b1a13fb89477ff40e194bef5c2007976.ctex"]
+source_file="res://assets/art/main_art/graveyard/skull/mindmap_crack.png"
+dest_files=["res://.godot/imported/mindmap_crack.png-c8e3b62503be371381f3c19210978d59.ctex"]
 
 [params]
 

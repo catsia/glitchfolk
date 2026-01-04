@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6ftxm7hg4qyu"
-path="res://.godot/imported/mindmap_crack.png-19495a46c4b0e8231bc4b8b20e695e8f.ctex"
+uid="uid://c1uvjrko364vx"
+path="res://.godot/imported/feathers.png-4984a82b1262443dbc41b72c19e61627.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/main_art/graveyard/mindmap_crack.png"
-dest_files=["res://.godot/imported/mindmap_crack.png-19495a46c4b0e8231bc4b8b20e695e8f.ctex"]
+source_file="res://assets/art/main_art/graveyard/skull/feathers.png"
+dest_files=["res://.godot/imported/feathers.png-4984a82b1262443dbc41b72c19e61627.ctex"]
 
 [params]
 

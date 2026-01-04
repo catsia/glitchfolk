@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmjlvi84mqclo"
-path="res://.godot/imported/crack2.png-e1cfb136ab1ccc96a776e4453bfc23bf.ctex"
+uid="uid://cdfb2mn3322ti"
+path="res://.godot/imported/crack2.png-5c79509b8e3f6a22c77a25e1c9683b24.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/placeholders/crack2.png"
-dest_files=["res://.godot/imported/crack2.png-e1cfb136ab1ccc96a776e4453bfc23bf.ctex"]
+source_file="res://assets/art/main_art/graveyard/skull/crack2.png"
+dest_files=["res://.godot/imported/crack2.png-5c79509b8e3f6a22c77a25e1c9683b24.ctex"]
 
 [params]
 

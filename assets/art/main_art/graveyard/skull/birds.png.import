@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://im4gr7ra8i6m"
-path="res://.godot/imported/flame1.png-29740ab66c0dc0f4aecc9679ca0d8047.ctex"
+uid="uid://sh7a1kviywac"
+path="res://.godot/imported/birds.png-932e77ab795e055a5f807b243c8dbece.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/placeholders/obrazy/flame1.png"
-dest_files=["res://.godot/imported/flame1.png-29740ab66c0dc0f4aecc9679ca0d8047.ctex"]
+source_file="res://assets/art/main_art/graveyard/skull/birds.png"
+dest_files=["res://.godot/imported/birds.png-932e77ab795e055a5f807b243c8dbece.ctex"]
 
 [params]
 

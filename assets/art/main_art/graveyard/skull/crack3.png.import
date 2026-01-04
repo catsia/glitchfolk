@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sh7a1kviywac"
-path="res://.godot/imported/birds.png-9653b6483ae5603987b833837f0c2189.ctex"
+uid="uid://bjaxv7eylxsxd"
+path="res://.godot/imported/crack3.png-3f5f9892f82ec2cfb8a2bf3431774646.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/main_art/graveyard/birds.png"
-dest_files=["res://.godot/imported/birds.png-9653b6483ae5603987b833837f0c2189.ctex"]
+source_file="res://assets/art/main_art/graveyard/skull/crack3.png"
+dest_files=["res://.godot/imported/crack3.png-3f5f9892f82ec2cfb8a2bf3431774646.ctex"]
 
 [params]
 
