@@ -1,9 +1,5 @@
 [signal arg_type="dict" arg="{"animation":"grimoire_dust"}"]
-[signal arg_type="dict" arg="{"animation":"header"}"]
-[signal arg_type="dict" arg="{"animation":"paragraph1"}"]
-[signal arg_type="dict" arg="{"animation":"paragraph2"}"]
-[signal arg_type="dict" arg="{"animation":"paragraph3"}"]
-[signal arg_type="dict" arg="{"animation":"paragraph4"}"]
+
 [color=#FF0000]ДЕНЬ 2. ЭВОКАЦИЯ[/color]
 
 Засохшая земля оседает папиллярными узорами на теле пергамента. 
@@ -13,7 +9,7 @@
 Как хищник, испытывающий слабость перед мясом с кровью, К. алкал превыше всего те знания, что по степени своей дерзости и святотатства сравнимы были лишь с его мятежным нравом. 
 Прямо сейчас они находились перед ним.
 
-[i](включается глаз, подсвечивает все параграфы. клик на заголовок)[/i] 
+
 
 — Су... [color=#8B0000][url="gri1"]Суммонин’[/url][/color]... 
 

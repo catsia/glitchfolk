@@ -5,6 +5,8 @@
 И [i]ни капли[/i] жалости.
 Беспристрастность – вот главная ценность моей любви.
 И сейчас я тебе её покажу.
+[signal arg_type="dict" arg="{"hide_image":"tech_back"}"]
+
 
 [signal arg_type="dict" arg="{"animation":"eye_blank"}"]
 [signal arg_type="dict" arg="{"animation":"childhood_blank"}"]

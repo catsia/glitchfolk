@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://dwyia6nqt7yic"]
+[gd_scene load_steps=47 format=3 uid="uid://dwyia6nqt7yic"]
 
 [ext_resource type="Script" uid="uid://d3vq7frx2rfqp" path="res://scripts/preintro.gd" id="1_44sji"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="1_j47sk"]
@@ -9,11 +9,11 @@
 [ext_resource type="BitMap" uid="uid://dvrve3n2mtxte" path="res://assets/buttons/flower_bitmap.png" id="3_igb2n"]
 [ext_resource type="BitMap" uid="uid://dryr10uevv6jp" path="res://assets/buttons/something_bitmap.png" id="4_h8022"]
 [ext_resource type="Texture2D" uid="uid://bhbktuw36fr4w" path="res://assets/art/obrazy/animations/preintro/something_blank-sheet.png" id="6_44sji"]
-[ext_resource type="Texture2D" uid="uid://x1oscq8bm3y" path="res://assets/art/obrazy/main_images/something_blank.png" id="6_pw2hx"]
 [ext_resource type="Texture2D" uid="uid://puf7n1fxkthe" path="res://assets/art/obrazy/animations/preintro/eye_blank_black_anim.png" id="7_iecda"]
 [ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="7_pw2hx"]
 [ext_resource type="Texture2D" uid="uid://b1eg4g03eupcl" path="res://assets/art/obrazy/animations/preintro/child_blank.png" id="7_u8pmo"]
 [ext_resource type="Texture2D" uid="uid://etlis68vu4h3" path="res://assets/art/obrazy/animations/preintro/flower_blank_anim.png" id="8_iecda"]
+[ext_resource type="Texture2D" uid="uid://csrfbc0bacpbr" path="res://assets/art/obrazy/animations/preintro/rasp_intro-sheet.png" id="9_202pr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iecda"]
 atlas = ExtResource("7_u8pmo")
@@ -69,16 +69,20 @@ animations = [{
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5x7bm"]
-atlas = ExtResource("6_44sji")
-region = Rect2(0, 0, 162, 114)
+atlas = ExtResource("9_202pr")
+region = Rect2(0, 0, 72, 78)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o5itn"]
-atlas = ExtResource("6_44sji")
-region = Rect2(162, 0, 162, 114)
+atlas = ExtResource("9_202pr")
+region = Rect2(72, 0, 72, 78)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b81pc"]
-atlas = ExtResource("6_44sji")
-region = Rect2(0, 114, 162, 114)
+atlas = ExtResource("9_202pr")
+region = Rect2(0, 78, 72, 78)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28kk4"]
+atlas = ExtResource("9_202pr")
+region = Rect2(72, 78, 72, 78)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x4oiu"]
 animations = [{
@@ -90,14 +94,20 @@ animations = [{
 "texture": SubResource("AtlasTexture_o5itn")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5x7bm")
+"texture": SubResource("AtlasTexture_b81pc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_28kk4")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_b81pc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o5itn")
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 7.0
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kahvx"]
@@ -159,7 +169,36 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 7.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ellrb"]
+atlas = ExtResource("6_44sji")
+region = Rect2(0, 0, 162, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p6dx3"]
+atlas = ExtResource("6_44sji")
+region = Rect2(162, 0, 162, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dvdw"]
+atlas = ExtResource("6_44sji")
+region = Rect2(0, 114, 162, 114)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hnodo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ellrb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p6dx3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7dvdw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_202pr"]
@@ -201,7 +240,36 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 8.0
+"speed": 7.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4oiu"]
+atlas = ExtResource("6_44sji")
+region = Rect2(0, 0, 162, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mp08u"]
+atlas = ExtResource("6_44sji")
+region = Rect2(162, 0, 162, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jedm8"]
+atlas = ExtResource("6_44sji")
+region = Rect2(0, 114, 162, 114)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_28kk4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4oiu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mp08u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jedm8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
 }]
 
 [node name="Preintro" type="Node2D"]
@@ -280,21 +348,81 @@ position = Vector2(214, 529)
 sprite_frames = SubResource("SpriteFrames_202pr")
 frame_progress = 0.62309045
 
-[node name="something_blank2" type="AnimatedSprite2D" parent="preintro"]
-position = Vector2(902, 97)
-sprite_frames = SubResource("SpriteFrames_x4oiu")
-
-[node name="something_blank" type="AnimatedSprite2D" parent="preintro"]
-position = Vector2(404, 193)
+[node name="rasp_blank" type="AnimatedSprite2D" parent="preintro"]
+position = Vector2(427, 201)
 sprite_frames = SubResource("SpriteFrames_x4oiu")
 
 [node name="eye_blank" type="AnimatedSprite2D" parent="preintro"]
 position = Vector2(1708, 484)
 sprite_frames = SubResource("SpriteFrames_5x7bm")
 
+[node name="something_blank" type="AnimatedSprite2D" parent="preintro"]
+position = Vector2(949, 99)
+sprite_frames = SubResource("SpriteFrames_hnodo")
+
 [node name="flower_blank" type="AnimatedSprite2D" parent="preintro"]
 position = Vector2(1443, 175)
 sprite_frames = SubResource("SpriteFrames_kahvx")
+
+[node name="puf" type="AnimatedSprite2D" parent="preintro"]
+visible = false
+position = Vector2(162, 335)
+sprite_frames = SubResource("SpriteFrames_28kk4")
+
+[node name="puf2" type="AnimatedSprite2D" parent="preintro"]
+visible = false
+position = Vector2(497, 385)
+sprite_frames = SubResource("SpriteFrames_28kk4")
+
+[node name="puf3" type="AnimatedSprite2D" parent="preintro"]
+visible = false
+position = Vector2(151, 771)
+sprite_frames = SubResource("SpriteFrames_28kk4")
+
+[node name="puf4" type="AnimatedSprite2D" parent="preintro"]
+visible = false
+position = Vector2(1374, 427)
+sprite_frames = SubResource("SpriteFrames_28kk4")
+
+[node name="puf5" type="AnimatedSprite2D" parent="preintro"]
+visible = false
+position = Vector2(1737, 197)
+sprite_frames = SubResource("SpriteFrames_28kk4")
+
+[node name="puf6" type="AnimatedSprite2D" parent="preintro"]
+visible = false
+position = Vector2(1503, 672)
+sprite_frames = SubResource("SpriteFrames_28kk4")
+
+[node name="puf7" type="AnimatedSprite2D" parent="preintro"]
+visible = false
+position = Vector2(1193, 109)
+sprite_frames = SubResource("SpriteFrames_28kk4")
+
+[node name="puf8" type="AnimatedSprite2D" parent="preintro"]
+visible = false
+position = Vector2(180, 119)
+sprite_frames = SubResource("SpriteFrames_28kk4")
+
+[node name="puf9" type="AnimatedSprite2D" parent="preintro"]
+visible = false
+position = Vector2(1760, 740)
+sprite_frames = SubResource("SpriteFrames_28kk4")
+
+[node name="puf10" type="AnimatedSprite2D" parent="preintro"]
+visible = false
+position = Vector2(653, 119)
+sprite_frames = SubResource("SpriteFrames_28kk4")
+
+[node name="puf11" type="AnimatedSprite2D" parent="preintro"]
+visible = false
+position = Vector2(497, 678)
+sprite_frames = SubResource("SpriteFrames_28kk4")
+
+[node name="tech_back" type="Sprite2D" parent="preintro"]
+position = Vector2(960, 158)
+texture = ExtResource("1_j47sk")
+metadata/fade_out = true
 
 [node name="pause_menu" parent="preintro" instance=ExtResource("7_pw2hx")]
 visible = false
@@ -302,50 +430,6 @@ offset_left = -46.0
 offset_top = -18.0
 offset_right = -46.0
 offset_bottom = -18.0
-
-[node name="rest_of_it" type="Node2D" parent="preintro"]
-visible = false
-metadata/fade_in = true
-
-[node name="something_blank" type="Sprite2D" parent="preintro/rest_of_it"]
-position = Vector2(437, 227)
-texture = ExtResource("6_pw2hx")
-
-[node name="something_blank2" type="Sprite2D" parent="preintro/rest_of_it"]
-position = Vector2(201, 107)
-texture = ExtResource("6_pw2hx")
-
-[node name="something_blank3" type="Sprite2D" parent="preintro/rest_of_it"]
-position = Vector2(1491, 434)
-texture = ExtResource("6_pw2hx")
-
-[node name="something_blank4" type="Sprite2D" parent="preintro/rest_of_it"]
-position = Vector2(1769, 181)
-texture = ExtResource("6_pw2hx")
-
-[node name="something_blank5" type="Sprite2D" parent="preintro/rest_of_it"]
-position = Vector2(179, 331)
-texture = ExtResource("6_pw2hx")
-
-[node name="something_blank6" type="Sprite2D" parent="preintro/rest_of_it"]
-position = Vector2(394, 741)
-texture = ExtResource("6_pw2hx")
-
-[node name="something_blank7" type="Sprite2D" parent="preintro/rest_of_it"]
-position = Vector2(464, 427)
-texture = ExtResource("6_pw2hx")
-
-[node name="something_blank8" type="Sprite2D" parent="preintro/rest_of_it"]
-position = Vector2(673, 102)
-texture = ExtResource("6_pw2hx")
-
-[node name="something_blank9" type="Sprite2D" parent="preintro/rest_of_it"]
-position = Vector2(1526, 725)
-texture = ExtResource("6_pw2hx")
-
-[node name="something_blank10" type="Sprite2D" parent="preintro/rest_of_it"]
-position = Vector2(1799, 798)
-texture = ExtResource("6_pw2hx")
 
 [node name="Node" type="Node" parent="preintro"]
 script = ExtResource("1_44sji")

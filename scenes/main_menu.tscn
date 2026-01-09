@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=3 uid="uid://civyingfxsin4"]
+[gd_scene load_steps=73 format=3 uid="uid://civyingfxsin4"]
 
 [ext_resource type="Script" uid="uid://ckfj3eobqep2w" path="res://scripts/ui/main_menu.gd" id="1_l6cm7"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_1ajci"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://hgv5jarmrs6g" path="res://assets/art/main_art/sheep/sheep1.png" id="13_7b55j"]
 [ext_resource type="Texture2D" uid="uid://b6wrdoyfb8pt2" path="res://assets/art/main_art/main_menu/logo_cyrillic.png" id="13_rcqid"]
 [ext_resource type="Texture2D" uid="uid://d1vft73u7es3v" path="res://assets/art/main_art/main_menu/logo_anim.png" id="14_1ajci"]
+[ext_resource type="Texture2D" uid="uid://bb6i2lglul52w" path="res://assets/art/placeholders/texture_back_transp.png" id="14_7b55j"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rtw2f"]
 atlas = ExtResource("5_8ln24")
@@ -553,6 +554,12 @@ offset_bottom = 1210.5261
 scale = Vector2(0.68, 0.7600001)
 mouse_filter = 2
 texture = ExtResource("2_1ajci")
+
+[node name="back_transp" type="TextureRect" parent="CanvasLayer"]
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+texture = ExtResource("14_7b55j")
 
 [node name="MenuGrass" type="Sprite2D" parent="CanvasLayer"]
 position = Vector2(981.99994, 915.99994)
