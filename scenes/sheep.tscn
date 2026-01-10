@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dgi14r5fa5o7s"]
+[gd_scene load_steps=21 format=3 uid="uid://dgi14r5fa5o7s"]
 
 [ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_pt82y"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_n54i3"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://cvwppwnvrxpw5" path="res://assets/art/main_art/characters_art/smile_short.png" id="12_jjfva"]
 [ext_resource type="Texture2D" uid="uid://d33iajcqa7tvl" path="res://assets/art/main_art/characters_art/staff.png" id="12_wkjkd"]
 [ext_resource type="Texture2D" uid="uid://dm32is5au1rlp" path="res://assets/art/main_art/characters_art/cloth.png" id="13_jjfva"]
+[ext_resource type="AudioStream" uid="uid://rwyt1iukexf1" path="res://assets/sound/music/tsygan.mp3" id="17_xfjls"]
 
 [sub_resource type="Animation" id="Animation_s32ju"]
 length = 0.001
@@ -166,3 +167,7 @@ position = Vector2(760, 451)
 texture = ExtResource("13_jjfva")
 metadata/fade_in = true
 metadata/fade_out = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_xfjls")
+autoplay = true

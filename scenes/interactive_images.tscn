@@ -1868,6 +1868,7 @@ texture = ExtResource("3_i4cod")
 metadata/fade_in = true
 
 [node name="flame" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(568, 534)
 sprite_frames = SubResource("SpriteFrames_fu5s6")
 animation = &"smallFire"
@@ -1888,6 +1889,7 @@ animation = &"idle_clean"
 script = ExtResource("5_a6g1q")
 
 [node name="raspberry" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(427, 301)
 sprite_frames = SubResource("SpriteFrames_fn62r")
 animation = &"idle_fast"
