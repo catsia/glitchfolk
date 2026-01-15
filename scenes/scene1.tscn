@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://wn7rtr0ktpeh"]
+[gd_scene load_steps=53 format=3 uid="uid://wn7rtr0ktpeh"]
 
 [ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_ug83y"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_td60s"]
@@ -10,6 +10,9 @@
 [ext_resource type="Script" uid="uid://rcj1ra52lc55" path="res://scenes/next_scene_button.gd" id="10_lfno2"]
 [ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="11_rayba"]
 [ext_resource type="Texture2D" uid="uid://cq0l14b5py32q" path="res://assets/art/animations/graveyard/willow_glitch.png" id="11_ug83y"]
+[ext_resource type="Texture2D" uid="uid://b5nvhtj0bk0g6" path="res://assets/art/main_art/splashart/splash.png" id="12_jyay1"]
+[ext_resource type="Texture2D" uid="uid://iovrsew4pvfe" path="res://assets/art/main_art/splashart/splash_roll.png" id="13_71dqt"]
+[ext_resource type="Texture2D" uid="uid://tuu56hjtsyow" path="res://assets/art/main_art/splashart/exgumation.png" id="14_4gngc"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="17_k2ng3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cg05x"]
@@ -500,6 +503,30 @@ frame_progress = 0.67724
 metadata/fade_in = true
 
 [node name="InteractiveImages" parent="." instance=ExtResource("17_k2ng3")]
+
+[node name="back" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_td60s")
+
+[node name="day" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(783, 341)
+texture = ExtResource("12_jyay1")
+
+[node name="2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1235, 352)
+texture = ExtResource("13_71dqt")
+region_enabled = true
+region_rect = Rect2(0, 394.30402, 117, 205.69598)
+
+[node name="exhumation" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(955, 651)
+texture = ExtResource("14_4gngc")
+metadata/fade_in = true
 
 [connection signal="pressed" from="Control/btn_father_mak" to="." method="_on_btn_father_mak_pressed"]
 [connection signal="pressed" from="Control/btn_father_mak" to="Control/btn_father_mak" method="_on_pressed"]

@@ -344,23 +344,28 @@ offset_bottom = 40.0
 texture = ExtResource("1_j47sk")
 
 [node name="childhood_blank" type="AnimatedSprite2D" parent="preintro"]
+visible = false
 position = Vector2(214, 529)
 sprite_frames = SubResource("SpriteFrames_202pr")
 frame_progress = 0.62309045
 
 [node name="rasp_blank" type="AnimatedSprite2D" parent="preintro"]
+visible = false
 position = Vector2(427, 201)
 sprite_frames = SubResource("SpriteFrames_x4oiu")
 
 [node name="eye_blank" type="AnimatedSprite2D" parent="preintro"]
+visible = false
 position = Vector2(1708, 484)
 sprite_frames = SubResource("SpriteFrames_5x7bm")
 
 [node name="something_blank" type="AnimatedSprite2D" parent="preintro"]
+visible = false
 position = Vector2(949, 99)
 sprite_frames = SubResource("SpriteFrames_hnodo")
 
 [node name="flower_blank" type="AnimatedSprite2D" parent="preintro"]
+visible = false
 position = Vector2(1443, 175)
 sprite_frames = SubResource("SpriteFrames_kahvx")
 
@@ -420,6 +425,7 @@ position = Vector2(497, 678)
 sprite_frames = SubResource("SpriteFrames_28kk4")
 
 [node name="tech_back" type="Sprite2D" parent="preintro"]
+visible = false
 position = Vector2(960, 158)
 texture = ExtResource("1_j47sk")
 metadata/fade_out = true
