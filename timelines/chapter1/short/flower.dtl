@@ -17,7 +17,7 @@ set {questions_asked} += 1.0
 	set {child} += 1.0
 	– И бился бы как дурак головой об стену. Условие вопросов – такой же закон, как сила гравитации. Несомненно, твоё намерение исходит из добрых побуждений, а инициативность достойна похвалы, только они не спасут ни от падения со скалы, ни от предательства.
 – Поторопись. У нас мало времени. В любой момент всё может закончиться.
-[signal arg_type="dict" arg="{"hide_animation":"flower_blank"}"]
+[signal arg_type="dict" arg="{"stop_animation":"flower_blank"}"]
 if {questions_asked} == 5.0:
 	[signal arg_type="dict" arg="{"next_timeline":"preintro1"}"]
 [signal arg_type="dict" arg="{"play_all_interactive":""}"]

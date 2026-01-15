@@ -10,7 +10,7 @@
 
 [signal arg_type="dict" arg="{"animation":"eye_blank"}"]
 [signal arg_type="dict" arg="{"animation":"childhood_blank"}"]
-[signal arg_type="dict" arg="{"animation":"something_blank"}"]
+[signal arg_type="dict" arg="{"animation":"rasp_blank"}"]
 [signal arg_type="dict" arg="{"animation":"something_blank2"}"]
 [signal arg_type="dict" arg="{"animation":"flower_blank"}"]
 [signal arg_type="dict" arg="{"play_all_interactive":""}"]

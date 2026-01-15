@@ -17,7 +17,7 @@ set {questions_asked} += 1.0
 	– Лучше пустить жизнь на самотёк? Грань между резигнацией и пассивностью тоньше речной корки льда по весне. Иногда достаточно просто стоять на месте, чтобы лёд треснул, и течение унесло тебя навсегда.
 
 – …Ты слишком долго думаешь. Мы не можем сейчас этого позволить. Дальше.
-[signal arg_type="dict" arg="{"hide_animation":"something_blank"}"]
+[signal arg_type="dict" arg="{"stop_animation":"something_blank"}"]
 if {questions_asked} == 5.0:
 	[signal arg_type="dict" arg="{"next_timeline":"preintro1"}"]
 [signal arg_type="dict" arg="{"play_all_interactive":""}"]

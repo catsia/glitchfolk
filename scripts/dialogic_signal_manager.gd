@@ -10,6 +10,8 @@ func _manage_dialogic_signal(context: Node, data: Dictionary):
 			_hide_image(context, data["hide_image"])
 		if data.has("hide_animation"):
 			_hide_animation(context, data["hide_animation"])
+		if data.has("stop_animation"):
+			_stop_animation(context, data["stop_animation"])
 		if data.has("next_scene"):
 			_next_scene(context, data["next_scene"])
 		if data.has("set_state"):

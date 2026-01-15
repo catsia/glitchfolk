@@ -16,7 +16,7 @@ set {questions_asked} += 1.0
 	set {notstupid} += 1.0
 	set {child} += 0.5
 	– Интересно, заметил ли ты сам, сколь защищающимся стал при ответе? Я задал обычный вопрос, а тебя словно в угол зажали.
-[signal arg_type="dict" arg="{"hide_animation":"something_blank2"}"]
+[signal arg_type="dict" arg="{"stop_animation":"something_blank2"}"]
 if {questions_asked} == 5.0:
 	[signal arg_type="dict" arg="{"next_timeline":"preintro1"}"]
 [signal arg_type="dict" arg="{"play_all_interactive":""}"]

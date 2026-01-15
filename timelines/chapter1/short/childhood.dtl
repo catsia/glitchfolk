@@ -20,7 +20,7 @@ set {questions_asked} += 1.0
 – Тихо! Молчи…
 ...
 Кажется, всё в порядке. Продолжим же да поскорей.
-[signal arg_type="dict" arg="{"hide_animation":"childhood_blank"}"]
+[signal arg_type="dict" arg="{"stop_animation":"childhood_blank"}"]
 if {questions_asked} == 5.0:
 	[signal arg_type="dict" arg="{"next_timeline":"preintro1"}"]
 [signal arg_type="dict" arg="{"play_all_interactive":""}"]

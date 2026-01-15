@@ -19,7 +19,7 @@ set {questions_asked} += 1.0
 	– Как ловко придумано. Тебе станет грустно, когда узнаешь, что в жизни так не бывает…
 
 – Я слышу скрип половиц за дверью. Скорее, дальше!
-[signal arg_type="dict" arg="{"hide_animation":"eye_blank"}"]
+[signal arg_type="dict" arg="{"stop_animation":"eye_blank"}"]
 if {questions_asked} == 5.0:
 	[signal arg_type="dict" arg="{"next_timeline":"preintro1"}"]
 [signal arg_type="dict" arg="{"play_all_interactive":""}"]
