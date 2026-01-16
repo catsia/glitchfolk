@@ -8,7 +8,6 @@ var first_mouse_pos: Vector2
 var has_started: bool = false
 
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	call_deferred("_center_mouse")
 	start_pos = position
 

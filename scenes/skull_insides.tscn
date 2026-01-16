@@ -27,6 +27,7 @@ height = 118.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 script = ExtResource("1_ujsjm")
+metadata/hidden = true
 
 [node name="pause_menu" parent="CanvasLayer" instance=ExtResource("2_64oey")]
 

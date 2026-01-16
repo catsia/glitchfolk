@@ -42,15 +42,7 @@ func _set_state(context: Node, argument: String):
 		ImageSceneManager.set_image_state_and_play(parts[0], parts[1])
 
 func _play_animation(context: Node, signal_name: String):
-	var animation =  context.get_node_or_null(signal_name)
-	if animation:
-		if animation.has_meta("fade_in"):
-			ImageManager.fade_in(context, animation)
-		else:
-			animation.visible = true
-		animation.play()
-	else:
-		print("No animation ", signal_name)
+	AnimationManager._play_animation(context, signal_name)
 
 func _show_image(context: Node, image_path: String):
 	ImageManager.show_image(context, image_path)
@@ -60,19 +52,8 @@ func _hide_image(context: Node, image_path: String):
 	ImageManager.hide_image(context, image_path)
 
 func _hide_animation(context: Node, signal_name: String):
-	var animation = context.get_node_or_null(signal_name)
-	if animation:
-		if animation.has_meta("fade_out"):
-			ImageManager.fade_out(context, animation)
-		else:
-			animation.visible = false
-	else:
-		print("No animation ", signal_name)	
+	AnimationManager._hide_animation(context, signal_name)
 		
 func _stop_animation(context: Node, signal_name: String):
-	var animation = context.get_node_or_null(signal_name)
-	if animation:
-		animation.stop()
-	else:
-		print("No animation ", signal_name)	
+	AnimationManager._stop_animation(context, signal_name)
 		

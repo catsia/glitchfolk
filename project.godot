@@ -24,6 +24,7 @@ ImageSceneManager="*res://scripts/image_scene_manager.gd"
 GlobalVariables="*res://scripts/global_variables.gd"
 SignalManager="*res://scripts/singletones/signal_manager.gd"
 ImageManager="*res://scripts/image_manager.gd"
+AnimationManager="*res://scripts/animation_manager.gd"
 
 [dialogic]
 

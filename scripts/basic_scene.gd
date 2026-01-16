@@ -9,6 +9,7 @@ var dialogSignalManager = preload("res://scripts/dialogic_signal_manager.gd")
 var paused = false
 
 func _ready():
+	set_mouse()
 	dialog_manager = dialogSignalManager.new()
 	SignalManager.resume_game_signal.connect(pause_game)
 	Dialogic.signal_event.connect(_on_dialogic_signal)
@@ -34,3 +35,14 @@ func pause_game():
 		Engine.time_scale = 0
 	paused = !paused
 	Dialogic.paused = paused
+	
+func set_mouse():
+	if(!self.has_meta(GlobalVariables.hidden_mouse_meta)):
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		return
+		
+	if(self.get_meta(GlobalVariables.hidden_mouse_meta)):
+		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	else:	
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		

@@ -18,3 +18,5 @@ var second_part_graveyard_scene = "graveyard2"
 var timeline_signal_arg = "timeline_name"
 
 var timeline_meta = "timeline"
+
+var hidden_mouse_meta = "hidden"
