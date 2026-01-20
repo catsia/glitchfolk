@@ -340,10 +340,9 @@ script = ExtResource("1_u8pmo")
 metadata/timeline = "test_preintro"
 
 [node name="back" type="TextureRect" parent="preintro"]
-offset_left = 45.0
-offset_top = 16.0
-offset_right = 1965.0
-offset_bottom = 1096.0
+offset_top = -1.0
+offset_right = 1920.0
+offset_bottom = 1079.0
 texture = ExtResource("1_j47sk")
 
 [node name="childhood_blank" type="AnimatedSprite2D" parent="preintro"]

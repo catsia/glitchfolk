@@ -1,4 +1,4 @@
-[gd_scene load_steps=247 format=3 uid="uid://bnwkx3jd1b8cg"]
+[gd_scene load_steps=256 format=3 uid="uid://bnwkx3jd1b8cg"]
 
 [ext_resource type="Script" uid="uid://8nhu1kwixmam" path="res://scenes/interactive_images.gd" id="1_vqs1a"]
 [ext_resource type="Texture2D" uid="uid://d0fvtskwvwlod" path="res://assets/art/background/obrazy_ref1.png" id="2_b6xrf"]
@@ -26,6 +26,42 @@
 [sub_resource type="AtlasTexture" id="AtlasTexture_52a4t"]
 atlas = ExtResource("8_b6xrf")
 region = Rect2(0, 387, 495, 387)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xdho"]
+atlas = ExtResource("8_b6xrf")
+region = Rect2(0, 0, 495, 387)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1vvf"]
+atlas = ExtResource("8_b6xrf")
+region = Rect2(495, 0, 495, 387)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dcvh0"]
+atlas = ExtResource("8_b6xrf")
+region = Rect2(990, 0, 495, 387)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s8cye"]
+atlas = ExtResource("8_b6xrf")
+region = Rect2(0, 387, 495, 387)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbs87"]
+atlas = ExtResource("8_b6xrf")
+region = Rect2(495, 387, 495, 387)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7if76"]
+atlas = ExtResource("8_b6xrf")
+region = Rect2(990, 387, 495, 387)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ai7a8"]
+atlas = ExtResource("8_b6xrf")
+region = Rect2(0, 774, 495, 387)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_42jhq"]
+atlas = ExtResource("8_b6xrf")
+region = Rect2(495, 774, 495, 387)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rq2y7"]
+atlas = ExtResource("8_b6xrf")
+region = Rect2(990, 774, 495, 387)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ldphm"]
 atlas = ExtResource("5_eeknh")
@@ -236,10 +272,37 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_52a4t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7xdho")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1vvf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dcvh0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s8cye")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tbs87")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7if76")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ai7a8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_42jhq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rq2y7")
 }],
 "loop": false,
 "name": &"bigFire",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -476,14 +539,6 @@ region = Rect2(840, 219, 168, 219)
 atlas = ExtResource("11_b6xrf")
 region = Rect2(1008, 219, 168, 219)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6hwag"]
-atlas = ExtResource("11_b6xrf")
-region = Rect2(0, 876, 168, 219)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kq446"]
-atlas = ExtResource("11_b6xrf")
-region = Rect2(168, 876, 168, 219)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_gjmta"]
 atlas = ExtResource("11_b6xrf")
 region = Rect2(1008, 219, 168, 219)
@@ -540,6 +595,14 @@ region = Rect2(840, 657, 168, 219)
 atlas = ExtResource("11_b6xrf")
 region = Rect2(1008, 657, 168, 219)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_6hwag"]
+atlas = ExtResource("11_b6xrf")
+region = Rect2(0, 876, 168, 219)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kq446"]
+atlas = ExtResource("11_b6xrf")
+region = Rect2(168, 876, 168, 219)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_2rkvg"]
 animations = [{
 "frames": [{
@@ -586,19 +649,8 @@ animations = [{
 "texture": SubResource("AtlasTexture_q8nuc")
 }],
 "loop": false,
-"name": &"firstPetal",
+"name": &"1",
 "speed": 8.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6hwag")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kq446")
-}],
-"loop": false,
-"name": &"fourthPetal",
-"speed": 9.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -637,8 +689,8 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_4i28f")
 }],
-"loop": true,
-"name": &"secondPetal",
+"loop": false,
+"name": &"2",
 "speed": 8.0
 }, {
 "frames": [{
@@ -649,7 +701,18 @@ animations = [{
 "texture": SubResource("AtlasTexture_4lcnj")
 }],
 "loop": false,
-"name": &"thirdPetal",
+"name": &"3",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6hwag")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kq446")
+}],
+"loop": false,
+"name": &"4",
 "speed": 9.0
 }]
 
@@ -1507,7 +1570,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_j8rno")
 }],
-"loop": true,
+"loop": false,
 "name": &"idle_fast",
 "speed": 5.0
 }, {
@@ -1548,7 +1611,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_1co2o")
 }],
-"loop": true,
+"loop": false,
 "name": &"idle_medium",
 "speed": 10.0
 }, {
@@ -1571,7 +1634,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_7bccu")
 }],
-"loop": true,
+"loop": false,
 "name": &"idle_raspAppearing",
 "speed": 6.0
 }, {
@@ -1750,7 +1813,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_bo8ew")
 }],
-"loop": true,
+"loop": false,
 "name": &"slow",
 "speed": 8.0
 }]
@@ -2003,14 +2066,15 @@ metadata/fade_in = true
 visible = false
 position = Vector2(568, 534)
 sprite_frames = SubResource("SpriteFrames_fu5s6")
-animation = &"coal"
+animation = &"bigFire"
 script = ExtResource("5_a6g1q")
 
 [node name="flower" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(1410, 156)
 sprite_frames = SubResource("SpriteFrames_2rkvg")
-animation = &"coal"
+animation = &"4"
+script = ExtResource("5_a6g1q")
 
 [node name="childhood" type="AnimatedSprite2D" parent="."]
 visible = false
@@ -2023,7 +2087,7 @@ script = ExtResource("5_a6g1q")
 visible = false
 position = Vector2(427, 301)
 sprite_frames = SubResource("SpriteFrames_fn62r")
-animation = &"idle_fast"
+animation = &"slow"
 script = ExtResource("5_a6g1q")
 
 [node name="eye" type="AnimatedSprite2D" parent="." node_paths=PackedStringArray("eye_button")]
