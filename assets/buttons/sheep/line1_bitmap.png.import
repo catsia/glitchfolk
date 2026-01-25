@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://b06uujc71pj6a"
+path="res://.godot/imported/line1_bitmap.png-177b0f960303666004477192e846db9a.res"
+
+[deps]
+
+source_file="res://assets/buttons/sheep/line1_bitmap.png"
+dest_files=["res://.godot/imported/line1_bitmap.png-177b0f960303666004477192e846db9a.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

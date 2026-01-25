@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://khbc2urcq164"
+path="res://.godot/imported/triangle2_bitmap.png-1eb0d8c71f08effba82dc2f5f6db15f3.res"
+
+[deps]
+
+source_file="res://assets/buttons/sheep/triangle2_bitmap.png"
+dest_files=["res://.godot/imported/triangle2_bitmap.png-1eb0d8c71f08effba82dc2f5f6db15f3.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

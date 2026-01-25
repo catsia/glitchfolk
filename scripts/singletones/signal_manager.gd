@@ -5,6 +5,10 @@ signal resume_game_signal
 signal area_seen_signal
 signal button_clicked_signal
 signal stop_all
+signal ellipse_buttons
+signal line_buttons
+signal triangle_buttons
+signal hexagon_buttons
 
 func emit_play_all_interactive():
 	play_all_interactive.emit()
@@ -20,3 +24,15 @@ func emit_button_clicked_with_timeline(timeline_name):
 
 func emit_stop_all():
 	stop_all.emit()
+
+func emit_ellipse_buttons():
+	ellipse_buttons.emit()
+
+func emit_line_buttons():
+	line_buttons.emit()
+
+func emit_triangle_buttons():
+	triangle_buttons.emit()
+
+func emit_hexagon_buttons():
+	hexagon_buttons.emit()

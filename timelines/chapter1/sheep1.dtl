@@ -264,14 +264,22 @@ krey: Ты меня спрашиваешь?
 gypsy: Найди мне овал, К. Укажи на него пальцем.
 [i](появляется образ глаза, клик на него)
 [signal arg_type="dict" arg="{"show_image":"smile_short"}"]
+[signal arg_type="dict" arg="{"set_state":"eye_eyeOpens"}"]
+[signal arg_type="dict" arg="{"pause":""}"]
 gypsy: Нет-нет, давай без этих фокусов. Не щурься, это элементарная задачка. Просто укажи на первое, что кажется овальным.
 [signal arg_type="dict" arg="{"hide_image":"smile_short"}"]
+[signal arg_type="dict" arg="{"set_state":"eye_eyeCloses"}"]
+do SignalManager.emit_ellipse_buttons()
+
 [i](клик на что-то овальное, куст, листья дерева или овечью шерсть)
 gypsy: [color=#8B0000][url="sh16"]Треугольник[/url][/color]?
+do SignalManager.emit_triangle_buttons()
 [i](клик на крону дерева или уши овцы)
 gypsy: Видишь ли какие-то прямые или изогнутые линии?
+do SignalManager.emit_line_buttons()
 [i](клик на траву, ствол дерева)
 gypsy: Может, ты даже покажешь на шестиугольники? Это уже посложнее, должен признаться.
+do SignalManager.emit_hexagon_buttons()
 [i](клик на улей)
 [signal arg_type="dict" arg="{"show_image":"smile_short"}"]
 [signal arg_type="dict" arg="{"show_image":"staff"}"]

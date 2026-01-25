@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dgi14r5fa5o7s"]
+[gd_scene load_steps=37 format=3 uid="uid://dgi14r5fa5o7s"]
 
 [ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_pt82y"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_n54i3"]
@@ -17,6 +17,22 @@
 [ext_resource type="Texture2D" uid="uid://d33iajcqa7tvl" path="res://assets/art/main_art/characters_art/staff.png" id="12_wkjkd"]
 [ext_resource type="Texture2D" uid="uid://dm32is5au1rlp" path="res://assets/art/main_art/characters_art/cloth.png" id="13_jjfva"]
 [ext_resource type="AudioStream" uid="uid://rwyt1iukexf1" path="res://assets/sound/music/tsygan.mp3" id="17_xfjls"]
+[ext_resource type="Script" uid="uid://clueqki7fe6bu" path="res://scripts/sheep_buttons.gd" id="18_t11lf"]
+[ext_resource type="Texture2D" uid="uid://bt6ixchxt0g14" path="res://assets/art/animations/sheep/buttons/bees_button.png" id="18_x32cs"]
+[ext_resource type="BitMap" uid="uid://dq2sjtf0gjpr" path="res://assets/buttons/sheep/bees_bitmap.png" id="19_t11lf"]
+[ext_resource type="BitMap" uid="uid://s84438prltxw" path="res://assets/buttons/sheep/bush1_bitmap.png" id="21_ogudn"]
+[ext_resource type="BitMap" uid="uid://c76qcx4ac4sbj" path="res://assets/buttons/sheep/bush2_bitmap.png" id="23_8wyf8"]
+[ext_resource type="BitMap" uid="uid://bqvfxe3f8on6a" path="res://assets/buttons/sheep/bush3_bitmap.png" id="25_xd0uc"]
+[ext_resource type="BitMap" uid="uid://cshmhq0y6ahfe" path="res://assets/buttons/sheep/grass1_bitmap.png" id="27_a027o"]
+[ext_resource type="BitMap" uid="uid://cilb455fceqo6" path="res://assets/buttons/sheep/road2_bitmap.png" id="28_ed4sy"]
+[ext_resource type="BitMap" uid="uid://dccidnfb4o2ns" path="res://assets/buttons/sheep/grass2_bitmap.png" id="29_kuuqh"]
+[ext_resource type="BitMap" uid="uid://b06uujc71pj6a" path="res://assets/buttons/sheep/line1_bitmap.png" id="31_c2dmr"]
+[ext_resource type="BitMap" uid="uid://bum74f3sivh71" path="res://assets/buttons/sheep/line2_bitmap.png" id="33_lein0"]
+[ext_resource type="BitMap" uid="uid://biuu6lqoqavud" path="res://assets/buttons/sheep/sheeps_bitmap.png" id="37_xl2ln"]
+[ext_resource type="BitMap" uid="uid://cr6a7mdqc6m2r" path="res://assets/buttons/sheep/sunflower_bitmap.png" id="39_u3jjo"]
+[ext_resource type="BitMap" uid="uid://bhln7b7o7w2d8" path="res://assets/buttons/sheep/tree_bitmap.png" id="41_j6fcp"]
+[ext_resource type="BitMap" uid="uid://pqqdk8n2rwdk" path="res://assets/buttons/sheep/triangle1_bitmap.png" id="43_81h7x"]
+[ext_resource type="BitMap" uid="uid://khbc2urcq164" path="res://assets/buttons/sheep/triangle2_bitmap.png" id="45_a0q7d"]
 
 [sub_resource type="Animation" id="Animation_s32ju"]
 length = 0.001
@@ -171,3 +187,154 @@ metadata/fade_out = true
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("17_xfjls")
 autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 11
+script = ExtResource("18_t11lf")
+
+[node name="bees" type="TextureButton" parent="CanvasLayer"]
+visible = false
+offset_left = 747.0
+offset_top = 499.0
+offset_right = 810.0
+offset_bottom = 562.0
+disabled = true
+texture_normal = ExtResource("18_x32cs")
+texture_click_mask = ExtResource("19_t11lf")
+
+[node name="bush1" type="TextureButton" parent="CanvasLayer"]
+visible = false
+offset_left = 1023.0
+offset_top = 566.0
+offset_right = 1260.0
+offset_bottom = 728.0
+disabled = true
+texture_click_mask = ExtResource("21_ogudn")
+
+[node name="bush2" type="TextureButton" parent="CanvasLayer"]
+visible = false
+offset_left = 625.0
+offset_top = 521.0
+offset_right = 919.0
+offset_bottom = 692.0
+disabled = true
+texture_click_mask = ExtResource("23_8wyf8")
+
+[node name="bush3" type="TextureButton" parent="CanvasLayer"]
+visible = false
+offset_left = 976.0
+offset_top = 528.0
+offset_right = 1111.0
+offset_bottom = 618.0
+disabled = true
+texture_click_mask = ExtResource("25_xd0uc")
+
+[node name="grass1" type="TextureButton" parent="CanvasLayer"]
+visible = false
+offset_left = 632.0
+offset_top = 629.0
+offset_right = 824.0
+offset_bottom = 854.0
+disabled = true
+texture_click_mask = ExtResource("27_a027o")
+
+[node name="grass2" type="TextureButton" parent="CanvasLayer"]
+visible = false
+offset_left = 1022.0
+offset_top = 630.0
+offset_right = 1265.0
+offset_bottom = 762.0
+disabled = true
+texture_click_mask = ExtResource("29_kuuqh")
+
+[node name="line1" type="TextureButton" parent="CanvasLayer"]
+visible = false
+offset_left = 772.0
+offset_top = 534.0
+offset_right = 814.0
+offset_bottom = 606.0
+disabled = true
+texture_click_mask = ExtResource("31_c2dmr")
+
+[node name="line2" type="TextureButton" parent="CanvasLayer"]
+visible = false
+offset_left = 1149.0
+offset_top = 498.0
+offset_right = 1200.0
+offset_bottom = 552.0
+disabled = true
+texture_click_mask = ExtResource("33_lein0")
+
+[node name="road" type="TextureButton" parent="CanvasLayer"]
+visible = false
+modulate = Color(1, 0, 1, 1)
+offset_left = 891.0
+offset_top = 393.0
+offset_right = 1023.0
+offset_bottom = 627.0
+disabled = true
+texture_click_mask = ExtResource("28_ed4sy")
+
+[node name="sheeps" type="TextureButton" parent="CanvasLayer"]
+visible = false
+modulate = Color(1, 1, 1, 0.3764706)
+offset_left = 672.0
+offset_top = 588.0
+offset_right = 1251.0
+offset_bottom = 858.0
+disabled = true
+texture_click_mask = ExtResource("37_xl2ln")
+
+[node name="sunflower" type="TextureButton" parent="CanvasLayer"]
+visible = false
+modulate = Color(1, 1, 1, 0.5254902)
+offset_left = 1077.0
+offset_top = 510.0
+offset_right = 1260.0
+offset_bottom = 606.0
+disabled = true
+texture_click_mask = ExtResource("39_u3jjo")
+
+[node name="tree" type="TextureButton" parent="CanvasLayer"]
+visible = false
+modulate = Color(1, 1, 1, 0.47058824)
+offset_left = 675.0
+offset_top = 354.0
+offset_right = 903.0
+offset_bottom = 519.0
+disabled = true
+texture_click_mask = ExtResource("41_j6fcp")
+
+[node name="triangle1" type="TextureButton" parent="CanvasLayer"]
+visible = false
+modulate = Color(1, 1, 1, 0.30980393)
+offset_left = 1101.0
+offset_top = 429.0
+offset_right = 1239.0
+offset_bottom = 525.0
+disabled = true
+texture_click_mask = ExtResource("43_81h7x")
+
+[node name="triangle2" type="TextureButton" parent="CanvasLayer"]
+visible = false
+offset_left = 941.0
+offset_top = 723.0
+offset_right = 1019.0
+offset_bottom = 810.0
+disabled = true
+texture_click_mask = ExtResource("45_a0q7d")
+
+[connection signal="pressed" from="CanvasLayer/bees" to="CanvasLayer" method="change_eclipse_buttons"]
+[connection signal="pressed" from="CanvasLayer/bush1" to="CanvasLayer" method="change_eclipse_buttons"]
+[connection signal="pressed" from="CanvasLayer/bush2" to="CanvasLayer" method="change_eclipse_buttons"]
+[connection signal="pressed" from="CanvasLayer/bush3" to="CanvasLayer" method="change_eclipse_buttons"]
+[connection signal="pressed" from="CanvasLayer/grass1" to="CanvasLayer" method="change_line_buttons"]
+[connection signal="pressed" from="CanvasLayer/grass2" to="CanvasLayer" method="change_line_buttons"]
+[connection signal="pressed" from="CanvasLayer/line1" to="CanvasLayer" method="change_line_buttons"]
+[connection signal="pressed" from="CanvasLayer/line2" to="CanvasLayer" method="change_line_buttons"]
+[connection signal="pressed" from="CanvasLayer/road" to="CanvasLayer" method="change_line_buttons"]
+[connection signal="pressed" from="CanvasLayer/sheeps" to="CanvasLayer" method="change_eclipse_buttons"]
+[connection signal="pressed" from="CanvasLayer/sunflower" to="CanvasLayer" method="change_hexagon_buttons"]
+[connection signal="pressed" from="CanvasLayer/tree" to="CanvasLayer" method="change_triangle_buttons"]
+[connection signal="pressed" from="CanvasLayer/triangle1" to="CanvasLayer" method="change_triangle_buttons"]
+[connection signal="pressed" from="CanvasLayer/triangle2" to="CanvasLayer" method="change_triangle_buttons"]

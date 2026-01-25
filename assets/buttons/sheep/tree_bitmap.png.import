@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bhln7b7o7w2d8"
+path="res://.godot/imported/tree_bitmap.png-6009e04ad2c1f80d47fb6a74460b7714.res"
+
+[deps]
+
+source_file="res://assets/buttons/sheep/tree_bitmap.png"
+dest_files=["res://.godot/imported/tree_bitmap.png-6009e04ad2c1f80d47fb6a74460b7714.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

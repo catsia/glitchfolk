@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dccidnfb4o2ns"
+path="res://.godot/imported/grass2_bitmap.png-ceb920e14d974f5410ff350c1f70ff28.res"
+
+[deps]
+
+source_file="res://assets/buttons/sheep/grass2_bitmap.png"
+dest_files=["res://.godot/imported/grass2_bitmap.png-ceb920e14d974f5410ff350c1f70ff28.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

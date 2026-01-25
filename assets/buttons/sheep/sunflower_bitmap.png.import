@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cr6a7mdqc6m2r"
+path="res://.godot/imported/sunflower_bitmap.png-ea0b0b4840f4280f1d765eaf8cbbe4cc.res"
+
+[deps]
+
+source_file="res://assets/buttons/sheep/sunflower_bitmap.png"
+dest_files=["res://.godot/imported/sunflower_bitmap.png-ea0b0b4840f4280f1d765eaf8cbbe4cc.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

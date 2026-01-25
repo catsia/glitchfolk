@@ -18,14 +18,23 @@ func _manage_dialogic_signal(context: Node, data: Dictionary):
 			_set_state(context, data["set_state"])	
 		if data.has("next_timeline"):
 			_next_timeline(context, data["next_timeline"])	
+		if data.has("enable_button"):
+			_enable_button(context, data["enable_button"])	
+		if data.has("disable_button"):
+			_disable_button(context, data["disable_button"])	
 		if data.has("play_all_interactive"):
 			_play_all_interactive()
 		if data.has("stop_all"):
 			_stop_all()	
+		if data.has("pause"):
+			_pause()	
 			
 func _next_scene(context: Node, next_scene: String):
 	var path = "res://scenes/" + next_scene + ".tscn"
 	context.get_tree().change_scene_to_file(path)
+
+func _pause():
+	Dialogic.paused = true
 
 func _next_timeline(context: Node, next_timeline: String):
 	Dialogic.start_timeline(next_timeline)
@@ -56,4 +65,10 @@ func _hide_animation(context: Node, signal_name: String):
 		
 func _stop_animation(context: Node, signal_name: String):
 	AnimationManager._stop_animation(context, signal_name)
+
+func _enable_button(context: Node, signal_name: String):
+	ButtonManager._enable_button(context, signal_name)
+		
+func _disable_button(context: Node, signal_name: String):
+	ButtonManager._disable_button(context, signal_name)
 		

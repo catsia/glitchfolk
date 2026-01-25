@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dqmxy4upp6s8b"
+path="res://.godot/imported/road_bitmap.png-3346ca180058be13bfc9dbe683bc06de.res"
+
+[deps]
+
+source_file="res://assets/buttons/sheep/road_bitmap.png"
+dest_files=["res://.godot/imported/road_bitmap.png-3346ca180058be13bfc9dbe683bc06de.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

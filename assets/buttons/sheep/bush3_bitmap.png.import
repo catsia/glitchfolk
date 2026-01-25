@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bqvfxe3f8on6a"
+path="res://.godot/imported/bush3_bitmap.png-c6dd066fb2d5d43bd197356898e5c0f4.res"
+
+[deps]
+
+source_file="res://assets/buttons/sheep/bush3_bitmap.png"
+dest_files=["res://.godot/imported/bush3_bitmap.png-c6dd066fb2d5d43bd197356898e5c0f4.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

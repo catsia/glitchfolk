@@ -25,6 +25,8 @@ GlobalVariables="*res://scripts/global_variables.gd"
 SignalManager="*res://scripts/singletones/signal_manager.gd"
 ImageManager="*res://scripts/image_manager.gd"
 AnimationManager="*res://scripts/animation_manager.gd"
+ButtonManager="*res://scripts/button_manager.gd"
+DialogicSignalManager="*res://scripts/dialogic_signal_manager.gd"
 
 [dialogic]
 
