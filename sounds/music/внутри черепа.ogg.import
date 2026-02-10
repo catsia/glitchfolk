@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dmrkhmdgqryt7"
+path="res://.godot/imported/внутри черепа.ogg-653c6c92fb3a7b1fc52657dfd779423f.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/music/внутри черепа.ogg"
+dest_files=["res://.godot/imported/внутри черепа.ogg-653c6c92fb3a7b1fc52657dfd779423f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

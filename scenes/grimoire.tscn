@@ -1,4 +1,4 @@
-[gd_scene load_steps=121 format=3 uid="uid://csj4uua3yj0dl"]
+[gd_scene load_steps=122 format=3 uid="uid://csj4uua3yj0dl"]
 
 [ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_nyjrj"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_fhfaf"]
@@ -14,6 +14,7 @@
 [ext_resource type="Script" uid="uid://cv0a2357kwrke" path="res://scripts/buttons/not_ending_anim_button.gd" id="12_8ltuu"]
 [ext_resource type="Script" uid="uid://8dpq410r4yb0" path="res://scripts/buttons/grimoire_last_button.gd" id="13_nyjrj"]
 [ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="14_su1je"]
+[ext_resource type="AudioStream" uid="uid://i6h21jgpgmet" path="res://sounds/music/гримуар.ogg" id="15_su1je"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vrino"]
 atlas = ExtResource("4_q2v0p")
@@ -1012,6 +1013,12 @@ script = ExtResource("12_8ltuu")
 animation = NodePath("../../../paragraph1")
 
 [node name="pause_menu" parent="." instance=ExtResource("14_su1je")]
+
+[node name="book_ost" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_su1je")
+autoplay = true
+bus = &"Music"
+parameters/looping = false
 
 [connection signal="pressed" from="CanvasLayer/Control/paragraph2" to="CanvasLayer/Control/paragraph2" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/paragraph4" to="CanvasLayer/Control/paragraph4" method="_on_pressed"]

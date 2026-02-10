@@ -1,4 +1,4 @@
-[gd_scene load_steps=192 format=3 uid="uid://cnudvb67jea3t"]
+[gd_scene load_steps=194 format=3 uid="uid://cnudvb67jea3t"]
 
 [ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_m3r7s"]
 [ext_resource type="Texture2D" uid="uid://db60bpl5ljeqw" path="res://assets/art/animations/intro/flower_of_order.png" id="2_7a8ye"]
@@ -14,6 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="11_37iue"]
 [ext_resource type="Texture2D" uid="uid://dop1t3kmteyek" path="res://assets/art/animations/intro/cross_spark.png" id="11_n6p8m"]
 [ext_resource type="Texture2D" uid="uid://b8q7s74yjg2b0" path="res://assets/art/obrazy/main_images/childhood_og.png" id="12_n6p8m"]
+[ext_resource type="AudioStream" uid="uid://bola478n2et4f" path="res://sounds/music/сказка.ogg" id="15_u5myo"]
+[ext_resource type="AudioStream" uid="uid://climtrn7lym27" path="res://sounds/music/появление птицы.ogg" id="16_u05oh"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0a7ni"]
 load_path = "res://.godot/imported/HB background red.png-cf34a7a21e851eb5a0ebefd2657265eb.ctex"
@@ -1514,5 +1516,15 @@ position = Vector2(1223, 124)
 scale = Vector2(0.333, 0.333)
 texture = ExtResource("12_n6p8m")
 metadata/fade_in = true
+
+[node name="tale_ost" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_u5myo")
+bus = &"Music"
+parameters/looping = false
+
+[node name="bird_ost" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_u05oh")
+bus = &"Music"
+parameters/looping = false
 
 [connection signal="animation_finished" from="CanvasLayer/cosmos" to="CanvasLayer/cosmos_cycle" method="_on_cosmos_animation_finished"]

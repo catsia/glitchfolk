@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=3 uid="uid://cfcgeq37otkor"]
+[gd_scene load_steps=77 format=3 uid="uid://cfcgeq37otkor"]
 
 [ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_dasuy"]
 [ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="2_tkwxn"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://dy8jsh77hcgxu" path="res://assets/art/main_art/soup_glitch/folk_soup_glitch2.png" id="12_tkwxn"]
 [ext_resource type="Texture2D" uid="uid://bx0f1w333ews4" path="res://assets/art/main_art/soup_glitch/folk_soup_glitch3.png" id="13_0ptnb"]
 [ext_resource type="Texture2D" uid="uid://dskh0prlek7o6" path="res://assets/art/main_art/soup_glitch/folk_soup_glitch4.png" id="14_433tg"]
+[ext_resource type="AudioStream" uid="uid://cx7ie88u51k45" path="res://sounds/music/суп высокий.ogg" id="16_tkwxn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_433tg"]
 atlas = ExtResource("8_b7r2s")
@@ -702,3 +703,9 @@ frame_progress = 0.09030169
 
 [node name="InteractiveImages" parent="." instance=ExtResource("3_lw81e")]
 position = Vector2(-3, -11)
+
+[node name="soup_ost" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_tkwxn")
+autoplay = true
+bus = &"Music"
+parameters/looping = false

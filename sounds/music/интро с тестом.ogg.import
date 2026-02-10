@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://jsleomhu5l7i"
+path="res://.godot/imported/интро с тестом.ogg-609e3d6ba619ece875a1005f9e5dd186.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/music/интро с тестом.ogg"
+dest_files=["res://.godot/imported/интро с тестом.ogg-609e3d6ba619ece875a1005f9e5dd186.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

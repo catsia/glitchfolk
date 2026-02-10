@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://wn7rtr0ktpeh"]
+[gd_scene load_steps=54 format=3 uid="uid://wn7rtr0ktpeh"]
 
 [ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_ug83y"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_td60s"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://b5nvhtj0bk0g6" path="res://assets/art/main_art/splashart/splash.png" id="12_jyay1"]
 [ext_resource type="Texture2D" uid="uid://iovrsew4pvfe" path="res://assets/art/main_art/splashart/splash_roll.png" id="13_71dqt"]
 [ext_resource type="Texture2D" uid="uid://tuu56hjtsyow" path="res://assets/art/main_art/splashart/exgumation.png" id="14_4gngc"]
+[ext_resource type="AudioStream" uid="uid://m5eoc0oj456j" path="res://sounds/music/кладбище.ogg" id="15_71dqt"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="17_k2ng3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cg05x"]
@@ -527,6 +528,11 @@ visible = false
 position = Vector2(955, 651)
 texture = ExtResource("14_4gngc")
 metadata/fade_in = true
+
+[node name="graveyard_ost" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_71dqt")
+bus = &"Music"
+parameters/looping = false
 
 [connection signal="pressed" from="Control/btn_father_mak" to="." method="_on_btn_father_mak_pressed"]
 [connection signal="pressed" from="Control/btn_father_mak" to="Control/btn_father_mak" method="_on_pressed"]
