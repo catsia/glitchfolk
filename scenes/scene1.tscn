@@ -531,6 +531,7 @@ metadata/fade_in = true
 
 [node name="graveyard_ost" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("15_71dqt")
+autoplay = true
 bus = &"Music"
 parameters/looping = false
 

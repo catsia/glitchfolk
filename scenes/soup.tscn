@@ -706,6 +706,5 @@ position = Vector2(-3, -11)
 
 [node name="soup_ost" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("16_tkwxn")
-autoplay = true
 bus = &"Music"
 parameters/looping = false
