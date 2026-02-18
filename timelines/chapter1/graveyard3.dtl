@@ -1,6 +1,5 @@
 [signal arg_type="dict" arg="{"show_image":"background"}"]
 [signal arg_type="dict" arg="{"show_image":"father_sprite"}"]
-[music path="res://sounds/music/кладбище.ogg" fade="5.0" volume="0.0"]
 [i](звук хрупкого костяного хруста + визуальное появление дыры в черепе)[/i]
 Короткое мгновение К. не может понять, что случилось. А [color=#8B0000][url="g13"]потом...[/url][/color]
 Юноша отползает от черепа так, словно оттуда зашипело.
@@ -15,10 +14,10 @@
 Вытирая рукавом сорочки лоб, К. вдруг что-то нащупывает на нём – липкий, кашеобразный комочек, который при ближайшем рассмотрении оказывается недоразложившимся останком мозга.
 Кусочек его родного отца покоился меж двух подушечек пальцев. Противный, вязкий и глинистый. Можно подумать, [color=#8B0000][url="g16"]что...[/url][/color]
 – До встречи, папа. И, ради святого глитча, [color=#8B0000][url="g29"]прости[/url][/color].
-[music fade="10.0" volume="0.0"]
 [signal arg_type="dict" arg="{"hide_image":"father_sprite"}"]
 [signal arg_type="dict" arg="{"hide_animation":"father_mak"}"]
 [sound path="res://sounds/burying.mp3" volume="0.0"]
+[music path="res://sounds/music/willow.ogg" fade="20.0" volume="0.0" bus="Music"]
 [wait time="1.0" hide_text="false"]
 [signal arg_type="dict" arg="{"animation":"willow_anim"}"]
 К. опустил свои кости на [color=#8B0000][url="g27"]одинокую лавку[/url][/color], спрятанную в тени плакучей ивы — единственно уместного [color=#8B0000][url="g28"]кладбищу[/url][/color] дерева, что оплакивало умерших, освобождая от этого обязательства [color=#8B0000][url="g17"]людей[/url][/color].

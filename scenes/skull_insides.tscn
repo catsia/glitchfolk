@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cl8jadjqnigqm"]
+[gd_scene format=3 uid="uid://cl8jadjqnigqm"]
 
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="1_2cs67"]
 [ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_ujsjm"]
@@ -24,108 +24,108 @@ radius = 52.153618
 radius = 53.0
 height = 118.0
 
-[node name="skull_insides" type="Node2D"]
+[node name="skull_insides" type="Node2D" unique_id=968689022]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=938640413]
 script = ExtResource("1_ujsjm")
 metadata/hidden = true
 
-[node name="pause_menu" parent="CanvasLayer" instance=ExtResource("2_64oey")]
+[node name="pause_menu" parent="CanvasLayer" unique_id=528494128 instance=ExtResource("2_64oey")]
 
-[node name="background" type="TextureRect" parent="CanvasLayer"]
+[node name="background" type="TextureRect" parent="CanvasLayer" unique_id=82773958]
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("1_2cs67")
 
-[node name="mindmap" type="Sprite2D" parent="CanvasLayer"]
+[node name="mindmap" type="Sprite2D" parent="CanvasLayer" unique_id=21412310]
 position = Vector2(960, 540)
 texture = ExtResource("2_sl1mc")
 script = ExtResource("3_sl1mc")
 
-[node name="place2" type="Area2D" parent="CanvasLayer/mindmap"]
+[node name="place2" type="Area2D" parent="CanvasLayer/mindmap" unique_id=908346338]
 script = ExtResource("5_ejj50")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/mindmap/place2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/mindmap/place2" unique_id=128983436]
 position = Vector2(-194, 235)
 shape = SubResource("CircleShape2D_sl1mc")
 
-[node name="place1" type="Area2D" parent="CanvasLayer/mindmap"]
+[node name="place1" type="Area2D" parent="CanvasLayer/mindmap" unique_id=2132073934]
 script = ExtResource("5_ejj50")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/mindmap/place1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/mindmap/place1" unique_id=980516374]
 position = Vector2(-178, -217)
 shape = SubResource("CircleShape2D_sl1mc")
 
-[node name="place3" type="Area2D" parent="CanvasLayer/mindmap"]
+[node name="place3" type="Area2D" parent="CanvasLayer/mindmap" unique_id=1345027934]
 script = ExtResource("5_ejj50")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/mindmap/place3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/mindmap/place3" unique_id=1558058123]
 position = Vector2(186, 250)
 shape = SubResource("CircleShape2D_sl1mc")
 
-[node name="place4" type="Area2D" parent="CanvasLayer/mindmap"]
+[node name="place4" type="Area2D" parent="CanvasLayer/mindmap" unique_id=1954537383]
 script = ExtResource("5_ejj50")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/mindmap/place4"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/mindmap/place4" unique_id=1357784896]
 position = Vector2(202, -95)
 shape = SubResource("CircleShape2D_sl1mc")
 
-[node name="Parallax2D" type="Parallax2D" parent="CanvasLayer" node_paths=PackedStringArray("target_node")]
+[node name="Parallax2D" type="Parallax2D" parent="CanvasLayer" unique_id=463369471 node_paths=PackedStringArray("target_node")]
 script = ExtResource("5_r4wu0")
 target_node = NodePath("../mindmap")
 
-[node name="feathers" type="Sprite2D" parent="CanvasLayer/Parallax2D"]
+[node name="feathers" type="Sprite2D" parent="CanvasLayer/Parallax2D" unique_id=1693811437]
 position = Vector2(739, 585)
 texture = ExtResource("5_wi8xs")
 
-[node name="birds" type="Sprite2D" parent="CanvasLayer/Parallax2D"]
+[node name="birds" type="Sprite2D" parent="CanvasLayer/Parallax2D" unique_id=1100352260]
 position = Vector2(986, 459)
 texture = ExtResource("5_msq6e")
 
-[node name="support_area" type="Area2D" parent="CanvasLayer"]
+[node name="support_area" type="Area2D" parent="CanvasLayer" unique_id=2040499329]
 position = Vector2(1994, 1269)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/support_area"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/support_area" unique_id=682428321]
 position = Vector2(-1025, -597)
 shape = SubResource("CapsuleShape2D_ejj50")
 
-[node name="Node" type="Node" parent="CanvasLayer" node_paths=PackedStringArray("areas")]
+[node name="Node" type="Node" parent="CanvasLayer" unique_id=1752811670 node_paths=PackedStringArray("areas")]
 script = ExtResource("4_krt3p")
 areas = [null, NodePath("../mindmap/place2"), NodePath("../mindmap/place1"), NodePath("../mindmap/place3")]
 
-[node name="5" type="Sprite2D" parent="CanvasLayer/Node"]
+[node name="5" type="Sprite2D" parent="CanvasLayer/Node" unique_id=471581681]
 position = Vector2(958, 672)
 texture = ExtResource("11_5gs76")
 
-[node name="4" type="Sprite2D" parent="CanvasLayer/Node"]
+[node name="4" type="Sprite2D" parent="CanvasLayer/Node" unique_id=2082975313]
 visible = false
 position = Vector2(958, 672)
 texture = ExtResource("12_5gs76")
 
-[node name="3" type="Sprite2D" parent="CanvasLayer/Node"]
+[node name="3" type="Sprite2D" parent="CanvasLayer/Node" unique_id=607418446]
 visible = false
 position = Vector2(958, 672)
 texture = ExtResource("13_uvwvg")
 
-[node name="2" type="Sprite2D" parent="CanvasLayer/Node"]
+[node name="2" type="Sprite2D" parent="CanvasLayer/Node" unique_id=876831915]
 visible = false
 position = Vector2(958, 672)
 texture = ExtResource("14_7jcaj")
 
-[node name="1" type="Sprite2D" parent="CanvasLayer/Node"]
+[node name="1" type="Sprite2D" parent="CanvasLayer/Node" unique_id=1284775104]
 visible = false
 position = Vector2(958, 672)
 texture = ExtResource("15_y2qhj")
 
-[node name="kostyl\' (view blocker)" type="TextureRect" parent="CanvasLayer/Node"]
+[node name="kostyl\' (view blocker)" type="TextureRect" parent="CanvasLayer/Node" unique_id=2016580784]
 offset_right = 1920.0
 offset_bottom = 1149.9999
 scale = Vector2(1, 0.16000003)
 texture = ExtResource("1_2cs67")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="CanvasLayer/Node"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="CanvasLayer/Node" unique_id=632796023]
 
-[node name="skull_ost" type="AudioStreamPlayer2D" parent="."]
+[node name="skull_ost" type="AudioStreamPlayer2D" parent="." unique_id=1219088017]
 stream = ExtResource("16_uvwvg")
 autoplay = true
 bus = &"Music"

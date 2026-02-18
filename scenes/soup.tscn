@@ -1,4 +1,4 @@
-[gd_scene load_steps=77 format=3 uid="uid://cfcgeq37otkor"]
+[gd_scene format=3 uid="uid://cfcgeq37otkor"]
 
 [ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_dasuy"]
 [ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="2_tkwxn"]
@@ -587,83 +587,83 @@ animations = [{
 "speed": 10.0
 }]
 
-[node name="Soup" type="CanvasLayer"]
+[node name="Soup" type="CanvasLayer" unique_id=235247731]
 script = ExtResource("1_dasuy")
 metadata/timeline = "soup1"
 
-[node name="pause_menu" parent="." instance=ExtResource("2_tkwxn")]
+[node name="pause_menu" parent="." unique_id=991317053 instance=ExtResource("2_tkwxn")]
 
-[node name="background" type="TextureRect" parent="."]
+[node name="background" type="TextureRect" parent="." unique_id=1653427843]
 offset_top = -2.0
 offset_right = 1920.0
 offset_bottom = 1078.0
 texture = ExtResource("3_dh2wj")
 
-[node name="soup1" type="Sprite2D" parent="."]
+[node name="soup1" type="Sprite2D" parent="." unique_id=426774926]
 visible = false
 position = Vector2(957, 529)
 texture = ExtResource("3_k4gy1")
 metadata/fade_in = true
 metadata/fade_out = true
 
-[node name="soup2" type="Sprite2D" parent="."]
+[node name="soup2" type="Sprite2D" parent="." unique_id=1673231728]
 visible = false
 position = Vector2(957, 529)
 texture = ExtResource("5_ml15s")
 metadata/fade_in = true
 metadata/fade_out = true
 
-[node name="soup3" type="Sprite2D" parent="."]
+[node name="soup3" type="Sprite2D" parent="." unique_id=557000383]
 visible = false
 position = Vector2(957, 529)
 texture = ExtResource("6_b7r2s")
 metadata/fade_in = true
 metadata/fade_out = true
 
-[node name="soup4" type="Sprite2D" parent="."]
+[node name="soup4" type="Sprite2D" parent="." unique_id=81501235]
 visible = false
 position = Vector2(957, 529)
 texture = ExtResource("7_ofds0")
 metadata/fade_in = true
 metadata/fade_out = true
 
-[node name="soup5" type="Sprite2D" parent="."]
+[node name="soup5" type="Sprite2D" parent="." unique_id=949245061]
 visible = false
 position = Vector2(957, 529)
 texture = ExtResource("8_mejb6")
 metadata/fade_in = true
 
-[node name="glitch" type="Sprite2D" parent="."]
+[node name="glitch" type="Sprite2D" parent="." unique_id=1571808256]
 visible = false
 position = Vector2(957, 529)
 texture = ExtResource("10_w4upn")
 
-[node name="glitch1" type="Sprite2D" parent="."]
+[node name="glitch1" type="Sprite2D" parent="." unique_id=1502311412]
 visible = false
 position = Vector2(957, 529)
 texture = ExtResource("11_dasuy")
 
-[node name="glitch2" type="Sprite2D" parent="."]
+[node name="glitch2" type="Sprite2D" parent="." unique_id=1434312533]
 visible = false
 position = Vector2(957, 529)
 texture = ExtResource("12_tkwxn")
 
-[node name="glitch3" type="Sprite2D" parent="."]
+[node name="glitch3" type="Sprite2D" parent="." unique_id=336100810]
 visible = false
 position = Vector2(957, 529)
 texture = ExtResource("13_0ptnb")
 
-[node name="glitch4" type="Sprite2D" parent="."]
+[node name="glitch4" type="Sprite2D" parent="." unique_id=1591430568]
 visible = false
 position = Vector2(957, 529)
 texture = ExtResource("14_433tg")
 
-[node name="fisheye" type="AnimatedSprite2D" parent="."]
+[node name="fisheye" type="AnimatedSprite2D" parent="." unique_id=1417888816]
 visible = false
 position = Vector2(1031, 605)
 sprite_frames = SubResource("SpriteFrames_04yys")
 
-[node name="fisheye_glitch" type="AnimatedSprite2D" parent="."]
+[node name="fisheye_glitch" type="AnimatedSprite2D" parent="." unique_id=2060573428]
 visible = false
 position = Vector2(1035.9729, 592)
 scale = Vector2(1.3307602, 1.2420372)
@@ -671,7 +671,7 @@ sprite_frames = SubResource("SpriteFrames_l3f5v")
 frame = 12
 frame_progress = 0.5537401
 
-[node name="fisheye_glitch1" type="AnimatedSprite2D" parent="."]
+[node name="fisheye_glitch1" type="AnimatedSprite2D" parent="." unique_id=1010750712]
 visible = false
 position = Vector2(1046.375, 613.00006)
 scale = Vector2(1.2738081, 1.3809527)
@@ -679,7 +679,7 @@ sprite_frames = SubResource("SpriteFrames_71fhd")
 frame = 13
 frame_progress = 0.7170329
 
-[node name="fisheye_glitch2" type="AnimatedSprite2D" parent="."]
+[node name="fisheye_glitch2" type="AnimatedSprite2D" parent="." unique_id=644220937]
 visible = false
 position = Vector2(1041.5, 588)
 scale = Vector2(1.3809524, 1.3333341)
@@ -687,24 +687,24 @@ sprite_frames = SubResource("SpriteFrames_r260i")
 frame = 4
 frame_progress = 0.7690623
 
-[node name="fisheye_glitch3" type="AnimatedSprite2D" parent="."]
+[node name="fisheye_glitch3" type="AnimatedSprite2D" parent="." unique_id=470074132]
 visible = false
 position = Vector2(1064, 575)
 scale = Vector2(1.7857066, 2)
 sprite_frames = SubResource("SpriteFrames_mnm2i")
 frame_progress = 0.15666033
 
-[node name="fisheye_glitch4" type="AnimatedSprite2D" parent="."]
+[node name="fisheye_glitch4" type="AnimatedSprite2D" parent="." unique_id=1137030457]
 visible = false
 position = Vector2(1088.0001, 590.00006)
 scale = Vector2(2.9404752, 2.9761872)
 sprite_frames = SubResource("SpriteFrames_t4dfr")
 frame_progress = 0.09030169
 
-[node name="InteractiveImages" parent="." instance=ExtResource("3_lw81e")]
+[node name="InteractiveImages" parent="." unique_id=210828293 instance=ExtResource("3_lw81e")]
 position = Vector2(-3, -11)
 
-[node name="soup_ost" type="AudioStreamPlayer2D" parent="."]
+[node name="soup_ost" type="AudioStreamPlayer2D" parent="." unique_id=665860230]
 stream = ExtResource("16_tkwxn")
 bus = &"Music"
 parameters/looping = false

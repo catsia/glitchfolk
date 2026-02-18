@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://wn7rtr0ktpeh"]
+[gd_scene format=3 uid="uid://wn7rtr0ktpeh"]
 
 [ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_ug83y"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_td60s"]
@@ -403,14 +403,14 @@ animations = [{
 "speed": 6.0
 }]
 
-[node name="Scene1" type="CanvasLayer"]
+[node name="Scene1" type="CanvasLayer" unique_id=15963802]
 script = ExtResource("1_ug83y")
 metadata/timeline = "graveyard1"
 
-[node name="pause_menu" parent="." instance=ExtResource("11_rayba")]
+[node name="pause_menu" parent="." unique_id=660586636 instance=ExtResource("11_rayba")]
 visible = false
 
-[node name="background" type="TextureRect" parent="."]
+[node name="background" type="TextureRect" parent="." unique_id=1067934983]
 offset_left = -78.0
 offset_top = -29.0
 offset_right = 2094.0
@@ -418,31 +418,31 @@ offset_bottom = 1204.0
 mouse_filter = 2
 texture = ExtResource("2_td60s")
 
-[node name="father_sprite" type="Sprite2D" parent="."]
+[node name="father_sprite" type="Sprite2D" parent="." unique_id=36413525]
 visible = false
 position = Vector2(960, 540)
 texture = ExtResource("3_dc6gq")
 metadata/fade_in = 1.0
 metadata/fade_out = 2.0
 
-[node name="father_crack" type="AnimatedSprite2D" parent="."]
+[node name="father_crack" type="AnimatedSprite2D" parent="." unique_id=995857174]
 visible = false
 position = Vector2(729, 312)
 sprite_frames = SubResource("SpriteFrames_3rh3o")
 frame_progress = 0.403787
 
-[node name="father_stain" type="AnimatedSprite2D" parent="."]
+[node name="father_stain" type="AnimatedSprite2D" parent="." unique_id=791762497]
 visible = false
 position = Vector2(822, 477)
 sprite_frames = SubResource("SpriteFrames_p1jvj")
 
-[node name="father_mak" type="AnimatedSprite2D" parent="."]
+[node name="father_mak" type="AnimatedSprite2D" parent="." unique_id=1317567679]
 position = Vector2(934, 342)
 sprite_frames = SubResource("SpriteFrames_3q2cr")
 metadata/fade_in = 1.0
 metadata/fade_out = 1.0
 
-[node name="Control" type="Control" parent="."]
+[node name="Control" type="Control" parent="." unique_id=154850861]
 layout_mode = 3
 anchors_preset = 0
 offset_left = -35.0
@@ -450,7 +450,7 @@ offset_top = -38.0
 offset_right = 2076.0
 offset_bottom = 1157.0
 
-[node name="btn_father_mak" type="Button" parent="Control" node_paths=PackedStringArray("animation")]
+[node name="btn_father_mak" type="Button" parent="Control" unique_id=570890429 node_paths=PackedStringArray("animation")]
 modulate = Color(1, 1, 1, 0)
 visibility_layer = 3
 layout_mode = 0
@@ -463,7 +463,7 @@ flat = true
 script = ExtResource("7_rayba")
 animation = NodePath("../../father_mak")
 
-[node name="father_strain" type="Button" parent="Control" node_paths=PackedStringArray("animation")]
+[node name="father_strain" type="Button" parent="Control" unique_id=1491364070 node_paths=PackedStringArray("animation")]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 816.0
@@ -474,7 +474,7 @@ flat = true
 script = ExtResource("7_rayba")
 animation = NodePath("../../father_stain")
 
-[node name="father_crack" type="Button" parent="Control" node_paths=PackedStringArray("animation")]
+[node name="father_crack" type="Button" parent="Control" unique_id=1582405163 node_paths=PackedStringArray("animation")]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 716.0
@@ -486,7 +486,7 @@ flat = true
 script = ExtResource("7_rayba")
 animation = NodePath("../../father_crack")
 
-[node name="next_scene_button" type="Button" parent="Control"]
+[node name="next_scene_button" type="Button" parent="Control" unique_id=187857905]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 18.0
@@ -496,40 +496,40 @@ disabled = true
 flat = true
 script = ExtResource("10_lfno2")
 
-[node name="willow_anim" type="AnimatedSprite2D" parent="."]
+[node name="willow_anim" type="AnimatedSprite2D" parent="." unique_id=336460941]
 visible = false
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_cakwj")
 frame_progress = 0.67724
 metadata/fade_in = true
 
-[node name="InteractiveImages" parent="." instance=ExtResource("17_k2ng3")]
+[node name="InteractiveImages" parent="." unique_id=213878777 instance=ExtResource("17_k2ng3")]
 
-[node name="back" type="TextureRect" parent="."]
+[node name="back" type="TextureRect" parent="." unique_id=1366473791]
 visible = false
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("2_td60s")
 
-[node name="day" type="Sprite2D" parent="."]
+[node name="day" type="Sprite2D" parent="." unique_id=1777431176]
 visible = false
 position = Vector2(783, 341)
 texture = ExtResource("12_jyay1")
 
-[node name="2" type="Sprite2D" parent="."]
+[node name="2" type="Sprite2D" parent="." unique_id=1661868756]
 visible = false
 position = Vector2(1235, 352)
 texture = ExtResource("13_71dqt")
 region_enabled = true
 region_rect = Rect2(0, 394.30402, 117, 205.69598)
 
-[node name="exhumation" type="Sprite2D" parent="."]
+[node name="exhumation" type="Sprite2D" parent="." unique_id=555759238]
 visible = false
 position = Vector2(955, 651)
 texture = ExtResource("14_4gngc")
 metadata/fade_in = true
 
-[node name="graveyard_ost" type="AudioStreamPlayer2D" parent="."]
+[node name="graveyard_ost" type="AudioStreamPlayer2D" parent="." unique_id=1857703543]
 stream = ExtResource("15_71dqt")
 autoplay = true
 bus = &"Music"

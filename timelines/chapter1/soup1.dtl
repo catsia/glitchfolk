@@ -37,6 +37,7 @@ mom: До чего быстро летит время! Ещё вчера ты в
 [signal arg_type="dict" arg="{"hide_image":"soup5"}"]
 [signal arg_type="dict" arg="{"show_image":"glitch"}"]
 [signal arg_type="dict" arg="{"hide_animation":"fisheye"}"]
+[music path="res://sounds/sounds/glitches/Glitch_layer_2.ogg" channel="1" fade="2.0" volume="-20.0" bus="Music"]
 [signal arg_type="dict" arg="{"animation":"fisheye_glitch"}"]
 
 mom: Как минув день? Писарь с тобой не слишком строг? А то слышала я всякое…
@@ -45,6 +46,7 @@ mom: Как минув день? Писарь с тобой не слишком 
 - Ага...
 - ...
 [signal arg_type="dict" arg="{"hide_image":"glitch"}"]
+[music path="res://sounds/sounds/glitches/Glitch_layer_4.ogg" channel="2" fade="2.0" volume="-20.0" bus="Music"]
 [signal arg_type="dict" arg="{"show_image":"glitch1"}"]
 [signal arg_type="dict" arg="{"hide_animation":"fisheye_glitch"}"]
 [signal arg_type="dict" arg="{"animation":"fisheye_glitch1"}"]
@@ -56,6 +58,7 @@ mom: Отчего ты кволый такой? Нос повесил. Осты�
 - ...
 [signal arg_type="dict" arg="{"hide_image":"glitch1"}"]
 [signal arg_type="dict" arg="{"show_image":"glitch2"}"]
+[music path="res://sounds/sounds/glitches/Glitch_layer_5.ogg" channel="3" fade="5.0" volume="-20.0"]
 [signal arg_type="dict" arg="{"hide_animation":"fisheye_glitch1"}"]
 [signal arg_type="dict" arg="{"animation":"fisheye_glitch2"}"]
 
@@ -63,12 +66,15 @@ mom: Повторяй за мной\: да благословит...
 - ...
 [signal arg_type="dict" arg="{"hide_image":"glitch2"}"]
 [signal arg_type="dict" arg="{"show_image":"glitch3"}"]
+[music path="res://sounds/sounds/glitches/Glitch_layer_2.ogg" channel="1" fade="0.0" volume="0.0"]
 [signal arg_type="dict" arg="{"hide_animation":"fisheye_glitch2"}"]
 [signal arg_type="dict" arg="{"animation":"fisheye_glitch3"}"]
 
 mom: ...сию скромну трапезу…
 - .........
 [signal arg_type="dict" arg="{"hide_image":"glitch3"}"]
+[music path="res://sounds/sounds/glitches/Glitch_layer_3.ogg" channel="1" fade="2.0" volume="0.0"]
+[music path="res://sounds/sounds/glitches/Glitch_layer_5.ogg" channel="3" fade="0.0" volume="5.0"]
 [signal arg_type="dict" arg="{"show_image":"glitch4"}"]
 [signal arg_type="dict" arg="{"hide_animation":"fisheye_glitch3"}"]
 [signal arg_type="dict" arg="{"animation":"fisheye_glitch4"}"]
@@ -76,10 +82,15 @@ mom: ...сию скромну трапезу…
 mom: ...святой Глитч…
 - ...............................
 [signal arg_type="dict" arg="{"hide_image":"glitch4"}"]
+[music fade="0.0" volume="0.0"]
+[music channel="1" fade="0.0" volume="0.0"]
+[music channel="2" fade="0.0" volume="0.0"]
+[music channel="3" fade="0.0" volume="0.0"]
 [signal arg_type="dict" arg="{"hide_animation":"fisheye_glitch4"}"]
 
 [i] (затемнение. *звук перевёрнутой тарелки* *звук всплеска* *звук человеческого “ах!”)
 [signal arg_type="dict" arg="{"show_image":"soup5"}"]
+[music path="res://sounds/music/суп высокий.ogg" fade="15.0" volume="0.0" bus="Music"]
 
 Бывало, во время обедов К. испытывал проблемы с аппетитом; ему казалось, что он медленно тонет в ухе.
 

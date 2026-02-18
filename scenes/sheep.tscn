@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://dgi14r5fa5o7s"]
+[gd_scene format=3 uid="uid://dgi14r5fa5o7s"]
 
 [ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_pt82y"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_n54i3"]
@@ -26,7 +26,7 @@
 [ext_resource type="BitMap" uid="uid://cilb455fceqo6" path="res://assets/buttons/sheep/road2_bitmap.png" id="28_ed4sy"]
 [ext_resource type="BitMap" uid="uid://dccidnfb4o2ns" path="res://assets/buttons/sheep/grass2_bitmap.png" id="29_kuuqh"]
 [ext_resource type="BitMap" uid="uid://b06uujc71pj6a" path="res://assets/buttons/sheep/line1_bitmap.png" id="31_c2dmr"]
-[ext_resource type="AudioStream" uid="uid://br3cr8vduhk4a" path="res://sounds/music/цыган.ogg" id="33_ed4sy"]
+[ext_resource type="AudioStream" uid="uid://mnvry538fcpw" path="res://sounds/music/sheep+ambience.ogg" id="33_ed4sy"]
 [ext_resource type="BitMap" uid="uid://bum74f3sivh71" path="res://assets/buttons/sheep/line2_bitmap.png" id="33_lein0"]
 [ext_resource type="BitMap" uid="uid://biuu6lqoqavud" path="res://assets/buttons/sheep/sheeps_bitmap.png" id="37_xl2ln"]
 [ext_resource type="BitMap" uid="uid://cr6a7mdqc6m2r" path="res://assets/buttons/sheep/sunflower_bitmap.png" id="39_u3jjo"]
@@ -72,32 +72,32 @@ _data = {
 &"move": SubResource("Animation_5g05w")
 }
 
-[node name="sheep" type="CanvasLayer"]
+[node name="sheep" type="CanvasLayer" unique_id=323613455]
 script = ExtResource("1_pt82y")
 metadata/timeline = "sheep1"
 
-[node name="pause_menu" parent="." instance=ExtResource("2_xfjls")]
+[node name="pause_menu" parent="." unique_id=29931743 instance=ExtResource("2_xfjls")]
 
-[node name="back" type="TextureRect" parent="."]
+[node name="back" type="TextureRect" parent="." unique_id=941990649]
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("2_n54i3")
 
-[node name="sheep_art" type="Sprite2D" parent="."]
+[node name="sheep_art" type="Sprite2D" parent="." unique_id=1706970785]
 position = Vector2(960, 540)
 texture = ExtResource("3_5g05w")
 metadata/fade_in = true
 
-[node name="sheep_road_final" type="Sprite2D" parent="."]
+[node name="sheep_road_final" type="Sprite2D" parent="." unique_id=215285064]
 visible = false
 position = Vector2(960, 540)
 texture = ExtResource("4_4apx6")
 
-[node name="cloud" type="Sprite2D" parent="."]
+[node name="cloud" type="Sprite2D" parent="." unique_id=1557884521]
 position = Vector2(394, 320)
 texture = ExtResource("4_vbo3h")
 
-[node name="cloud_back" type="TextureRect" parent="."]
+[node name="cloud_back" type="TextureRect" parent="." unique_id=73840271]
 offset_left = 1266.0
 offset_top = 92.0
 offset_right = 3186.0
@@ -105,7 +105,7 @@ offset_bottom = 1172.0
 scale = Vector2(0.34449884, 0.80251527)
 texture = ExtResource("2_n54i3")
 
-[node name="cloud_back2" type="TextureRect" parent="."]
+[node name="cloud_back2" type="TextureRect" parent="." unique_id=1732549309]
 offset_left = 64.0
 offset_top = 32.0
 offset_right = 1984.0
@@ -113,82 +113,80 @@ offset_bottom = 1112.0
 scale = Vector2(0.3066469, 0.85335094)
 texture = ExtResource("2_n54i3")
 
-[node name="InteractiveImages" parent="." instance=ExtResource("3_6qn06")]
+[node name="InteractiveImages" parent="." unique_id=252292684 instance=ExtResource("3_6qn06")]
 
-[node name="cloud_anim" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_4uhln")
-}
-autoplay = "move"
+[node name="cloud_anim" type="AnimationPlayer" parent="." unique_id=718620946]
+libraries/ = SubResource("AnimationLibrary_4uhln")
+autoplay = &"move"
 speed_scale = 0.002
 
-[node name="sheep4" type="Sprite2D" parent="."]
+[node name="sheep4" type="Sprite2D" parent="." unique_id=976025707]
 visible = false
 position = Vector2(960, 724)
 texture = ExtResource("6_wkjkd")
 metadata/fade_in = true
 metadata/fade_out = true
 
-[node name="sheep3" type="Sprite2D" parent="."]
+[node name="sheep3" type="Sprite2D" parent="." unique_id=2015722042]
 visible = false
 position = Vector2(926, 748)
 texture = ExtResource("6_ycxms")
 metadata/fade_in = true
 metadata/fade_out = true
 
-[node name="sheep2" type="Sprite2D" parent="."]
+[node name="sheep2" type="Sprite2D" parent="." unique_id=293056420]
 visible = false
 position = Vector2(1178, 781)
 texture = ExtResource("6_ujskf")
 metadata/fade_in = true
 metadata/fade_out = true
 
-[node name="sheep1" type="Sprite2D" parent="."]
+[node name="sheep1" type="Sprite2D" parent="." unique_id=181682415]
 visible = false
 position = Vector2(876, 792)
 texture = ExtResource("7_ycxms")
 metadata/fade_in = true
 metadata/fade_out = true
 
-[node name="sheepking" type="Sprite2D" parent="."]
+[node name="sheepking" type="Sprite2D" parent="." unique_id=573835590]
 visible = false
 position = Vector2(1055, 792)
 texture = ExtResource("6_s32ju")
 metadata/fade_in = true
 
-[node name="smile_long" type="Sprite2D" parent="."]
+[node name="smile_long" type="Sprite2D" parent="." unique_id=2083454384]
 visible = false
 position = Vector2(937, 835)
 texture = ExtResource("11_wkjkd")
 metadata/fade_in = true
 metadata/fade_out = true
 
-[node name="smile_short" type="Sprite2D" parent="."]
+[node name="smile_short" type="Sprite2D" parent="." unique_id=675984114]
 visible = false
 position = Vector2(937, 788)
 texture = ExtResource("12_jjfva")
 metadata/fade_in = true
 metadata/fade_out = true
 
-[node name="staff" type="Sprite2D" parent="."]
+[node name="staff" type="Sprite2D" parent="." unique_id=1646352014]
 visible = false
 position = Vector2(1225, 541)
 texture = ExtResource("12_wkjkd")
 metadata/fade_in = true
 metadata/fade_out = true
 
-[node name="cloth" type="Sprite2D" parent="."]
+[node name="cloth" type="Sprite2D" parent="." unique_id=1346019179]
 visible = false
 position = Vector2(760, 451)
 texture = ExtResource("13_jjfva")
 metadata/fade_in = true
 metadata/fade_out = true
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1959741692]
 layer = 11
 script = ExtResource("18_t11lf")
 
-[node name="bees" type="TextureButton" parent="CanvasLayer"]
+[node name="bees" type="TextureButton" parent="CanvasLayer" unique_id=1972311929]
 visible = false
 offset_left = 747.0
 offset_top = 499.0
@@ -198,7 +196,7 @@ disabled = true
 texture_normal = ExtResource("18_x32cs")
 texture_click_mask = ExtResource("19_t11lf")
 
-[node name="bush1" type="TextureButton" parent="CanvasLayer"]
+[node name="bush1" type="TextureButton" parent="CanvasLayer" unique_id=58222602]
 visible = false
 offset_left = 1023.0
 offset_top = 566.0
@@ -207,7 +205,7 @@ offset_bottom = 728.0
 disabled = true
 texture_click_mask = ExtResource("21_ogudn")
 
-[node name="bush2" type="TextureButton" parent="CanvasLayer"]
+[node name="bush2" type="TextureButton" parent="CanvasLayer" unique_id=1211000338]
 visible = false
 offset_left = 625.0
 offset_top = 521.0
@@ -216,7 +214,7 @@ offset_bottom = 692.0
 disabled = true
 texture_click_mask = ExtResource("23_8wyf8")
 
-[node name="bush3" type="TextureButton" parent="CanvasLayer"]
+[node name="bush3" type="TextureButton" parent="CanvasLayer" unique_id=1369612517]
 visible = false
 offset_left = 976.0
 offset_top = 528.0
@@ -225,7 +223,7 @@ offset_bottom = 618.0
 disabled = true
 texture_click_mask = ExtResource("25_xd0uc")
 
-[node name="grass1" type="TextureButton" parent="CanvasLayer"]
+[node name="grass1" type="TextureButton" parent="CanvasLayer" unique_id=808574077]
 visible = false
 offset_left = 632.0
 offset_top = 629.0
@@ -234,7 +232,7 @@ offset_bottom = 854.0
 disabled = true
 texture_click_mask = ExtResource("27_a027o")
 
-[node name="grass2" type="TextureButton" parent="CanvasLayer"]
+[node name="grass2" type="TextureButton" parent="CanvasLayer" unique_id=1482328389]
 visible = false
 offset_left = 1022.0
 offset_top = 630.0
@@ -243,7 +241,7 @@ offset_bottom = 762.0
 disabled = true
 texture_click_mask = ExtResource("29_kuuqh")
 
-[node name="line1" type="TextureButton" parent="CanvasLayer"]
+[node name="line1" type="TextureButton" parent="CanvasLayer" unique_id=2077838745]
 visible = false
 offset_left = 772.0
 offset_top = 534.0
@@ -252,7 +250,7 @@ offset_bottom = 606.0
 disabled = true
 texture_click_mask = ExtResource("31_c2dmr")
 
-[node name="line2" type="TextureButton" parent="CanvasLayer"]
+[node name="line2" type="TextureButton" parent="CanvasLayer" unique_id=1234489544]
 visible = false
 offset_left = 1149.0
 offset_top = 498.0
@@ -261,7 +259,7 @@ offset_bottom = 552.0
 disabled = true
 texture_click_mask = ExtResource("33_lein0")
 
-[node name="road" type="TextureButton" parent="CanvasLayer"]
+[node name="road" type="TextureButton" parent="CanvasLayer" unique_id=672758912]
 visible = false
 modulate = Color(1, 0, 1, 1)
 offset_left = 891.0
@@ -271,7 +269,7 @@ offset_bottom = 627.0
 disabled = true
 texture_click_mask = ExtResource("28_ed4sy")
 
-[node name="sheeps" type="TextureButton" parent="CanvasLayer"]
+[node name="sheeps" type="TextureButton" parent="CanvasLayer" unique_id=1574084679]
 visible = false
 modulate = Color(1, 1, 1, 0.3764706)
 offset_left = 672.0
@@ -281,7 +279,7 @@ offset_bottom = 858.0
 disabled = true
 texture_click_mask = ExtResource("37_xl2ln")
 
-[node name="sunflower" type="TextureButton" parent="CanvasLayer"]
+[node name="sunflower" type="TextureButton" parent="CanvasLayer" unique_id=708660367]
 visible = false
 modulate = Color(1, 1, 1, 0.5254902)
 offset_left = 1077.0
@@ -291,7 +289,7 @@ offset_bottom = 606.0
 disabled = true
 texture_click_mask = ExtResource("39_u3jjo")
 
-[node name="tree" type="TextureButton" parent="CanvasLayer"]
+[node name="tree" type="TextureButton" parent="CanvasLayer" unique_id=860690122]
 visible = false
 modulate = Color(1, 1, 1, 0.47058824)
 offset_left = 675.0
@@ -301,7 +299,7 @@ offset_bottom = 519.0
 disabled = true
 texture_click_mask = ExtResource("41_j6fcp")
 
-[node name="triangle1" type="TextureButton" parent="CanvasLayer"]
+[node name="triangle1" type="TextureButton" parent="CanvasLayer" unique_id=1475314306]
 visible = false
 modulate = Color(1, 1, 1, 0.30980393)
 offset_left = 1101.0
@@ -311,7 +309,7 @@ offset_bottom = 525.0
 disabled = true
 texture_click_mask = ExtResource("43_81h7x")
 
-[node name="triangle2" type="TextureButton" parent="CanvasLayer"]
+[node name="triangle2" type="TextureButton" parent="CanvasLayer" unique_id=1163257168]
 visible = false
 offset_left = 941.0
 offset_top = 723.0
@@ -320,7 +318,7 @@ offset_bottom = 810.0
 disabled = true
 texture_click_mask = ExtResource("45_a0q7d")
 
-[node name="gypsy_ost" type="AudioStreamPlayer2D" parent="."]
+[node name="gypsy_ost" type="AudioStreamPlayer2D" parent="." unique_id=689133499]
 stream = ExtResource("33_ed4sy")
 autoplay = true
 bus = &"Music"

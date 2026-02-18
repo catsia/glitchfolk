@@ -1,4 +1,4 @@
-[gd_scene load_steps=256 format=3 uid="uid://bnwkx3jd1b8cg"]
+[gd_scene format=3 uid="uid://bnwkx3jd1b8cg"]
 
 [ext_resource type="Script" uid="uid://8nhu1kwixmam" path="res://scenes/interactive_images.gd" id="1_vqs1a"]
 [ext_resource type="Texture2D" uid="uid://d0fvtskwvwlod" path="res://assets/art/background/obrazy_ref1.png" id="2_b6xrf"]
@@ -714,6 +714,94 @@ animations = [{
 "loop": false,
 "name": &"4",
 "speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3e3ps")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vhour")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4et2e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mnha0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_evgnc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2bp0j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aagrl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cvsdh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m7732")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8ps1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b6uyv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r6tiw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qhsyw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q8nuc")
+}],
+"loop": false,
+"name": &"idle_1",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gjmta")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jfi0m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1n7ks")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ylol")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b6gdx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6q7qk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qh8r7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_afchx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1hhx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c5jwg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pyh5e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4i28f")
+}],
+"loop": false,
+"name": &"idle_2",
+"speed": 8.0
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1g5rh"]
@@ -1572,7 +1660,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"idle_fast",
-"speed": 5.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -2048,49 +2136,49 @@ animations = [{
 "speed": 8.0
 }]
 
-[node name="InteractiveImages" type="Node2D"]
+[node name="InteractiveImages" type="Node2D" unique_id=1391672311]
 script = ExtResource("1_vqs1a")
 
-[node name="ObrazyRef1" type="Sprite2D" parent="."]
+[node name="ObrazyRef1" type="Sprite2D" parent="." unique_id=2063829863]
 visible = false
 position = Vector2(960, 539)
 texture = ExtResource("2_b6xrf")
 
-[node name="cross_bird" type="Sprite2D" parent="."]
+[node name="cross_bird" type="Sprite2D" parent="." unique_id=385763744]
 visible = false
 position = Vector2(960, 540)
 texture = ExtResource("3_i4cod")
 metadata/fade_in = true
 
-[node name="flame" type="AnimatedSprite2D" parent="."]
+[node name="flame" type="AnimatedSprite2D" parent="." unique_id=912636589]
 visible = false
 position = Vector2(568, 534)
 sprite_frames = SubResource("SpriteFrames_fu5s6")
 animation = &"bigFire"
 script = ExtResource("5_a6g1q")
 
-[node name="flower" type="AnimatedSprite2D" parent="."]
+[node name="flower" type="AnimatedSprite2D" parent="." unique_id=1091878107]
 visible = false
 position = Vector2(1410, 156)
 sprite_frames = SubResource("SpriteFrames_2rkvg")
-animation = &"4"
+animation = &"idle_1"
 script = ExtResource("5_a6g1q")
 
-[node name="childhood" type="AnimatedSprite2D" parent="."]
+[node name="childhood" type="AnimatedSprite2D" parent="." unique_id=128049337]
 visible = false
 position = Vector2(214, 529)
 sprite_frames = SubResource("SpriteFrames_00w7j")
 animation = &"idle_intro"
 script = ExtResource("5_a6g1q")
 
-[node name="raspberry" type="AnimatedSprite2D" parent="."]
+[node name="raspberry" type="AnimatedSprite2D" parent="." unique_id=567557906]
 visible = false
 position = Vector2(427, 301)
 sprite_frames = SubResource("SpriteFrames_fn62r")
-animation = &"slow"
+animation = &"idle_slow"
 script = ExtResource("5_a6g1q")
 
-[node name="eye" type="AnimatedSprite2D" parent="." node_paths=PackedStringArray("eye_button")]
+[node name="eye" type="AnimatedSprite2D" parent="." unique_id=1063144553 node_paths=PackedStringArray("eye_button")]
 visible = false
 position = Vector2(1708, 484)
 sprite_frames = SubResource("SpriteFrames_j8rno")
@@ -2098,11 +2186,11 @@ animation = &"eyeSide"
 script = ExtResource("14_o3su5")
 eye_button = NodePath("../CanvasLayer/eye")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=141848978]
 layer = 10
 script = ExtResource("18_84f6e")
 
-[node name="flame" type="Button" parent="CanvasLayer"]
+[node name="flame" type="Button" parent="CanvasLayer" unique_id=1530434012]
 visible = false
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
@@ -2113,7 +2201,7 @@ offset_bottom = 752.0
 flat = true
 script = ExtResource("10_413m3")
 
-[node name="childhood" type="Button" parent="CanvasLayer"]
+[node name="childhood" type="Button" parent="CanvasLayer" unique_id=384163266]
 visible = false
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
@@ -2123,7 +2211,7 @@ offset_right = 280.0
 offset_bottom = 590.0
 script = ExtResource("10_413m3")
 
-[node name="eye" type="Button" parent="CanvasLayer"]
+[node name="eye" type="Button" parent="CanvasLayer" unique_id=1289669421]
 visible = false
 modulate = Color(1, 1, 1, 0)
 offset_left = 1616.0
@@ -2133,3 +2221,19 @@ offset_bottom = 561.0
 disabled = true
 flat = true
 script = ExtResource("11_4et2e")
+
+[node name="flower" type="Button" parent="CanvasLayer" unique_id=1378528971]
+visible = false
+offset_left = 1348.0
+offset_top = 43.0
+offset_right = 1481.0
+offset_bottom = 264.0
+script = ExtResource("10_413m3")
+
+[node name="raspberry" type="Button" parent="CanvasLayer" unique_id=534281142]
+visible = false
+offset_left = 396.0
+offset_top = 259.0
+offset_right = 468.0
+offset_bottom = 340.0
+script = ExtResource("10_413m3")

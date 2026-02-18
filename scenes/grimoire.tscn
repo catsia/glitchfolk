@@ -1,4 +1,4 @@
-[gd_scene load_steps=122 format=3 uid="uid://csj4uua3yj0dl"]
+[gd_scene format=3 uid="uid://csj4uua3yj0dl"]
 
 [ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_nyjrj"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_fhfaf"]
@@ -14,7 +14,7 @@
 [ext_resource type="Script" uid="uid://cv0a2357kwrke" path="res://scripts/buttons/not_ending_anim_button.gd" id="12_8ltuu"]
 [ext_resource type="Script" uid="uid://8dpq410r4yb0" path="res://scripts/buttons/grimoire_last_button.gd" id="13_nyjrj"]
 [ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="14_su1je"]
-[ext_resource type="AudioStream" uid="uid://i6h21jgpgmet" path="res://sounds/music/гримуар.ogg" id="15_su1je"]
+[ext_resource type="AudioStream" uid="uid://cn3ev08a7678c" path="res://sounds/music/grimoire+ambiance.ogg" id="15_su1je"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vrino"]
 atlas = ExtResource("4_q2v0p")
@@ -891,68 +891,68 @@ animations = [{
 "speed": 9.0
 }]
 
-[node name="Grimoire" type="CanvasLayer"]
+[node name="Grimoire" type="CanvasLayer" unique_id=1048277219]
 script = ExtResource("1_nyjrj")
 metadata/timeline = "grimoire"
 
-[node name="background" type="TextureRect" parent="."]
+[node name="background" type="TextureRect" parent="." unique_id=1876865258]
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_fhfaf")
 
-[node name="grimoire_art" type="Sprite2D" parent="."]
+[node name="grimoire_art" type="Sprite2D" parent="." unique_id=1296073979]
 position = Vector2(960, 509)
 texture = ExtResource("3_lbjj8")
 
-[node name="grimoire_dust" type="AnimatedSprite2D" parent="."]
+[node name="grimoire_dust" type="AnimatedSprite2D" parent="." unique_id=1984688434]
 position = Vector2(953, 519)
 sprite_frames = SubResource("SpriteFrames_6pgbq")
 frame_progress = 0.107331164
 
-[node name="header" type="AnimatedSprite2D" parent="."]
+[node name="header" type="AnimatedSprite2D" parent="." unique_id=118645101]
 position = Vector2(774, 428)
 sprite_frames = SubResource("SpriteFrames_7wr43")
 frame_progress = 0.425169
 
-[node name="paragraph1" type="AnimatedSprite2D" parent="."]
+[node name="paragraph1" type="AnimatedSprite2D" parent="." unique_id=2105878750]
 position = Vector2(853, 481)
 sprite_frames = SubResource("SpriteFrames_knld4")
 frame_progress = 0.086525016
 
-[node name="paragraph2" type="AnimatedSprite2D" parent="."]
+[node name="paragraph2" type="AnimatedSprite2D" parent="." unique_id=1346456693]
 position = Vector2(929, 556)
 sprite_frames = SubResource("SpriteFrames_4l0v7")
 frame_progress = 0.9347604
 
-[node name="paragraph3" type="AnimatedSprite2D" parent="."]
+[node name="paragraph3" type="AnimatedSprite2D" parent="." unique_id=50310372]
 position = Vector2(1002, 627)
 sprite_frames = SubResource("SpriteFrames_otx87")
 frame = 1
 frame_progress = 0.15969
 
-[node name="paragraph4" type="AnimatedSprite2D" parent="."]
+[node name="paragraph4" type="AnimatedSprite2D" parent="." unique_id=1189377846]
 position = Vector2(1004, 327)
 sprite_frames = SubResource("SpriteFrames_3mrqb")
 frame = 4
 frame_progress = 0.28608
 
-[node name="paragraph5" type="AnimatedSprite2D" parent="."]
+[node name="paragraph5" type="AnimatedSprite2D" parent="." unique_id=934526590]
 visible = false
 position = Vector2(1121, 401)
 sprite_frames = SubResource("SpriteFrames_p03a8")
 
-[node name="InteractiveImages" parent="." instance=ExtResource("11_374y1")]
+[node name="InteractiveImages" parent="." unique_id=912884489 instance=ExtResource("11_374y1")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1283077119]
 layer = 11
 
-[node name="Control" type="Control" parent="CanvasLayer"]
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1428285794]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="paragraph2" type="Button" parent="CanvasLayer/Control" node_paths=PackedStringArray("animation")]
+[node name="paragraph2" type="Button" parent="CanvasLayer/Control" unique_id=158496258 node_paths=PackedStringArray("animation")]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 804.0
@@ -964,7 +964,7 @@ flat = true
 script = ExtResource("12_8ltuu")
 animation = NodePath("../../../paragraph2")
 
-[node name="paragraph4" type="Button" parent="CanvasLayer/Control" node_paths=PackedStringArray("animation")]
+[node name="paragraph4" type="Button" parent="CanvasLayer/Control" unique_id=625552405 node_paths=PackedStringArray("animation")]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 910.0
@@ -976,7 +976,7 @@ flat = true
 script = ExtResource("12_8ltuu")
 animation = NodePath("../../../paragraph4")
 
-[node name="paragraph5" type="Button" parent="CanvasLayer/Control" node_paths=PackedStringArray("animation")]
+[node name="paragraph5" type="Button" parent="CanvasLayer/Control" unique_id=612109288 node_paths=PackedStringArray("animation")]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 999.99994
@@ -988,7 +988,7 @@ flat = true
 script = ExtResource("13_nyjrj")
 animation = NodePath("../../../paragraph5")
 
-[node name="paragraph3" type="Button" parent="CanvasLayer/Control" node_paths=PackedStringArray("animation")]
+[node name="paragraph3" type="Button" parent="CanvasLayer/Control" unique_id=505358900 node_paths=PackedStringArray("animation")]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 879.0
@@ -1000,7 +1000,7 @@ flat = true
 script = ExtResource("12_8ltuu")
 animation = NodePath("../../../paragraph3")
 
-[node name="paragraph1" type="Button" parent="CanvasLayer/Control" node_paths=PackedStringArray("animation")]
+[node name="paragraph1" type="Button" parent="CanvasLayer/Control" unique_id=1462661105 node_paths=PackedStringArray("animation")]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 731.5067
@@ -1012,9 +1012,9 @@ flat = true
 script = ExtResource("12_8ltuu")
 animation = NodePath("../../../paragraph1")
 
-[node name="pause_menu" parent="." instance=ExtResource("14_su1je")]
+[node name="pause_menu" parent="." unique_id=1717294060 instance=ExtResource("14_su1je")]
 
-[node name="book_ost" type="AudioStreamPlayer2D" parent="."]
+[node name="book_ost" type="AudioStreamPlayer2D" parent="." unique_id=510701878]
 stream = ExtResource("15_su1je")
 autoplay = true
 bus = &"Music"

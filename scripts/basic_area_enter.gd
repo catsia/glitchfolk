@@ -8,4 +8,3 @@ func _on_area_entered(area: Area2D) -> void:
 		return
 	SignalManager.emit_area_seen()
 	isSeen = true
-	
