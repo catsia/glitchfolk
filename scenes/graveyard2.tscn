@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://5ejvc8ajayfu"]
+[gd_scene format=3 uid="uid://5ejvc8ajayfu"]
 
 [ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_gbvxb"]
 [ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="2_lb4vj"]
@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://c6hnvsuaiq6jb" path="res://assets/art/animations/graveyard/father_stain.png" id="6_tuyr6"]
 [ext_resource type="Texture2D" uid="uid://dik1w32ikcxkw" path="res://assets/art/animations/graveyard/father_mak.png" id="7_1vb0k"]
 [ext_resource type="Script" uid="uid://c1t2finxoc4c6" path="res://scripts/basic_button.gd" id="8_sqtc5"]
-[ext_resource type="Script" uid="uid://rcj1ra52lc55" path="res://scenes/next_scene_button.gd" id="9_3xue4"]
+[ext_resource type="Script" uid="uid://rcj1ra52lc55" path="res://scripts/next_scene_button.gd" id="9_3xue4"]
 [ext_resource type="Texture2D" uid="uid://cq0l14b5py32q" path="res://assets/art/animations/graveyard/willow_glitch.png" id="10_tn2kl"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="11_ly02p"]
 

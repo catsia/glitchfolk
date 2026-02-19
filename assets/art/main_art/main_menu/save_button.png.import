@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6s2h33ywdiqa"
-path="res://.godot/imported/map.png-8713ef507ad23b005444c07db77d6311.ctex"
+uid="uid://cewib21tg4dke"
+path="res://.godot/imported/save_button.png-ddaa13e76c782ddc9cc21a3c576888a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/placeholders/map.png"
-dest_files=["res://.godot/imported/map.png-8713ef507ad23b005444c07db77d6311.ctex"]
+source_file="res://assets/art/main_art/main_menu/save_button.png"
+dest_files=["res://.godot/imported/save_button.png-ddaa13e76c782ddc9cc21a3c576888a6.ctex"]
 
 [params]
 

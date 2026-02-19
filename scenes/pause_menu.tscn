@@ -1,12 +1,15 @@
-[gd_scene load_steps=47 format=3 uid="uid://d2v0xy18fq2ap"]
+[gd_scene format=3 uid="uid://d2v0xy18fq2ap"]
 
 [ext_resource type="Script" uid="uid://yx8sidfx4lg8" path="res://scripts/ui/pause_menu.gd" id="1_n87rw"]
 [ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="2_kukqi"]
 [ext_resource type="Texture2D" uid="uid://d1vft73u7es3v" path="res://assets/art/main_art/main_menu/logo_anim.png" id="3_5d2l8"]
 [ext_resource type="Texture2D" uid="uid://dxeskrvxe6dyq" path="res://assets/art/main_art/main_menu/cont_button-export.png" id="4_7l7mv"]
+[ext_resource type="Texture2D" uid="uid://cewib21tg4dke" path="res://assets/art/main_art/main_menu/save_button.png" id="5_88e76"]
 [ext_resource type="Texture2D" uid="uid://b1866rnky0pvw" path="res://assets/art/main_art/main_menu/exit_button.png" id="5_v4r4p"]
 [ext_resource type="Texture2D" uid="uid://d0mgyntk7r5iq" path="res://assets/art/animations/match.png" id="6_1s2dm"]
-[ext_resource type="Script" uid="uid://4roa54nhnxkp" path="res://scenes/hover_anim.gd" id="7_88e76"]
+[ext_resource type="Texture2D" uid="uid://dab5gva2bygxy" path="res://assets/art/main_art/main_menu/load_button.png" id="6_knqa7"]
+[ext_resource type="Texture2D" uid="uid://dvotm1nucxnww" path="res://assets/art/main_art/main_menu/settings_button.png" id="7_71k7c"]
+[ext_resource type="Script" uid="uid://4roa54nhnxkp" path="res://scripts/hover_anim.gd" id="7_88e76"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7l7mv"]
 atlas = ExtResource("3_5d2l8")
@@ -46,7 +49,7 @@ animations = [{
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_knqa7"]
 atlas = ExtResource("4_7l7mv")
-region = Rect2(0, 2.5, 324, 81)
+region = Rect2(-2.5380402, 2.5, 319.30884, 81)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_71k7c"]
 atlas = ExtResource("4_7l7mv")
@@ -55,6 +58,42 @@ region = Rect2(0, 175.5, 324, 84)
 [sub_resource type="AtlasTexture" id="AtlasTexture_4hnlu"]
 atlas = ExtResource("4_7l7mv")
 region = Rect2(0, 89.5, 324, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3o3g3"]
+atlas = ExtResource("5_88e76")
+region = Rect2(1.9698639, 9, 320.81146, 75)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h5b1d"]
+atlas = ExtResource("5_88e76")
+region = Rect2(1.2185364, 186, 320.8115, 75)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avs0h"]
+atlas = ExtResource("5_88e76")
+region = Rect2(-3.2893524, 94.05308, 320.81152, 78.88807)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ar2xs"]
+atlas = ExtResource("6_knqa7")
+region = Rect2(1.2185364, 9.154488, 322.78146, 75.13149)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkjer"]
+atlas = ExtResource("6_knqa7")
+region = Rect2(0, 176.69772, 324, 84.89859)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gujb"]
+atlas = ExtResource("6_knqa7")
+region = Rect2(0, 88.79387, 324, 89.40648)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fy126"]
+atlas = ExtResource("7_71k7c")
+region = Rect2(0.46722412, 6.900543, 323.53278, 76.634125)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bhxne"]
+atlas = ExtResource("7_71k7c")
+region = Rect2(0, 176.69772, 324, 85.64987)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vlav8"]
+atlas = ExtResource("7_71k7c")
+region = Rect2(0, 90.2965, 324, 85.64991)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cmnsq"]
 atlas = ExtResource("5_v4r4p")
@@ -266,7 +305,7 @@ animations = [{
 "speed": 8.0
 }]
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" unique_id=1391158559]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -275,17 +314,17 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_n87rw")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=157658140]
 layer = 10
 visible = false
 
-[node name="back" type="TextureRect" parent="CanvasLayer"]
+[node name="back" type="TextureRect" parent="CanvasLayer" unique_id=262898955]
 offset_left = 6.1035156e-05
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("2_kukqi")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=1136696942]
 visible = false
 anchors_preset = 8
 anchor_left = 0.5
@@ -300,52 +339,94 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_group_ = true
 
-[node name="resumeButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+[node name="resumeButton" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=790549432]
 layout_mode = 2
 text = "Продолжить"
 
-[node name="quitButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+[node name="quitButton" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=951532360]
 layout_mode = 2
 text = "Выход"
 
-[node name="logo" type="AnimatedSprite2D" parent="CanvasLayer"]
+[node name="logo" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1173345108]
 position = Vector2(504.5, 192.25)
 scale = Vector2(0.72583336, 0.7063492)
 sprite_frames = SubResource("SpriteFrames_knqa7")
 autoplay = "default"
 frame_progress = 0.49721333
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer"]
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer" unique_id=1148636475]
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
 offset_left = 84.0
-offset_top = -440.0
+offset_top = -672.0
 offset_right = 411.0
-offset_bottom = -277.0
+offset_bottom = -269.0
 grow_vertical = 0
+size_flags_horizontal = 0
 metadata/_edit_group_ = true
 
-[node name="contButton" type="TextureButton" parent="CanvasLayer/VBoxContainer2"]
+[node name="contButton" type="TextureButton" parent="CanvasLayer/VBoxContainer2" unique_id=762983575]
 layout_mode = 2
 texture_normal = SubResource("AtlasTexture_knqa7")
 texture_pressed = SubResource("AtlasTexture_71k7c")
 texture_hover = SubResource("AtlasTexture_4hnlu")
 
-[node name="exitButton" type="TextureButton" parent="CanvasLayer/VBoxContainer2"]
+[node name="saveButton" type="TextureButton" parent="CanvasLayer/VBoxContainer2" unique_id=2145059306]
+texture_filter = 1
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_3o3g3")
+texture_pressed = SubResource("AtlasTexture_h5b1d")
+texture_hover = SubResource("AtlasTexture_avs0h")
+
+[node name="loadButton" type="TextureButton" parent="CanvasLayer/VBoxContainer2" unique_id=777178498]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_ar2xs")
+texture_pressed = SubResource("AtlasTexture_jkjer")
+texture_hover = SubResource("AtlasTexture_5gujb")
+
+[node name="settingsButton" type="TextureButton" parent="CanvasLayer/VBoxContainer2" unique_id=855354078]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_fy126")
+texture_pressed = SubResource("AtlasTexture_bhxne")
+texture_hover = SubResource("AtlasTexture_vlav8")
+
+[node name="exitButton" type="TextureButton" parent="CanvasLayer/VBoxContainer2" unique_id=403456604]
 layout_mode = 2
 texture_normal = SubResource("AtlasTexture_cmnsq")
 texture_pressed = SubResource("AtlasTexture_ofnjo")
 texture_hover = SubResource("AtlasTexture_1rgno")
 
-[node name="match_new" type="AnimatedSprite2D" parent="CanvasLayer" node_paths=PackedStringArray("button")]
+[node name="match_new" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=991669766 node_paths=PackedStringArray("button")]
 visible = false
-position = Vector2(464, 664)
+position = Vector2(470, 440)
 sprite_frames = SubResource("SpriteFrames_71k7c")
+frame_progress = 0.16580056
 script = ExtResource("7_88e76")
 button = NodePath("../VBoxContainer2/contButton")
 
-[node name="match_exit" type="AnimatedSprite2D" parent="CanvasLayer" node_paths=PackedStringArray("button")]
+[node name="match_save" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=795212280 node_paths=PackedStringArray("button")]
+visible = false
+position = Vector2(469, 523)
+sprite_frames = SubResource("SpriteFrames_71k7c")
+script = ExtResource("7_88e76")
+button = NodePath("../VBoxContainer2/saveButton")
+
+[node name="match_load" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=554291654 node_paths=PackedStringArray("button")]
+visible = false
+position = Vector2(468, 597)
+sprite_frames = SubResource("SpriteFrames_71k7c")
+script = ExtResource("7_88e76")
+button = NodePath("../VBoxContainer2/loadButton")
+
+[node name="match_settings" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=948099689 node_paths=PackedStringArray("button")]
+visible = false
+position = Vector2(466, 677)
+sprite_frames = SubResource("SpriteFrames_71k7c")
+script = ExtResource("7_88e76")
+button = NodePath("../VBoxContainer2/settingsButton")
+
+[node name="match_exit" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=254758707 node_paths=PackedStringArray("button")]
 visible = false
 position = Vector2(470, 761)
 sprite_frames = SubResource("SpriteFrames_cmnsq")

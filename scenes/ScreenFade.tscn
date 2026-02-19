@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://comvfvndiilgr"]
+[gd_scene format=3 uid="uid://comvfvndiilgr"]
 
-[ext_resource type="Script" uid="uid://bw3h4lwt3i8x1" path="res://scenes/screen_fade.gd" id="1_fw8rv"]
+[ext_resource type="Script" uid="uid://bw3h4lwt3i8x1" path="res://scripts/screen_fade.gd" id="1_fw8rv"]
 
 [node name="ScreenFade" type="Node2D"]
 script = ExtResource("1_fw8rv")

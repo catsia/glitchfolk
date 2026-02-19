@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dik1w32ikcxkw" path="res://assets/art/animations/graveyard/father_mak.png" id="5_cg05x"]
 [ext_resource type="Texture2D" uid="uid://c6hnvsuaiq6jb" path="res://assets/art/animations/graveyard/father_stain.png" id="6_ogaks"]
 [ext_resource type="Script" uid="uid://c1t2finxoc4c6" path="res://scripts/basic_button.gd" id="7_rayba"]
-[ext_resource type="Script" uid="uid://rcj1ra52lc55" path="res://scenes/next_scene_button.gd" id="10_lfno2"]
+[ext_resource type="Script" uid="uid://rcj1ra52lc55" path="res://scripts/next_scene_button.gd" id="10_lfno2"]
 [ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="11_rayba"]
 [ext_resource type="Texture2D" uid="uid://cq0l14b5py32q" path="res://assets/art/animations/graveyard/willow_glitch.png" id="11_ug83y"]
 [ext_resource type="Texture2D" uid="uid://b5nvhtj0bk0g6" path="res://assets/art/main_art/splashart/splash.png" id="12_jyay1"]

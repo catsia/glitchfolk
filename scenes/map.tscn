@@ -1,67 +1,74 @@
-[gd_scene load_steps=7 format=3 uid="uid://dh36w2naer3ja"]
+[gd_scene format=3 uid="uid://dh36w2naer3ja"]
 
-[ext_resource type="Script" uid="uid://bv7402ir0km7l" path="res://scenes/fields_button.gd" id="1_0cso3"]
-[ext_resource type="Script" uid="uid://s8ya767g4vd2" path="res://scenes/home_button.gd" id="1_2klcf"]
-[ext_resource type="Texture2D" uid="uid://c6s2h33ywdiqa" path="res://assets/art/placeholders/map.png" id="1_4xfga"]
-[ext_resource type="Script" uid="uid://c1dvuaurro2v8" path="res://scenes/cube.gd" id="2_gldc4"]
-[ext_resource type="Script" uid="uid://dbao77ixfi254" path="res://scenes/forest_button.gd" id="2_paxxb"]
+[ext_resource type="Texture2D" uid="uid://db1d6nwww4mb3" path="res://assets/art/background/HB background red.png" id="1_2klcf"]
+[ext_resource type="Texture2D" uid="uid://c8rpxw2p0ujmo" path="res://assets/art/main_art/map/main_map.png" id="2_2lpho"]
+[ext_resource type="Texture2D" uid="uid://b8lw300ql6rrr" path="res://assets/art/main_art/map/home_button.png" id="3_nakos"]
+[ext_resource type="Texture2D" uid="uid://bxk6ycsrbk74" path="res://assets/art/main_art/map/home_button_grey.png" id="4_jh32y"]
+[ext_resource type="Texture2D" uid="uid://ctro2d7fix0wk" path="res://assets/art/main_art/map/field_button_grey.png" id="5_nakos"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="6_2lpho"]
+[ext_resource type="Texture2D" uid="uid://bqumcn1jrqs4t" path="res://assets/art/main_art/map/field_button_.png" id="6_jh32y"]
+[ext_resource type="Texture2D" uid="uid://hi4ufgw8x8ub" path="res://assets/art/main_art/map/forest_button_grey.png" id="7_be0no"]
+[ext_resource type="Texture2D" uid="uid://ji3k5odfng8b" path="res://assets/art/main_art/map/forest_button.png" id="8_blm8a"]
+[ext_resource type="Texture2D" uid="uid://rpu2gpv6mhti" path="res://assets/art/main_art/map/village_button_grey.png" id="9_mlgqr"]
+[ext_resource type="Texture2D" uid="uid://bv314cp8libdh" path="res://assets/art/main_art/map/village_button.png" id="10_wslke"]
 
-[node name="map" type="Node2D"]
+[node name="map" type="Node2D" unique_id=842989677]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=855350922]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_2klcf")
 
-[node name="home" type="Button" parent="CanvasLayer"]
-offset_left = 700.0
-offset_top = 713.0
-offset_right = 1000.0
-offset_bottom = 813.0
-text = "ПОЯВЛЯЕТСЯ ТОЛЬКО ПОСЛЕ ПОСЕЩЕНИЯ ОСТАЛЬНЫХ (в идеале сразу после посещения третьей локации, без карты)"
-autowrap_mode = 3
-script = ExtResource("1_2klcf")
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1852649276]
 
-[node name="fields" type="Button" parent="CanvasLayer"]
-offset_left = 1081.0
-offset_top = 615.0
-offset_right = 1182.0
-offset_bottom = 670.0
-text = "fields"
-script = ExtResource("1_0cso3")
-
-[node name="forest" type="Button" parent="CanvasLayer"]
-offset_left = 733.0
-offset_top = 345.0
-offset_right = 819.0
-offset_bottom = 379.0
-text = "forest"
-script = ExtResource("2_paxxb")
-
-[node name="cube" type="Button" parent="CanvasLayer"]
-offset_left = 1040.0
-offset_top = 353.0
-offset_right = 1127.0
-offset_bottom = 399.0
-text = "cube"
-script = ExtResource("2_gldc4")
-
-[node name="Label" type="Label" parent="CanvasLayer"]
-anchors_preset = -1
-anchor_right = 0.021000002
-anchor_bottom = 0.021000002
-offset_left = 744.0
-offset_top = 478.0
-offset_right = 1112.68
-offset_bottom = 607.32
-text = "Кнопки должны пропадать после нажатия и оставаться невидимыми после посещения соответствующей сцены (просто спрятать не могу, так как сцена каждый раз грузится заново в исходном состоянии)."
-autowrap_mode = 3
-
-[node name="map_art" type="Sprite2D" parent="."]
+[node name="map_art" type="Sprite2D" parent="CanvasLayer" unique_id=1451460149]
+texture_filter = 1
 position = Vector2(960, 540)
-texture = ExtResource("1_4xfga")
+scale = Vector2(3, 3)
+texture = ExtResource("2_2lpho")
 
-[node name="InteractiveImages" parent="." instance=ExtResource("6_2lpho")]
+[node name="home" type="TextureButton" parent="CanvasLayer" unique_id=961170099]
+texture_filter = 1
+offset_left = 1079.0
+offset_top = 304.0
+offset_right = 1192.0
+offset_bottom = 381.0
+texture_normal = ExtResource("4_jh32y")
+texture_hover = ExtResource("3_nakos")
+ignore_texture_size = true
+stretch_mode = 3
 
-[connection signal="pressed" from="CanvasLayer/home" to="CanvasLayer/home" method="_on_pressed"]
-[connection signal="pressed" from="CanvasLayer/fields" to="CanvasLayer/fields" method="_on_pressed"]
-[connection signal="pressed" from="CanvasLayer/forest" to="CanvasLayer/forest" method="_on_pressed"]
-[connection signal="pressed" from="CanvasLayer/cube" to="CanvasLayer/cube" method="_on_pressed"]
+[node name="fields" type="TextureButton" parent="CanvasLayer" unique_id=325978668]
+texture_filter = 1
+offset_left = 661.0
+offset_top = 479.0
+offset_right = 849.0
+offset_bottom = 549.0
+texture_normal = ExtResource("5_nakos")
+texture_hover = ExtResource("6_jh32y")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="forest" type="TextureButton" parent="CanvasLayer" unique_id=1079241090]
+texture_filter = 1
+offset_left = 762.0
+offset_top = 607.0
+offset_right = 975.0
+offset_bottom = 741.0
+texture_normal = ExtResource("7_be0no")
+texture_hover = ExtResource("8_blm8a")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="village" type="TextureButton" parent="CanvasLayer" unique_id=512076879]
+texture_filter = 1
+offset_left = 879.0
+offset_top = 452.0
+offset_right = 1044.0
+offset_bottom = 544.0
+texture_normal = ExtResource("9_mlgqr")
+texture_hover = ExtResource("10_wslke")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="InteractiveImages" parent="." unique_id=459016767 instance=ExtResource("6_2lpho")]
