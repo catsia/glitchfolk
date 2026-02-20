@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctk73nhh0yfrd"
-path="res://.godot/imported/flame_appearing.png-d80288b80e67d97028605544456fa8b7.ctex"
+uid="uid://cbbkqjtgslhy6"
+path="res://.godot/imported/folk_father_crack-sheet.png-b75b92af9d40f8a5c663e75d8654dc5e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/obrazy/animations/flame_appearing.png"
-dest_files=["res://.godot/imported/flame_appearing.png-d80288b80e67d97028605544456fa8b7.ctex"]
+source_file="res://assets/art/animations/graveyard/folk_father_crack-sheet.png"
+dest_files=["res://.godot/imported/folk_father_crack-sheet.png-b75b92af9d40f8a5c663e75d8654dc5e.ctex"]
 
 [params]
 

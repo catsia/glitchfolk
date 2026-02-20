@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://80ma2cjqvtm1"
-path="res://.godot/imported/flame_appearing_white.png-cd5901810933fdbd0da27abacbefb59b.ctex"
+uid="uid://celhrbykklhcg"
+path="res://.godot/imported/father_stain_fix.png-be494aed087d9c1ad1b648783190c817.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/obrazy/animations/flame_appearing_white.png"
-dest_files=["res://.godot/imported/flame_appearing_white.png-cd5901810933fdbd0da27abacbefb59b.ctex"]
+source_file="res://assets/art/animations/graveyard/father_stain_fix.png"
+dest_files=["res://.godot/imported/father_stain_fix.png-be494aed087d9c1ad1b648783190c817.ctex"]
 
 [params]
 
