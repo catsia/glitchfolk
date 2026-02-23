@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://celhrbykklhcg" path="res://assets/art/animations/graveyard/father_stain_fix.png" id="6_71dqt"]
 [ext_resource type="Texture2D" uid="uid://fcm83w6imr63" path="res://assets/art/animations/graveyard/father_mak_fix.png" id="7_71dqt"]
 [ext_resource type="Script" uid="uid://c1t2finxoc4c6" path="res://scripts/basic_button.gd" id="7_rayba"]
-[ext_resource type="Script" uid="uid://rcj1ra52lc55" path="res://scripts/next_scene_button.gd" id="10_lfno2"]
+[ext_resource type="Script" path="res://scripts/next_scene_button.gd" id="10_lfno2"]
 [ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="11_rayba"]
 [ext_resource type="Texture2D" uid="uid://cq0l14b5py32q" path="res://assets/art/animations/graveyard/willow_glitch.png" id="11_ug83y"]
 [ext_resource type="Texture2D" uid="uid://b5nvhtj0bk0g6" path="res://assets/art/main_art/splashart/splash.png" id="12_jyay1"]
@@ -364,7 +364,7 @@ offset_bottom = 1204.0
 mouse_filter = 2
 texture = ExtResource("2_td60s")
 
-[node name="father_sprite" type="Sprite2D" parent="." unique_id=36413525]
+[node name="father_sprite" type="Sprite2D" parent="." unique_id=36413525 groups=["persist"]]
 visible = false
 texture_filter = 1
 position = Vector2(960, 540)
@@ -372,7 +372,7 @@ texture = ExtResource("3_dc6gq")
 metadata/fade_in = 1.0
 metadata/fade_out = 2.0
 
-[node name="father_crack" type="AnimatedSprite2D" parent="." unique_id=995857174]
+[node name="father_crack" type="AnimatedSprite2D" parent="." unique_id=995857174 groups=["persist"]]
 visible = false
 texture_filter = 1
 position = Vector2(729, 312)
@@ -381,7 +381,7 @@ sprite_frames = SubResource("SpriteFrames_3rh3o")
 frame = 14
 frame_progress = 1.0
 
-[node name="father_stain" type="AnimatedSprite2D" parent="." unique_id=791762497]
+[node name="father_stain" type="AnimatedSprite2D" parent="." unique_id=791762497 groups=["persist"]]
 visible = false
 texture_filter = 1
 position = Vector2(822, 477)
@@ -389,7 +389,7 @@ sprite_frames = SubResource("SpriteFrames_p1jvj")
 frame = 6
 frame_progress = 0.8781582
 
-[node name="father_mak" type="AnimatedSprite2D" parent="." unique_id=1317567679]
+[node name="father_mak" type="AnimatedSprite2D" parent="." unique_id=1317567679 groups=["persist"]]
 visible = false
 texture_filter = 1
 position = Vector2(993.00006, 357)
@@ -408,20 +408,20 @@ offset_top = -38.0
 offset_right = 2076.0
 offset_bottom = 1157.0
 
-[node name="btn_father_mak" type="Button" parent="Control" unique_id=570890429 node_paths=PackedStringArray("animation")]
+[node name="btn_father_mak" type="Button" parent="Control" unique_id=570890429 node_paths=PackedStringArray("animation") groups=["persist"]]
 modulate = Color(1, 1, 1, 0)
 visibility_layer = 3
 layout_mode = 0
-offset_left = 907.0
-offset_top = 360.0
-offset_right = 992.0
-offset_bottom = 462.0
+offset_left = 966.0
+offset_top = 370.0
+offset_right = 1051.0
+offset_bottom = 472.0
 action_mode = 0
 flat = true
 script = ExtResource("7_rayba")
 animation = NodePath("../../father_mak")
 
-[node name="father_strain" type="Button" parent="Control" unique_id=1491364070 node_paths=PackedStringArray("animation")]
+[node name="father_strain" type="Button" parent="Control" unique_id=1491364070 node_paths=PackedStringArray("animation") groups=["persist"]]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 816.0
@@ -432,7 +432,7 @@ flat = true
 script = ExtResource("7_rayba")
 animation = NodePath("../../father_stain")
 
-[node name="father_crack" type="Button" parent="Control" unique_id=1582405163 node_paths=PackedStringArray("animation")]
+[node name="father_crack" type="Button" parent="Control" unique_id=1582405163 node_paths=PackedStringArray("animation") groups=["persist"]]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 716.0
@@ -444,17 +444,17 @@ flat = true
 script = ExtResource("7_rayba")
 animation = NodePath("../../father_crack")
 
-[node name="next_scene_button" type="Button" parent="Control" unique_id=187857905]
+[node name="next_scene_button" type="Button" parent="Control" unique_id=187857905 groups=["persist"]]
 layout_mode = 0
-offset_left = 61.0
-offset_top = 48.0
-offset_right = 2060.0
-offset_bottom = 1200.0
+offset_left = 110.0
+offset_top = 49.0
+offset_right = 2109.0
+offset_bottom = 1201.0
 disabled = true
 flat = true
 script = ExtResource("10_lfno2")
 
-[node name="willow_anim" type="AnimatedSprite2D" parent="." unique_id=336460941]
+[node name="willow_anim" type="AnimatedSprite2D" parent="." unique_id=336460941 groups=["persist"]]
 visible = false
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_cakwj")
@@ -463,25 +463,25 @@ metadata/fade_in = true
 
 [node name="InteractiveImages" parent="." unique_id=213878777 instance=ExtResource("17_k2ng3")]
 
-[node name="back" type="TextureRect" parent="." unique_id=1366473791]
+[node name="back" type="TextureRect" parent="." unique_id=1366473791 groups=["persist"]]
 visible = false
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("2_td60s")
 
-[node name="day" type="Sprite2D" parent="." unique_id=1777431176]
+[node name="day" type="Sprite2D" parent="." unique_id=1777431176 groups=["persist"]]
 visible = false
 position = Vector2(783, 341)
 texture = ExtResource("12_jyay1")
 
-[node name="2" type="Sprite2D" parent="." unique_id=1661868756]
+[node name="2" type="Sprite2D" parent="." unique_id=1661868756 groups=["persist"]]
 visible = false
 position = Vector2(1235, 352)
 texture = ExtResource("13_71dqt")
 region_enabled = true
 region_rect = Rect2(0, 394.30402, 117, 205.69598)
 
-[node name="exhumation" type="Sprite2D" parent="." unique_id=555759238]
+[node name="exhumation" type="Sprite2D" parent="." unique_id=555759238 groups=["persist"]]
 visible = false
 position = Vector2(955, 651)
 texture = ExtResource("14_4gngc")

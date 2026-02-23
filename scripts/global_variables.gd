@@ -20,3 +20,5 @@ var timeline_signal_arg = "timeline_name"
 var timeline_meta = "timeline"
 
 var hidden_mouse_meta = "hidden"
+
+var not_save_scene = "no_save"

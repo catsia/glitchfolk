@@ -13,7 +13,7 @@ func _manage_dialogic_signal(context: Node, data: Dictionary):
 		if data.has("stop_animation"):
 			_stop_animation(context, data["stop_animation"])
 		if data.has("next_scene"):
-			_next_scene(context, data["next_scene"])
+			_next_scene(data["next_scene"])
 		if data.has("set_state"):
 			_set_state(context, data["set_state"])	
 		if data.has("next_timeline"):
@@ -29,15 +29,14 @@ func _manage_dialogic_signal(context: Node, data: Dictionary):
 		if data.has("pause"):
 			_pause()	
 			
-func _next_scene(context: Node, next_scene: String):
-	var path = "res://scenes/" + next_scene + ".tscn"
-	context.get_tree().change_scene_to_file(path)
+func _next_scene(next_scene: String):
+	SceneManager.change_scene(next_scene)
 
 func _pause():
 	Dialogic.paused = true
 
 func _next_timeline(context: Node, next_timeline: String):
-	Dialogic.start_timeline(next_timeline)
+	Dialogic.start(next_timeline)
 
 func _play_all_interactive():
 	SignalManager.emit_play_all_interactive()

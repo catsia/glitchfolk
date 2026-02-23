@@ -1,26 +1,26 @@
-[gd_scene load_steps=5 format=3 uid="uid://vqau5l2rremv"]
+[gd_scene format=3 uid="uid://vqau5l2rremv"]
 
 [ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_17fb0"]
 [ext_resource type="Texture2D" uid="uid://x3dunqg4doro" path="res://assets/art/placeholders/witch2.png" id="2_w2h3f"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="3_w2h3f"]
 [ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="4_6co03"]
 
-[node name="witch" type="CanvasLayer"]
+[node name="witch" type="CanvasLayer" unique_id=294247228]
 script = ExtResource("1_17fb0")
 metadata/timeline = "witch1"
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=311281249]
 position = Vector2(960, 540)
 texture = ExtResource("2_w2h3f")
 
-[node name="InteractiveImages" parent="." instance=ExtResource("3_w2h3f")]
+[node name="InteractiveImages" parent="." unique_id=2008001633 instance=ExtResource("3_w2h3f")]
 
-[node name="pause_menu" parent="." instance=ExtResource("4_6co03")]
+[node name="pause_menu" parent="." unique_id=121184589 instance=ExtResource("4_6co03")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2067415315]
 layer = 10
 
-[node name="Button" type="Button" parent="CanvasLayer"]
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=1516535389]
 offset_left = 250.0
 offset_top = 375.0
 offset_right = 528.0

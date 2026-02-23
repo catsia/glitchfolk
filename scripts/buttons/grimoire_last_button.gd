@@ -6,7 +6,7 @@ func _ready():
 	self.hide()
 	SignalManager.play_all_interactive.connect(play_animation)
 	InteractiveObjManager.connect("next_timeline", next_timeline)
-	InteractiveObjManager.register_second_wave_object()
+	InteractiveObjManager.register_second_wave_object(self.name)
 
 func next_timeline():
 	self.show()
@@ -21,4 +21,5 @@ func _on_pressed() -> void:
 	Dialogic.start(animation.name.substr(0,animation.name.length()))
 	InteractiveObjManager.emit_end_signals()
 	self.hide()
-	InteractiveObjManager.second_wave_clicked()
+	self.disabled = true
+	InteractiveObjManager.second_wave_clicked(self.name)

@@ -37,6 +37,3 @@ func change_triangle_buttons():
 func change_hexagon_buttons():
 	Dialogic.paused = !Dialogic.paused
 	ButtonManager._change_texture_button_visibility(self, "sunflower")
-
-func _on_button_pressed() -> void:
-	print("HERE")

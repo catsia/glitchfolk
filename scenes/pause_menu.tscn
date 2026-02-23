@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://d0mgyntk7r5iq" path="res://assets/art/animations/match.png" id="6_1s2dm"]
 [ext_resource type="Texture2D" uid="uid://dab5gva2bygxy" path="res://assets/art/main_art/main_menu/load_button.png" id="6_knqa7"]
 [ext_resource type="Texture2D" uid="uid://dvotm1nucxnww" path="res://assets/art/main_art/main_menu/settings_button.png" id="7_71k7c"]
-[ext_resource type="Script" uid="uid://4roa54nhnxkp" path="res://scripts/hover_anim.gd" id="7_88e76"]
+[ext_resource type="Script" path="res://scripts/hover_anim.gd" id="7_88e76"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7l7mv"]
 atlas = ExtResource("3_5d2l8")
@@ -433,8 +433,10 @@ sprite_frames = SubResource("SpriteFrames_cmnsq")
 script = ExtResource("7_88e76")
 button = NodePath("../VBoxContainer2/exitButton")
 
-[connection signal="pressed" from="CanvasLayer/VBoxContainer/resumeButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/resumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/resumeButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/quitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/VBoxContainer2/contButton" to="." method="_on_cont_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer2/saveButton" to="." method="_on_save_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer2/loadButton" to="." method="_on_load_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/VBoxContainer2/exitButton" to="." method="_on_exit_button_pressed"]

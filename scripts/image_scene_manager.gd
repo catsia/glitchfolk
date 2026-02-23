@@ -7,16 +7,18 @@ var active_images = []
 
 func _ready():
 	current_images_node = find_images_node()
-	get_tree().scene_changed.connect(_on_scene_changed)
+	SignalManager.scene_loaded.connect(_on_scene_changed)
 
 func _on_scene_changed():
-	print("scene_changed")
 	current_images_node = find_images_node()
 	restore_images()
 
 func find_images_node() -> Node:
 	var scene = get_tree().current_scene
-	return scene.find_child("InteractiveImages", true, false)
+	if (scene):
+		return scene.find_child("InteractiveImages", true, false)
+	else:
+		return null
 
 func play_idle(image_id: String):
 	current_images_node.play_idle(image_id, get_image_state(image_id))
@@ -43,7 +45,6 @@ func get_image_state(image_id: String) -> String:
 	return image_states.get(image_id, {}).get("state", "default")
 
 func set_image_state_and_play(image_id: String, state: String):
-	print(state)
 	if state == GlobalVariables.next:
 		state = create_next_state(image_id)
 		

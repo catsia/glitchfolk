@@ -1424,71 +1424,71 @@ offset_bottom = 1157.0
 texture = SubResource("CompressedTexture2D_0a7ni")
 expand_mode = 2
 
-[node name="rgb_pixel1" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1926864093]
+[node name="rgb_pixel1" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1926864093 groups=["persist"]]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_urird")
 animation = &"RGB_1"
 
-[node name="rgb_pixel2" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=2119878119]
+[node name="rgb_pixel2" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=2119878119 groups=["persist"]]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_7kkmp")
 animation = &"RGB2"
 
-[node name="flower_of_order" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1635534549]
+[node name="flower_of_order" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1635534549 groups=["persist"]]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_7xutd")
 animation = &"new_animation"
 
-[node name="rgb_pixel_full" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=813901007]
+[node name="rgb_pixel_full" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=813901007 groups=["persist"]]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_hbvmi")
 
-[node name="pixel_life_birth1" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1265217438]
+[node name="pixel_life_birth1" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1265217438 groups=["persist"]]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_qkcvs")
 animation = &"birthsxv"
 
-[node name="pixel_life_birth2" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=255701911]
+[node name="pixel_life_birth2" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=255701911 groups=["persist"]]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_dhsud")
 
-[node name="pixel_life_birth3" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1827892409]
+[node name="pixel_life_birth3" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1827892409 groups=["persist"]]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_es01l")
 animation = &"birthsxv"
 
-[node name="pixel_life_birth4" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=2029132048]
+[node name="pixel_life_birth4" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=2029132048 groups=["persist"]]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_0naf5")
 animation = &"birthsxv"
 
-[node name="pixel_life_birth5" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=251973182]
+[node name="pixel_life_birth5" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=251973182 groups=["persist"]]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_t1qkj")
 animation = &"birthsxv"
 
-[node name="pixel_life_birth6" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1183295443]
+[node name="pixel_life_birth6" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1183295443 groups=["persist"]]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_272cy")
 animation = &"birthsxv"
 
-[node name="cosmos" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1318680838]
+[node name="cosmos" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1318680838 groups=["persist"]]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_ep0vl")
 
-[node name="cosmos_cycle" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=695603920]
+[node name="cosmos_cycle" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=695603920 groups=["persist"]]
 visible = false
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_37iue")
 frame_progress = 0.96132
 script = ExtResource("9_xwriy")
 
-[node name="pixel_life_birth_temp" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1164770098]
+[node name="pixel_life_birth_temp" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1164770098 groups=["persist"]]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_bu1yb")
 animation = &"birthsxv"
 
-[node name="cross_bird" type="Sprite2D" parent="CanvasLayer" unique_id=1474995315]
+[node name="cross_bird" type="Sprite2D" parent="CanvasLayer" unique_id=1474995315 groups=["persist"]]
 visible = false
 position = Vector2(960, 540)
 texture = ExtResource("8_bu1yb")
@@ -1496,13 +1496,13 @@ metadata/fade_in = true
 
 [node name="InteractiveImages" parent="CanvasLayer" unique_id=2051074361 instance=ExtResource("11_37iue")]
 
-[node name="back_technical" type="Sprite2D" parent="CanvasLayer" unique_id=2037115006]
+[node name="back_technical" type="Sprite2D" parent="CanvasLayer" unique_id=2037115006 groups=["persist"]]
 visible = false
 position = Vector2(998, 539)
 scale = Vector2(0.41041666, 0.70092595)
 texture = ExtResource("10_37iue")
 
-[node name="cross_bird_animation" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=548073775]
+[node name="cross_bird_animation" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=548073775 groups=["persist"]]
 visible = false
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_fc3e2")
@@ -1510,7 +1510,7 @@ frame = 3
 frame_progress = 0.7841494
 metadata/fade_in = true
 
-[node name="childhood" type="Sprite2D" parent="CanvasLayer" unique_id=2090815016]
+[node name="childhood" type="Sprite2D" parent="CanvasLayer" unique_id=2090815016 groups=["persist"]]
 visible = false
 position = Vector2(1223, 124)
 scale = Vector2(0.333, 0.333)

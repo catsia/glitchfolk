@@ -8,7 +8,7 @@ var isPressed: bool = false
 
 func _ready():
 	SignalManager.play_all_interactive.connect(play_animation)
-	InteractiveObjManager.register_object()
+	InteractiveObjManager.register_object(self.name)
 	InteractiveObjManager.connect(GlobalVariables.stop_all, stop_animation)
 
 func stop_animation():
@@ -25,7 +25,7 @@ func play_animation():
 func register_click():
 	if !isPressed:
 		isPressed = true
-		InteractiveObjManager.object_clicked()
+		InteractiveObjManager.object_clicked(self.name)
 
 func _on_pressed() -> void:
 	Dialogic.start(animation.name.substr(0,animation.name.length()))

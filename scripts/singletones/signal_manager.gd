@@ -9,6 +9,7 @@ signal ellipse_buttons
 signal line_buttons
 signal triangle_buttons
 signal hexagon_buttons
+signal scene_loaded
 
 func emit_play_all_interactive():
 	play_all_interactive.emit()
@@ -36,3 +37,6 @@ func emit_triangle_buttons():
 
 func emit_hexagon_buttons():
 	hexagon_buttons.emit()
+
+func emit_scene_loaded():
+	scene_loaded.emit()

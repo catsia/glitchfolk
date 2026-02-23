@@ -1,5 +1,5 @@
 extends Control
-
+@onready var loadingButton = $CanvasLayer/VBoxContainer/loadButton
 func _on_start_but_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/preintro.tscn")
 
@@ -11,3 +11,9 @@ func _ready():
 	#create_tween().tween_property($CanvasLayer/MenuGrass, "modulate:a", 1.0, 3.0)
 	await get_tree().create_timer(2.5).timeout
 	create_tween().tween_property($CanvasLayer/fade_out, "modulate:a", 0.0, 2.0)
+	if(SavingLoadingManager.is_save_present()):
+		loadingButton.disabled = false
+
+
+func _on_load_button_pressed() -> void:
+	SavingLoadingManager.load_game()

@@ -10,9 +10,11 @@ var paused = false
 
 func _ready():
 	set_mouse()
+	SceneManager.set_current_scene(self)
 	dialog_manager = dialogSignalManager.new()
 	SignalManager.resume_game_signal.connect(pause_game)
 	Dialogic.signal_event.connect(_on_dialogic_signal)
+	ImageSceneManager.restore_images()
 	start_timeline()
 
 func _on_dialogic_signal(data: Dictionary, args = []):
@@ -23,7 +25,7 @@ func _process(delta: float) -> void:
 		pause_game()
 
 func start_timeline():
-	if (self.has_meta("timeline")):
+	if (self.has_meta("timeline") && !SavingLoadingManager.is_being_loaded):
 		Dialogic.start(self.get_meta("timeline"))
 
 func pause_game():
@@ -45,4 +47,3 @@ func set_mouse():
 		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	else:	
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		

@@ -12,12 +12,13 @@ var isPressed: bool = false
 func _ready():
 	SignalManager.play_all_interactive.connect(play_animation)
 	dialog_manager = dialogSignalManager.new()
-	InteractiveObjManager.register_object()
+	InteractiveObjManager.register_object(self.name)
 	
 func after_pressed():
 	isPressed = true
 	self.hide()
-	InteractiveObjManager.object_clicked()
+	InteractiveObjManager.object_clicked(self.name)
+	
 	
 func play_animation():
 	if !isPressed:

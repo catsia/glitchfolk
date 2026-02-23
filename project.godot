@@ -31,6 +31,8 @@ ImageManager="*res://scripts/image_manager.gd"
 AnimationManager="*res://scripts/animation_manager.gd"
 ButtonManager="*res://scripts/button_manager.gd"
 DialogicSignalManager="*res://scripts/dialogic_signal_manager.gd"
+SceneManager="*res://scripts/singletones/scene_manager.gd"
+SavingLoadingManager="*res://scripts/singletones/saving_loading_manager.gd"
 
 [dialogic]
 
@@ -144,6 +146,10 @@ project/assembly_name="glitchfolk"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[global_group]
+
+persist="node that needs to be saved"
 
 [input]
 
