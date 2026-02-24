@@ -5,6 +5,8 @@ var current_images_node: Node
 var image_states = {}
 var active_images = [] 
 
+var is_eye_disabled: bool = true
+
 func _ready():
 	current_images_node = find_images_node()
 	SignalManager.scene_loaded.connect(_on_scene_changed)
@@ -62,3 +64,9 @@ func create_next_state(image_id: String):
 	state = 1 if state == null else state + 1
 	return str(state)
 	
+func is_eye_button_disabled() -> bool:
+	return current_images_node.is_eye_button_disabled()
+
+func load_is_eye_button_disabled():
+	if not is_eye_disabled && current_images_node:
+		current_images_node.enable_eye_button()

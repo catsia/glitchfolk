@@ -47,3 +47,9 @@ func play_idle(image_id: String, state: String):
 	var image_node = get_image(image_id)
 	if image_node:
 		image_node.play("idle_" + state)
+		
+func is_eye_button_disabled() -> bool:
+	return get_canvas_layer().is_eye_button_disabled()
+
+func enable_eye_button():
+	return get_canvas_layer().enable_eye_button()

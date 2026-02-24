@@ -10,8 +10,9 @@ func save():
 
 	Dialogic.Save.save()
 	
-	data["active_images"] = ImageSceneManager.active_images
-	data["image_states"] = ImageSceneManager.image_states
+	#data["active_images"] = ImageSceneManager.active_images
+	#data["image_states"] = ImageSceneManager.image_states
+	save_interactive_images(data)
 	
 	data["singletons"] = save_singleton_states()
 	
@@ -43,8 +44,9 @@ func load_game():
 	is_being_loaded = true
 	load_singleton_states(data.get("singletons", {}))
 	
-	ImageSceneManager.image_states = data.get("image_states", {})
-	ImageSceneManager.active_images = data.get("active_images", [])
+	#ImageSceneManager.image_states = data.get("image_states", {})
+	#ImageSceneManager.active_images = data.get("active_images", [])
+	load_interactive_images(data)
 	
 	SceneManager.change_scene(data.get("scene", ""))
 	
@@ -53,10 +55,20 @@ func load_game():
 	
 	load_persistent_nodes(data.get("persistent_nodes", {}))
 	Dialogic.Save.load()
-	
+	ImageSceneManager.load_is_eye_button_disabled()
 	is_being_loaded = false
 	SignalManager.emit_scene_loaded()
 	return true
+
+func save_interactive_images(data: Dictionary):
+	data["active_images"] = ImageSceneManager.active_images
+	data["image_states"] = ImageSceneManager.image_states
+	data["is_eye_disabled"] = ImageSceneManager.is_eye_button_disabled()
+
+func load_interactive_images(data: Dictionary):
+	ImageSceneManager.image_states = data.get("image_states", {})
+	ImageSceneManager.active_images = data.get("active_images", [])
+	ImageSceneManager.is_eye_disabled = data.get("is_eye_disabled", true)
 
 func save_singleton_states() -> Dictionary:
 	var singleton_data = {}

@@ -35,7 +35,6 @@ func object_clicked(uid:String):
 	interactive_obj.erase(uid)
 	clicked_obj[uid] = ""
 	
-	print(interactive_obj)
 	if(interactive_obj.is_empty()):
 		close_eye()
 		emit_end_signals()
