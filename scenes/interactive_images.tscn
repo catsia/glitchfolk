@@ -1687,7 +1687,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"idle_fast",
-"speed": 12.0
+"speed": 19.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -1728,7 +1728,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"idle_medium",
-"speed": 10.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -1792,7 +1792,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"idle_slow",
-"speed": 8.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -2205,7 +2205,7 @@ script = ExtResource("5_a6g1q")
 visible = false
 position = Vector2(427, 301)
 sprite_frames = SubResource("SpriteFrames_fn62r")
-animation = &"idle_slow"
+animation = &"idle_medium"
 script = ExtResource("5_a6g1q")
 
 [node name="eye" type="AnimatedSprite2D" parent="." unique_id=1063144553 node_paths=PackedStringArray("eye_button")]
