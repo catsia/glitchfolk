@@ -1,18 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://bvwfadmu8h53p"]
+[gd_scene format=3 uid="uid://bvwfadmu8h53p"]
 
 [ext_resource type="Script" uid="uid://btsjwdm4qqu8v" path="res://scripts/basic_scene.gd" id="1_cdcac"]
 [ext_resource type="Texture2D" uid="uid://bpsdw88pi4lfn" path="res://assets/art/placeholders/folk_home.png" id="1_ckhyc"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="3_cdcac"]
 [ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="4_db1on"]
 
-[node name="Home" type="CanvasLayer"]
+[node name="Home" type="CanvasLayer" unique_id=225696685]
 script = ExtResource("1_cdcac")
 metadata/timeline = "home1"
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1638770840]
 position = Vector2(960, 540)
 texture = ExtResource("1_ckhyc")
 
-[node name="InteractiveImages" parent="." instance=ExtResource("3_cdcac")]
+[node name="InteractiveImages" parent="." unique_id=904437995 instance=ExtResource("3_cdcac")]
 
-[node name="pause_menu" parent="." instance=ExtResource("4_db1on")]
+[node name="pause_menu" parent="." unique_id=824516294 instance=ExtResource("4_db1on")]

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogicGlossary" load_steps=2 format=3 uid="uid://da3ym13e0bcuy"]
+[gd_resource type="Resource" script_class="DialogicGlossary" format=3 uid="uid://da3ym13e0bcuy"]
 
 [ext_resource type="Script" uid="uid://icghbfk7mtv4" path="res://addons/dialogic/Modules/Glossary/glossary_resource.gd" id="1_xl7jk"]
 
@@ -7,7 +7,7 @@ script = ExtResource("1_xl7jk")
 entries = {
 "s1": {
 "name": "s1",
-"text": "\"А была ли рыба в супе, когда я сел за стол?..\""
+"text": "\"Когда эта рыба появилась в супе? До моей тошноты или...\""
 },
 "s10": {
 "name": "s10",
@@ -47,7 +47,7 @@ entries = {
 "name": "s6",
 "text": "\"Почему эти связи столь сердечноцентричны? У них даже название говорящее: дела сердечные. 
 
-Если бы я когда-нибудь любил по-настоящему, то находил бы зависимость от какого-то органа унизительной для своих чувств. Есть что-то дискриминирующее в этом. 
+Любой, кто когда-нибудь любил по-настоящему, находил бы зависимость от какого-то органа унизительной для своих чувств. Есть что-то дискриминирующее в этом. 
 
 Проход в любовные покои – только для обладателей сердца...\""
 },
