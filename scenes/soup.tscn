@@ -708,3 +708,8 @@ position = Vector2(-3, -11)
 stream = ExtResource("16_tkwxn")
 bus = &"Music"
 parameters/looping = false
+
+[node name="back_tech" type="Sprite2D" parent="." unique_id=1625910898]
+position = Vector2(958, 537)
+texture = ExtResource("3_dh2wj")
+metadata/fade_out = true

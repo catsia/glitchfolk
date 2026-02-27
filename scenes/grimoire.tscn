@@ -901,10 +901,13 @@ offset_bottom = 40.0
 texture = ExtResource("2_fhfaf")
 
 [node name="grimoire_art" type="Sprite2D" parent="." unique_id=1296073979]
+visible = false
 position = Vector2(960, 509)
 texture = ExtResource("3_lbjj8")
+metadata/fade_in = true
 
 [node name="grimoire_dust" type="AnimatedSprite2D" parent="." unique_id=1984688434]
+visible = false
 position = Vector2(953, 519)
 sprite_frames = SubResource("SpriteFrames_6pgbq")
 frame_progress = 0.107331164
@@ -1018,7 +1021,12 @@ animation = NodePath("../../../paragraph1")
 stream = ExtResource("15_su1je")
 autoplay = true
 bus = &"Music"
-parameters/looping = false
+parameters/looping = true
+
+[node name="back_tech" type="Sprite2D" parent="." unique_id=2106563726]
+position = Vector2(958, 543)
+texture = ExtResource("2_fhfaf")
+metadata/fade_out = true
 
 [connection signal="pressed" from="CanvasLayer/Control/paragraph2" to="CanvasLayer/Control/paragraph2" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/paragraph4" to="CanvasLayer/Control/paragraph4" method="_on_pressed"]

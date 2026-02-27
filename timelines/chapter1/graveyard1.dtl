@@ -2,6 +2,7 @@
 [signal arg_type="dict" arg="{"show_image":"father_sprite"}"]
 [signal arg_type="dict" arg="{"set_state":"flame_smallFire"}"]
 [signal arg_type="dict" arg="{"set_state":"childhood_dust"}"]
+[signal arg_type="dict" arg="{"hide_image":"back_tech"}"]
 krey: – Просыпайся, [color=#8B0000][url="g1"]папа[/url][/color].
 [signal arg_type="dict" arg="{"show_image":"day"}"]
 [signal arg_type="dict" arg="{"show_image":"2"}"]

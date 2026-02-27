@@ -423,7 +423,6 @@ position = Vector2(497, 678)
 sprite_frames = SubResource("SpriteFrames_28kk4")
 
 [node name="tech_back" type="Sprite2D" parent="preintro" unique_id=195496216 groups=["persist"]]
-visible = false
 position = Vector2(960, 158)
 texture = ExtResource("1_j47sk")
 metadata/fade_out = true
@@ -443,6 +442,7 @@ metadata/timeline = ""
 stream = ExtResource("16_g17fq")
 autoplay = true
 bus = &"Music"
+parameters/looping = true
 
 [connection signal="pressed" from="CanvasLayer/flower" to="CanvasLayer/flower" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/childhood" to="CanvasLayer/childhood" method="_on_pressed"]

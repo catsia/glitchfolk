@@ -53,7 +53,8 @@ scene = ExtResource("6_0tkqa")
 script = ExtResource("1_bp0cy")
 scene = ExtResource("7_tfkqc")
 overrides = {
-"sounds_volume": "-80.0"
+"sounds_volume": "-80.0",
+"text_color_use_global": "false"
 }
 
 [sub_resource type="Resource" id="Resource_n27kp"]

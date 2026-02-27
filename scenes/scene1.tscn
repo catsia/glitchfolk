@@ -481,6 +481,11 @@ texture = ExtResource("13_71dqt")
 region_enabled = true
 region_rect = Rect2(0, 394.30402, 117, 205.69598)
 
+[node name="back_tech" type="Sprite2D" parent="." unique_id=2121561307]
+position = Vector2(962, 538)
+texture = ExtResource("2_td60s")
+metadata/fade_out = true
+
 [node name="exhumation" type="Sprite2D" parent="." unique_id=555759238 groups=["persist"]]
 visible = false
 position = Vector2(955, 651)
@@ -491,7 +496,7 @@ metadata/fade_in = true
 stream = ExtResource("15_71dqt")
 autoplay = true
 bus = &"Music"
-parameters/looping = false
+parameters/looping = true
 
 [connection signal="pressed" from="Control/btn_father_mak" to="." method="_on_btn_father_mak_pressed"]
 [connection signal="pressed" from="Control/btn_father_mak" to="Control/btn_father_mak" method="_on_pressed"]

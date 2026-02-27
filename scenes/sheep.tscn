@@ -322,7 +322,7 @@ texture_click_mask = ExtResource("45_a0q7d")
 stream = ExtResource("33_ed4sy")
 autoplay = true
 bus = &"Music"
-parameters/looping = false
+parameters/looping = true
 
 [connection signal="pressed" from="CanvasLayer/bees" to="CanvasLayer" method="change_eclipse_buttons"]
 [connection signal="pressed" from="CanvasLayer/bush1" to="CanvasLayer" method="change_eclipse_buttons"]

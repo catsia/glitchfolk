@@ -1,4 +1,7 @@
+[wait time="9.0"]
+[signal arg_type="dict" arg="{"show_image":"grimoire_art"}"]
 [signal arg_type="dict" arg="{"animation":"grimoire_dust"}"]
+[signal arg_type="dict" arg="{"hide_image":"back_tech"}"]
 
 Засохшая земля оседает папиллярными узорами на теле пергамента.
 Он не стал омывать руки – всего пара часов разделяла эксгумацию одного ветхого тела от останков ещё более древних времён. [pause=5]Он в любом случае замарал бы их снова.
