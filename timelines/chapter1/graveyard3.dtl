@@ -1,5 +1,5 @@
-[signal arg_type="dict" arg="{"show_image":"background"}"]
 [signal arg_type="dict" arg="{"show_image":"father_sprite"}"]
+[signal arg_type="dict" arg="{"show_image":"hole"}"]
 [i](звук хрупкого костяного хруста + визуальное появление дыры в черепе)[/i]
 Короткое мгновение К. не может понять, что случилось. А [color=#8B0000][url="g13"]потом...[/url][/color]
 Юноша отползает от черепа так, словно изнутри донеслось змеиное шипение.

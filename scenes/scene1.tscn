@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://iovrsew4pvfe" path="res://assets/art/main_art/splashart/splash_roll.png" id="13_71dqt"]
 [ext_resource type="Texture2D" uid="uid://tuu56hjtsyow" path="res://assets/art/main_art/splashart/exgumation.png" id="14_4gngc"]
 [ext_resource type="AudioStream" uid="uid://m5eoc0oj456j" path="res://sounds/music/кладбище.ogg" id="15_71dqt"]
+[ext_resource type="Texture2D" uid="uid://dc58ga6cy1f22" path="res://assets/art/animations/graveyard/skull_hole.png" id="16_4gngc"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="17_k2ng3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4gngc"]
@@ -400,6 +401,13 @@ frame_progress = 1.0
 metadata/fade_in = 1.0
 metadata/fade_out = 1.0
 
+[node name="hole" type="Sprite2D" parent="." unique_id=801319186]
+visible = false
+texture_filter = 1
+position = Vector2(723, 318)
+scale = Vector2(3, 3)
+texture = ExtResource("16_4gngc")
+
 [node name="Control" type="Control" parent="." unique_id=154850861]
 layout_mode = 3
 anchors_preset = 0
@@ -447,9 +455,9 @@ animation = NodePath("../../father_crack")
 [node name="next_scene_button" type="Button" parent="Control" unique_id=187857905 groups=["persist"]]
 layout_mode = 0
 offset_left = 110.0
-offset_top = 49.0
+offset_top = 46.0
 offset_right = 2109.0
-offset_bottom = 1201.0
+offset_bottom = 1198.0
 disabled = true
 flat = true
 script = ExtResource("10_lfno2")
@@ -482,6 +490,7 @@ region_enabled = true
 region_rect = Rect2(0, 394.30402, 117, 205.69598)
 
 [node name="back_tech" type="Sprite2D" parent="." unique_id=2121561307]
+visible = false
 position = Vector2(962, 538)
 texture = ExtResource("2_td60s")
 metadata/fade_out = true
