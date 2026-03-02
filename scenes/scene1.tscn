@@ -7,14 +7,13 @@
 [ext_resource type="Texture2D" uid="uid://celhrbykklhcg" path="res://assets/art/animations/graveyard/father_stain_fix.png" id="6_71dqt"]
 [ext_resource type="Texture2D" uid="uid://fcm83w6imr63" path="res://assets/art/animations/graveyard/father_mak_fix.png" id="7_71dqt"]
 [ext_resource type="Script" uid="uid://c1t2finxoc4c6" path="res://scripts/basic_button.gd" id="7_rayba"]
-[ext_resource type="Script" uid="uid://rcj1ra52lc55" path="res://scripts/next_scene_button.gd" id="10_lfno2"]
+[ext_resource type="Script" path="res://scripts/next_scene_button.gd" id="10_lfno2"]
 [ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="11_rayba"]
 [ext_resource type="Texture2D" uid="uid://cq0l14b5py32q" path="res://assets/art/animations/graveyard/willow_glitch.png" id="11_ug83y"]
 [ext_resource type="Texture2D" uid="uid://b5nvhtj0bk0g6" path="res://assets/art/main_art/splashart/splash.png" id="12_jyay1"]
 [ext_resource type="Texture2D" uid="uid://iovrsew4pvfe" path="res://assets/art/main_art/splashart/splash_roll.png" id="13_71dqt"]
 [ext_resource type="Texture2D" uid="uid://tuu56hjtsyow" path="res://assets/art/main_art/splashart/exgumation.png" id="14_4gngc"]
 [ext_resource type="AudioStream" uid="uid://m5eoc0oj456j" path="res://sounds/music/кладбище.ogg" id="15_71dqt"]
-[ext_resource type="Texture2D" uid="uid://dc58ga6cy1f22" path="res://assets/art/animations/graveyard/skull_hole.png" id="16_4gngc"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="17_k2ng3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4gngc"]
@@ -400,13 +399,6 @@ frame = 10
 frame_progress = 1.0
 metadata/fade_in = 1.0
 metadata/fade_out = 1.0
-
-[node name="hole" type="Sprite2D" parent="." unique_id=801319186]
-visible = false
-texture_filter = 1
-position = Vector2(723, 318)
-scale = Vector2(3, 3)
-texture = ExtResource("16_4gngc")
 
 [node name="Control" type="Control" parent="." unique_id=154850861]
 layout_mode = 3

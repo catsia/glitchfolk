@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://c6hnvsuaiq6jb" path="res://assets/art/animations/graveyard/father_stain.png" id="6_tuyr6"]
 [ext_resource type="Texture2D" uid="uid://dik1w32ikcxkw" path="res://assets/art/animations/graveyard/father_mak.png" id="7_1vb0k"]
 [ext_resource type="Texture2D" uid="uid://cq0l14b5py32q" path="res://assets/art/animations/graveyard/willow_glitch.png" id="10_tn2kl"]
+[ext_resource type="Texture2D" uid="uid://dc58ga6cy1f22" path="res://assets/art/animations/graveyard/skull_hole.png" id="10_wwens"]
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="11_ly02p"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cg05x"]
@@ -420,6 +421,14 @@ visible = false
 position = Vector2(960, 540)
 texture = ExtResource("4_l3cm5")
 metadata/fade_in = 1.0
+metadata/fade_out = 2.0
+
+[node name="hole" type="Sprite2D" parent="." unique_id=502144502 groups=["persist"]]
+visible = false
+texture_filter = 1
+position = Vector2(723, 318)
+scale = Vector2(3, 3)
+texture = ExtResource("10_wwens")
 metadata/fade_out = 2.0
 
 [node name="father_crack" type="AnimatedSprite2D" parent="." unique_id=420760511 groups=["persist"]]
