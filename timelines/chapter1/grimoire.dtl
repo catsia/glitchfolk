@@ -34,5 +34,5 @@
 
 
 <Empty Text Event>
-[signal arg_type="dict" arg="{"set_state":"eye_eyeLooks"}"]
+[signal arg_type="dict" arg="{"set_state":"eye_eyeOpens"}"]
 [wait time="1.5"]

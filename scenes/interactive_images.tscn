@@ -22,10 +22,6 @@
 [ext_resource type="Texture2D" uid="uid://cqc3ora41yoyp" path="res://assets/art/obrazy/animations/folk_child_obraz.png" id="18_12h02"]
 [ext_resource type="Script" uid="uid://0hf2fmqgabf6" path="res://scripts/buttons/manage_buttons.gd" id="18_84f6e"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_52a4t"]
-atlas = ExtResource("8_b6xrf")
-region = Rect2(0, 387, 495, 387)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_7xdho"]
 atlas = ExtResource("8_b6xrf")
 region = Rect2(0, 0, 495, 387)
@@ -286,9 +282,6 @@ region = Rect2(1485, 387, 495, 387)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_52a4t")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_7xdho")
 }, {
 "duration": 1.0,
@@ -314,6 +307,18 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_rq2y7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s8cye")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dcvh0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1vvf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7xdho")
 }],
 "loop": false,
 "name": &"bigFire",
@@ -2178,12 +2183,11 @@ texture = ExtResource("3_i4cod")
 metadata/fade_in = true
 
 [node name="flame" type="AnimatedSprite2D" parent="." unique_id=912636589]
-visible = false
 texture_filter = 1
 position = Vector2(568, 534)
 sprite_frames = SubResource("SpriteFrames_fu5s6")
-animation = &"idle_coal"
-frame = 5
+animation = &"bigFire"
+frame = 12
 frame_progress = 1.0
 script = ExtResource("5_a6g1q")
 
@@ -2212,7 +2216,7 @@ script = ExtResource("5_a6g1q")
 visible = false
 position = Vector2(1708, 484)
 sprite_frames = SubResource("SpriteFrames_j8rno")
-animation = &"eyeSide"
+animation = &"eyeOpens"
 script = ExtResource("14_o3su5")
 eye_button = NodePath("../CanvasLayer/eye")
 

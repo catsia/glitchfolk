@@ -92,8 +92,6 @@
 
 Тогда самый славный воин приблизился к монстру вплотную и...
 [music fade="5.0" volume="0.0"]
-[signal arg_type="dict" arg="{"set_state":"flame_coal"}"]
-[wait time="2.0"]
 Ох, ты уже почти уснул. Засыпай, сынок.
 [music path="res://sounds/music/сказка.ogg" fade="10.0" volume="0.0"]
 - Ну дорасскажи, ну пап...
@@ -121,6 +119,8 @@ krey: – [shake rate=20 level=10]Из-под земли достану…[/shak
 - Тебе послышалось.
 
 Засыпай, сынок. Закрывай глазки.
+[signal arg_type="dict" arg="{"set_state":"flame_coal"}"]
+[wait time="2.0"]
 [music fade="8.0" volume="0.0"]
 [signal arg_type="dict" arg="{"show_image":"back_technical2"}"]
 [wait time="8.0"]
