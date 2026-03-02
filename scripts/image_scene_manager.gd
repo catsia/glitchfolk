@@ -33,7 +33,7 @@ func restore_images():
 		if current_images_node and current_images_node.has_method("show_image"):
 			current_images_node.show_image(image_id, image_states[image_id].state)
 
-func add_active_image(image_id: String, node: Node):
+func add_active_image(image_id: String, _node: Node):
 	active_images.append(image_id)
 	if current_images_node and current_images_node.has_method("show_image"):
 			current_images_node.show_image(image_id)

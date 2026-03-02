@@ -17,10 +17,10 @@ func _ready():
 	ImageSceneManager.restore_images()
 	start_timeline()
 
-func _on_dialogic_signal(data: Dictionary, args = []):
+func _on_dialogic_signal(data: Dictionary, _args = []):
 	dialog_manager._manage_dialogic_signal(self, data)	
 	
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if (Input.is_action_just_pressed("pause")):
 		pause_game()
 

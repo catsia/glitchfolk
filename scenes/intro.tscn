@@ -1522,7 +1522,7 @@ metadata/fade_in = true
 visible = false
 position = Vector2(965, 540)
 texture = ExtResource("10_37iue")
-metadata/fade_in = true
+metadata/fade_in = 8.0
 
 [node name="tale_ost" type="AudioStreamPlayer2D" parent="." unique_id=402216637]
 stream = ExtResource("15_u5myo")

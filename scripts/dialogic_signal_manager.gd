@@ -35,7 +35,7 @@ func _next_scene(next_scene: String):
 func _pause():
 	Dialogic.paused = true
 
-func _next_timeline(context: Node, next_timeline: String):
+func _next_timeline(_context: Node, next_timeline: String):
 	Dialogic.start(next_timeline)
 
 func _play_all_interactive():
@@ -44,7 +44,7 @@ func _play_all_interactive():
 func _stop_all():
 	SignalManager.emit_stop_all()
 
-func _set_state(context: Node, argument: String):
+func _set_state(_context: Node, argument: String):
 	var parts = argument.split("_")
 	if(parts.size() >= 2): 
 		ImageSceneManager.set_image_state_and_play(parts[0], parts[1])
