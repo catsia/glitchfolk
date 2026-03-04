@@ -1,3 +1,4 @@
+[signal arg_type="dict" arg="{"animation":"paragraph3"}"]
 [i]Уровень второй\: [color=#8B0000][url="gri14"]Духовный[/url][/color].
 
 [i]Второй компонентой ритуала является специальное [color=#8B0000][url="gri15"]ключ-слово[/url][/color] (i.e. пропускное слово).
@@ -9,6 +10,8 @@
 
 [i]Ключ выступает [color=#8B0000][url="gri18"]фактором аутентификации лица[/url][/color], которому посылается запрос.
 [i]Зная [color=#8B0000][url="gri19"]содержание ключа[/url][/color] сущности, вы моментально [color=#8B0000][url="gri20"]обратите на себя[/url][/color] её внимание.
-[signal arg_type="dict" arg="{"set_state":"raspberry_raspAppearing"}"]
-
-mom: Сынок! [color=#8B0000][url="gri21"]Обед стынет[/url][/color]!
+if {general.mom_asked} == false:
+	[signal arg_type="dict" arg="{"set_state":"raspberry_raspAppearing"}"]
+	
+	mom: Сынок! [color=#8B0000][url="gri21"]Обед стынет[/url][/color]!
+	set {general.mom_asked} = true

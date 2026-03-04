@@ -83,6 +83,9 @@ variables={
 "child": 0,
 "destruction": 0,
 "first_asked": false,
+"general": {
+"mom_asked": false
+},
 "gypsy": {
 "argument1": false,
 "argument2": false,

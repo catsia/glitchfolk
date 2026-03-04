@@ -15,6 +15,8 @@ func _ready():
 	SignalManager.resume_game_signal.connect(pause_game)
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 	ImageSceneManager.restore_images()
+	
+	await get_tree().process_frame
 	start_timeline()
 
 func _on_dialogic_signal(data: Dictionary, _args = []):
