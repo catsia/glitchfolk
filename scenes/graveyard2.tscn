@@ -443,6 +443,7 @@ position = Vector2(822, 477)
 sprite_frames = SubResource("SpriteFrames_p1jvj")
 
 [node name="father_mak" type="AnimatedSprite2D" parent="." unique_id=1753924172 groups=["persist"]]
+visible = false
 position = Vector2(934, 342)
 sprite_frames = SubResource("SpriteFrames_3q2cr")
 metadata/fade_in = 1.0
