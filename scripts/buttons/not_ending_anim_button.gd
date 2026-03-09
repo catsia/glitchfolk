@@ -30,3 +30,33 @@ func register_click():
 func _on_pressed() -> void:
 	Dialogic.start(animation.name.substr(0,animation.name.length()))
 	register_click()
+
+
+func _on_paragraph_1_mouse_entered() -> void:
+	get_parent().get_node("Paragraph1Lightup").show()
+	
+func _on_paragraph_1_mouse_exited() -> void:
+	get_parent().get_node("Paragraph1Lightup").hide()
+	
+	
+func _on_paragraph_2_mouse_entered() -> void:
+	get_parent().get_node("Paragraph2Lightup").show()
+
+func _on_paragraph_2_mouse_exited() -> void:
+	get_parent().get_node("Paragraph2Lightup").hide()
+
+
+func _on_paragraph_3_mouse_entered() -> void:
+	get_parent().get_node("Paragraph3Lightup").show()
+
+
+func _on_paragraph_3_mouse_exited() -> void:
+	get_parent().get_node("Paragraph3Lightup").hide()
+
+
+func _on_paragraph_4_mouse_entered() -> void:
+	get_parent().get_node("Paragraph4Lightup").show()
+
+
+func _on_paragraph_4_mouse_exited() -> void:
+	get_parent().get_node("Paragraph4Lightup").hide()

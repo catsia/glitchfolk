@@ -635,36 +635,43 @@ metadata/fade_in = true
 
 [node name="glitch" type="Sprite2D" parent="." unique_id=1571808256 groups=["persist"]]
 visible = false
+texture_filter = 1
 position = Vector2(957, 529)
 texture = ExtResource("10_w4upn")
 
 [node name="glitch1" type="Sprite2D" parent="." unique_id=1502311412 groups=["persist"]]
 visible = false
+texture_filter = 1
 position = Vector2(957, 529)
 texture = ExtResource("11_dasuy")
 
 [node name="glitch2" type="Sprite2D" parent="." unique_id=1434312533 groups=["persist"]]
 visible = false
+texture_filter = 1
 position = Vector2(957, 529)
 texture = ExtResource("12_tkwxn")
 
 [node name="glitch3" type="Sprite2D" parent="." unique_id=336100810 groups=["persist"]]
 visible = false
+texture_filter = 1
 position = Vector2(957, 529)
 texture = ExtResource("13_0ptnb")
 
 [node name="glitch4" type="Sprite2D" parent="." unique_id=1591430568 groups=["persist"]]
 visible = false
+texture_filter = 1
 position = Vector2(957, 529)
 texture = ExtResource("14_433tg")
 
 [node name="fisheye" type="AnimatedSprite2D" parent="." unique_id=1417888816 groups=["persist"]]
 visible = false
+texture_filter = 1
 position = Vector2(1031, 605)
 sprite_frames = SubResource("SpriteFrames_04yys")
 
 [node name="fisheye_glitch" type="AnimatedSprite2D" parent="." unique_id=2060573428 groups=["persist"]]
 visible = false
+texture_filter = 1
 position = Vector2(1035.9729, 592)
 scale = Vector2(1.3307602, 1.2420372)
 sprite_frames = SubResource("SpriteFrames_l3f5v")
@@ -673,6 +680,7 @@ frame_progress = 0.5537401
 
 [node name="fisheye_glitch1" type="AnimatedSprite2D" parent="." unique_id=1010750712 groups=["persist"]]
 visible = false
+texture_filter = 1
 position = Vector2(1046.375, 613.00006)
 scale = Vector2(1.2738081, 1.3809527)
 sprite_frames = SubResource("SpriteFrames_71fhd")
@@ -681,6 +689,7 @@ frame_progress = 0.7170329
 
 [node name="fisheye_glitch2" type="AnimatedSprite2D" parent="." unique_id=644220937 groups=["persist"]]
 visible = false
+texture_filter = 1
 position = Vector2(1041.5, 588)
 scale = Vector2(1.3809524, 1.3333341)
 sprite_frames = SubResource("SpriteFrames_r260i")
@@ -689,6 +698,7 @@ frame_progress = 0.7690623
 
 [node name="fisheye_glitch3" type="AnimatedSprite2D" parent="." unique_id=470074132 groups=["persist"]]
 visible = false
+texture_filter = 1
 position = Vector2(1064, 575)
 scale = Vector2(1.7857066, 2)
 sprite_frames = SubResource("SpriteFrames_mnm2i")
@@ -696,6 +706,7 @@ frame_progress = 0.15666033
 
 [node name="fisheye_glitch4" type="AnimatedSprite2D" parent="." unique_id=1137030457 groups=["persist"]]
 visible = false
+texture_filter = 1
 position = Vector2(1088.0001, 590.00006)
 scale = Vector2(2.9404752, 2.9761872)
 sprite_frames = SubResource("SpriteFrames_t4dfr")

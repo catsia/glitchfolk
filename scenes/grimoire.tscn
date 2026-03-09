@@ -13,8 +13,13 @@
 [ext_resource type="PackedScene" uid="uid://bnwkx3jd1b8cg" path="res://scenes/interactive_images.tscn" id="11_374y1"]
 [ext_resource type="Script" uid="uid://cv0a2357kwrke" path="res://scripts/buttons/not_ending_anim_button.gd" id="12_8ltuu"]
 [ext_resource type="Script" uid="uid://8dpq410r4yb0" path="res://scripts/buttons/grimoire_last_button.gd" id="13_nyjrj"]
+[ext_resource type="Texture2D" uid="uid://cxaqt3tiqmtcy" path="res://assets/buttons/grimoire/paragraph1_lightup.png" id="14_4qw18"]
 [ext_resource type="PackedScene" uid="uid://d2v0xy18fq2ap" path="res://scenes/pause_menu.tscn" id="14_su1je"]
+[ext_resource type="Texture2D" uid="uid://3vsux6s13oc" path="res://assets/buttons/grimoire/paragraph2_lightup.png" id="15_1nrre"]
 [ext_resource type="AudioStream" uid="uid://cn3ev08a7678c" path="res://sounds/music/grimoire+ambiance.ogg" id="15_su1je"]
+[ext_resource type="Texture2D" uid="uid://b765usoik2pjh" path="res://assets/buttons/grimoire/paragraph3_lightup.png" id="16_xea4h"]
+[ext_resource type="Texture2D" uid="uid://bsv52w5g5n6yu" path="res://assets/buttons/grimoire/paragraph4_lightup.png" id="17_kaxl7"]
+[ext_resource type="Texture2D" uid="uid://d4cr8vx3cp5w2" path="res://assets/buttons/grimoire/paragraph5_lightup.png" id="18_pf2s3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vrino"]
 atlas = ExtResource("4_q2v0p")
@@ -901,7 +906,7 @@ offset_bottom = 40.0
 texture = ExtResource("2_fhfaf")
 
 [node name="grimoire_art" type="Sprite2D" parent="." unique_id=1296073979]
-visible = false
+texture_filter = 1
 position = Vector2(960, 509)
 texture = ExtResource("3_lbjj8")
 metadata/fade_in = true
@@ -1015,7 +1020,46 @@ flat = true
 script = ExtResource("12_8ltuu")
 animation = NodePath("../../../paragraph1")
 
+[node name="Paragraph2Lightup" type="Sprite2D" parent="CanvasLayer/Control" unique_id=1038149193]
+visible = false
+texture_filter = 1
+position = Vector2(921.00006, 558)
+scale = Vector2(3, 3)
+texture = ExtResource("15_1nrre")
+
+[node name="Paragraph3Lightup" type="Sprite2D" parent="CanvasLayer/Control" unique_id=1949593359]
+visible = false
+texture_filter = 1
+position = Vector2(1001, 629)
+scale = Vector2(3, 3)
+texture = ExtResource("16_xea4h")
+
+[node name="Paragraph4Lightup" type="Sprite2D" parent="CanvasLayer/Control" unique_id=931193378]
+visible = false
+texture_filter = 1
+position = Vector2(1011, 324)
+scale = Vector2(3, 3)
+texture = ExtResource("17_kaxl7")
+
+[node name="Paragraph5Lightup" type="Sprite2D" parent="CanvasLayer/Control" unique_id=1308419295]
+visible = false
+texture_filter = 1
+position = Vector2(1124, 399)
+scale = Vector2(3, 3)
+texture = ExtResource("18_pf2s3")
+
+[node name="Paragraph1Lightup" type="Sprite2D" parent="CanvasLayer/Control" unique_id=155247534]
+visible = false
+texture_filter = 1
+position = Vector2(852.00006, 487.00003)
+scale = Vector2(3, 3)
+texture = ExtResource("14_4qw18")
+
 [node name="pause_menu" parent="." unique_id=1717294060 instance=ExtResource("14_su1je")]
+offset_left = 14.0
+offset_top = -14.0
+offset_right = 14.0
+offset_bottom = -14.0
 
 [node name="book_ost" type="AudioStreamPlayer2D" parent="." unique_id=510701878]
 stream = ExtResource("15_su1je")
@@ -1024,12 +1068,23 @@ bus = &"Music"
 parameters/looping = true
 
 [node name="back_tech" type="Sprite2D" parent="." unique_id=2106563726]
+visible = false
 position = Vector2(958, 543)
 texture = ExtResource("2_fhfaf")
 metadata/fade_out = true
 
+[connection signal="mouse_entered" from="CanvasLayer/Control/paragraph2" to="CanvasLayer/Control/paragraph3" method="_on_paragraph_2_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Control/paragraph2" to="CanvasLayer/Control/paragraph3" method="_on_paragraph_2_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/Control/paragraph2" to="CanvasLayer/Control/paragraph2" method="_on_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/Control/paragraph4" to="CanvasLayer/Control/paragraph1" method="_on_paragraph_4_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Control/paragraph4" to="CanvasLayer/Control/paragraph1" method="_on_paragraph_4_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/Control/paragraph4" to="CanvasLayer/Control/paragraph4" method="_on_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/Control/paragraph5" to="CanvasLayer/Control/paragraph5" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Control/paragraph5" to="CanvasLayer/Control/paragraph5" method="_on_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/Control/paragraph5" to="CanvasLayer/Control/paragraph5" method="_on_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/Control/paragraph3" to="CanvasLayer/Control/paragraph1" method="_on_paragraph_3_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Control/paragraph3" to="CanvasLayer/Control/paragraph1" method="_on_paragraph_3_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/Control/paragraph3" to="CanvasLayer/Control/paragraph3" method="_on_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/Control/paragraph1" to="CanvasLayer/Control/paragraph3" method="_on_paragraph_1_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Control/paragraph1" to="CanvasLayer/Control/paragraph3" method="_on_paragraph_1_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/Control/paragraph1" to="CanvasLayer/Control/paragraph1" method="_on_pressed"]

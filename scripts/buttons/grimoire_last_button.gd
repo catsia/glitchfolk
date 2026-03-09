@@ -13,6 +13,7 @@ func next_timeline():
 	animation.visible = true
 	animation.play()
 
+
 func play_animation():
 	animation.play()
 
@@ -23,3 +24,12 @@ func _on_pressed() -> void:
 	self.hide()
 	self.disabled = true
 	InteractiveObjManager.second_wave_clicked(self.name)
+
+
+
+func _on_mouse_entered() -> void:
+	get_parent().get_node("Paragraph5Lightup").show()
+
+
+func _on_mouse_exited() -> void:
+	get_parent().get_node("Paragraph5Lightup").hide()
